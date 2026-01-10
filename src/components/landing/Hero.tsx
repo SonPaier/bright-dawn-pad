@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useTranslation } from "@/hooks/useTranslation";
 import { useToast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
 import { z } from "zod";
 
 const contactSchema = z.object({
@@ -38,19 +39,29 @@ const Hero = () => {
 
     setIsLoading(true);
     
-    // Demo mode - log to console, later integrate with Edge Function
-    console.log("Form submitted:", { contact });
-    
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    
-    toast({
-      title: "Sukces!",
-      description: hero.success,
-    });
-    
-    setContact("");
-    setIsLoading(false);
+    try {
+      const { data, error } = await supabase.functions.invoke('send-contact-email', {
+        body: { contact }
+      });
+      
+      if (error) throw error;
+      
+      toast({
+        title: "Sukces!",
+        description: hero.success,
+      });
+      
+      setContact("");
+    } catch (error) {
+      console.error("Error sending email:", error);
+      toast({
+        title: "Błąd",
+        description: hero.error,
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
