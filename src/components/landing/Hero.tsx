@@ -1,0 +1,95 @@
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { useTranslation } from "@/hooks/useTranslation";
+import { useToast } from "@/hooks/use-toast";
+import { z } from "zod";
+
+const contactSchema = z.object({
+  contact: z.string().refine(
+    (val) => {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      const phoneRegex = /^\d{9}$/;
+      return emailRegex.test(val) || phoneRegex.test(val.replace(/\s/g, ""));
+    },
+    { message: "Podaj poprawny email lub numer telefonu (9 cyfr)" }
+  ),
+});
+
+const Hero = () => {
+  const { t } = useTranslation();
+  const hero = t("hero");
+  const { toast } = useToast();
+  const [contact, setContact] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    const result = contactSchema.safeParse({ contact });
+    if (!result.success) {
+      toast({
+        title: "Błąd",
+        description: hero.validationError,
+        variant: "destructive",
+      });
+      return;
+    }
+
+    setIsLoading(true);
+    
+    // Demo mode - log to console, later integrate with Edge Function
+    console.log("Form submitted:", { contact });
+    
+    // Simulate API call
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    
+    toast({
+      title: "Sukces!",
+      description: hero.success,
+    });
+    
+    setContact("");
+    setIsLoading(false);
+  };
+
+  return (
+    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+      {/* Background gradient */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-primary/10" />
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/20 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2" />
+      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-sky-400/20 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2" />
+      
+      <div className="container relative z-10 px-4 py-20 md:py-32">
+        <div className="max-w-4xl mx-auto text-center animate-fade-in">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-foreground leading-tight">
+            {hero.title}
+          </h1>
+          
+          <p className="mt-6 md:mt-8 text-lg md:text-xl lg:text-2xl text-muted-foreground font-light max-w-3xl mx-auto leading-relaxed">
+            {hero.subtitle}
+          </p>
+          
+          <form onSubmit={handleSubmit} className="mt-10 md:mt-12 flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
+            <Input
+              type="text"
+              placeholder={hero.placeholder}
+              value={contact}
+              onChange={(e) => setContact(e.target.value)}
+              className="h-14 px-6 text-base rounded-xl border-border/50 bg-card/50 backdrop-blur-sm focus:border-primary"
+            />
+            <Button
+              type="submit"
+              disabled={isLoading}
+              className="h-14 px-8 text-base font-semibold rounded-xl bg-gradient-to-r from-primary to-sky-500 hover:from-primary/90 hover:to-sky-500/90 shadow-lg shadow-primary/25 transition-all duration-300 hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-0.5"
+            >
+              {isLoading ? "Wysyłanie..." : hero.cta}
+            </Button>
+          </form>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
