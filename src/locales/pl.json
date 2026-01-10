@@ -1,0 +1,141 @@
+{
+  "hero": {
+    "title": "Skup się na detailingu, chaos zostaw nam.",
+    "subtitle": "Poznaj CRM i system rezerwacji stworzony przy udziale doświadczonych detailerów i właścicieli myjni.",
+    "cta": "Umów się na prezentację",
+    "placeholder": "Twój email lub numer telefonu",
+    "success": "Dziękujemy! Skontaktujemy się wkrótce.",
+    "error": "Wystąpił błąd. Spróbuj ponownie.",
+    "validationError": "Podaj poprawny email lub numer telefonu (9 cyfr)"
+  },
+  "appPreview": {
+    "title": "Jeden system, wszystkie urządzenia",
+    "subtitle": "Zarządzaj rezerwacjami z laptopa, tabletu lub telefonu"
+  },
+  "benefits": {
+    "sectionTitle": "Dlaczego N2WASH?",
+    "sectionSubtitle": "Korzyści, które zmienią Twój biznes",
+    "items": [
+      {
+        "icon": "UserX",
+        "title": "Mniej nieobecności",
+        "description": "Automatyczne przypomnienia SMS i email redukują no-shows nawet o 70%"
+      },
+      {
+        "icon": "PhoneOff",
+        "title": "Mniej czasu na telefonie",
+        "description": "Klienci sami przekładają i anulują rezerwacje przez publiczny kalendarz"
+      },
+      {
+        "icon": "CalendarPlus",
+        "title": "Szybkie rezerwacje",
+        "description": "Intuicyjny interfejs pozwala stworzyć rezerwację w kilka sekund"
+      },
+      {
+        "icon": "BookOpen",
+        "title": "Koniec z zeszytem",
+        "description": "Cyfrowe zarządzanie eliminuje chaos i nieporozumienia"
+      },
+      {
+        "icon": "Users",
+        "title": "Baza klientów",
+        "description": "Buduj relacje dzięki pełnej historii wizyt i preferencji klientów"
+      },
+      {
+        "icon": "FileText",
+        "title": "Szybkie oferty",
+        "description": "Generator wycen detailingu z gotowymi szablonami usług"
+      },
+      {
+        "icon": "TrendingUp",
+        "title": "Wsparcie sprzedaży",
+        "description": "Inteligentne sugestie upsellingu zwiększają wartość zamówienia"
+      },
+      {
+        "icon": "UserCog",
+        "title": "Dostęp dla pracowników",
+        "description": "Osobne konta z kontrolą uprawnień dla całego zespołu"
+      },
+      {
+        "icon": "ClipboardCheck",
+        "title": "Protokoły przyjęcia",
+        "description": "Szybka dokumentacja stanu pojazdu ze zdjęciami"
+      },
+      {
+        "icon": "Smartphone",
+        "title": "Wszystko z telefonu",
+        "description": "Pełna funkcjonalność w kieszeni - zarządzaj biznesem gdziekolwiek jesteś",
+        "highlighted": true
+      }
+    ]
+  },
+  "testimonials": {
+    "sectionTitle": "Opinie naszych klientów",
+    "sectionSubtitle": "Sprawdź, co mówią o nas właściciele myjni i detailerzy",
+    "items": [
+      {
+        "name": "Marcin Kowalski",
+        "company": "Auto Detailing Pro",
+        "text": "Od kiedy używam N2WASH, nie muszę już odbierać telefonów w trakcie pracy. Klienci sami rezerwują i przekładają wizyty. Oszczędzam co najmniej 2 godziny dziennie.",
+        "rating": 5
+      },
+      {
+        "name": "Anna Nowak",
+        "company": "Myjnia Express Wrocław",
+        "text": "Protokoły przyjęcia pojazdu to game changer. Mam dokumentację każdego auta i zero reklamacji. System jest prosty nawet dla moich starszych pracowników.",
+        "rating": 5
+      },
+      {
+        "name": "Tomasz Wiśniewski",
+        "company": "Premium Car Care",
+        "text": "Wreszcie mam porządek w rezerwacjach i bazę klientów. Funkcja przypomnień praktycznie wyeliminowała no-shows. Polecam każdemu detailerowi!",
+        "rating": 5
+      }
+    ]
+  },
+  "pricing": {
+    "sectionTitle": "Prosty i przejrzysty cennik",
+    "sectionSubtitle": "Płacisz tylko za to, czego potrzebujesz",
+    "pricePerStation": 75,
+    "currency": "zł",
+    "currencyCode": "PLN",
+    "perStation": "za stanowisko",
+    "perMonth": "miesięcznie",
+    "perYear": "rocznie",
+    "netPrice": "netto",
+    "stations": "stanowiska",
+    "station": "stanowisko",
+    "monthly": "Miesięcznie",
+    "yearly": "Rocznie",
+    "yearlyDiscount": "20% taniej",
+    "totalMonthly": "Razem miesięcznie",
+    "totalYearly": "Razem rocznie",
+    "cta": "Umów prezentację",
+    "additionalModules": {
+      "title": "Moduły dodatkowe",
+      "subtitle": "Wycena indywidualna",
+      "items": [
+        "Widok dla pracowników",
+        "Tworzenie i zarządzanie ofertami detailingu",
+        "Protokoły przyjęcia pojazdu",
+        "Wsparcie sprzedaży",
+        "Analityka i raporty"
+      ]
+    }
+  },
+  "footer": {
+    "contact": "Kontakt",
+    "email": "hello@n2wash.com",
+    "phone": "+48 123 456 789",
+    "website": "n2wash.com",
+    "copyright": "© 2025 N2WASH. Wszelkie prawa zastrzeżone.",
+    "privacy": "Polityka prywatności",
+    "terms": "Regulamin"
+  },
+  "nav": {
+    "benefits": "Korzyści",
+    "pricing": "Cennik",
+    "testimonials": "Opinie",
+    "contact": "Kontakt"
+  }
+}

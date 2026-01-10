@@ -1,14 +1,28 @@
+import { useRef } from "react";
+import Hero from "@/components/landing/Hero";
+import AppPreview from "@/components/landing/AppPreview";
+import Benefits from "@/components/landing/Benefits";
+import Testimonials from "@/components/landing/Testimonials";
+import Pricing from "@/components/landing/Pricing";
+import Footer from "@/components/landing/Footer";
+
 const Index = () => {
+  const heroRef = useRef<HTMLDivElement>(null);
+
+  const scrollToContact = () => {
+    heroRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <main className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-6xl md:text-8xl font-bold tracking-tight text-gradient-water">
-          N2WASH
-        </h1>
-        <p className="mt-4 text-lg text-muted-foreground font-light tracking-wide">
-          Coming Soon
-        </p>
+    <main className="min-h-screen bg-background">
+      <div ref={heroRef}>
+        <Hero />
       </div>
+      <AppPreview />
+      <Benefits />
+      <Testimonials />
+      <Pricing onScrollToContact={scrollToContact} />
+      <Footer />
     </main>
   );
 };
