@@ -1,5 +1,5 @@
 import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
-import nodemailer from "https://esm.sh/nodemailer@6.9.9";
+import { SMTPClient } from "https://deno.land/x/denomailer@1.6.0/mod.ts";
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -26,14 +26,16 @@ const handler = async (req: Request): Promise<Response> => {
       );
     }
 
-    // Create transporter with IONOS SMTP
-    const transporter = nodemailer.createTransport({
-      host: Deno.env.get("SMTP_HOST"),
-      port: parseInt(Deno.env.get("SMTP_PORT") || "465"),
-      secure: true, // Port 465 uses SSL
-      auth: {
-        user: Deno.env.get("SMTP_USER"),
-        pass: Deno.env.get("SMTP_PASS"),
+    // Create SMTP client for IONOS
+    const client = new SMTPClient({
+      connection: {
+        hostname: Deno.env.get("SMTP_HOST")!,
+        port: parseInt(Deno.env.get("SMTP_PORT") || "465"),
+        tls: true,
+        auth: {
+          username: Deno.env.get("SMTP_USER")!,
+          password: Deno.env.get("SMTP_PASS")!,
+        },
       },
     });
 
@@ -42,8 +44,8 @@ const handler = async (req: Request): Promise<Response> => {
     const contactType = isEmail ? "Email" : "Telefon";
 
     // Send email notification
-    await transporter.sendMail({
-      from: Deno.env.get("SMTP_FROM"),
+    await client.send({
+      from: Deno.env.get("SMTP_FROM")!,
       to: "hello@n2wash.com",
       subject: `Nowe zapytanie o prezentację - N2Wash.com`,
       html: `
@@ -54,6 +56,8 @@ const handler = async (req: Request): Promise<Response> => {
         <p style="color: #666; font-size: 12px;">Wiadomość wysłana automatycznie z formularza na stronie n2wash.com</p>
       `,
     });
+
+    await client.close();
 
     console.log("Email sent successfully to hello@n2wash.com");
 
