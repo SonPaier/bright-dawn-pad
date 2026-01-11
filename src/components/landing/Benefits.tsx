@@ -1,13 +1,9 @@
 import {
   UserX,
   PhoneOff,
-  CalendarPlus,
   BookOpen,
   Users,
   FileText,
-  TrendingUp,
-  UserCog,
-  ClipboardCheck,
   Smartphone,
   LucideIcon,
 } from "lucide-react";
@@ -17,13 +13,9 @@ import BenefitCard from "./BenefitCard";
 const iconMap: Record<string, LucideIcon> = {
   UserX,
   PhoneOff,
-  CalendarPlus,
   BookOpen,
   Users,
   FileText,
-  TrendingUp,
-  UserCog,
-  ClipboardCheck,
   Smartphone,
 };
 
@@ -43,7 +35,7 @@ const Benefits = () => {
           </p>
         </header>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 md:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 max-w-4xl mx-auto">
           {benefits.items.map((benefit, index) => {
             const Icon = iconMap[benefit.icon] || Smartphone;
             return (
@@ -52,11 +44,14 @@ const Benefits = () => {
                 icon={Icon}
                 title={benefit.title}
                 description={benefit.description}
-                highlighted={"highlighted" in benefit && benefit.highlighted}
               />
             );
           })}
         </div>
+
+        <p className="text-center mt-10 text-lg text-muted-foreground font-medium">
+          {benefits.moreText}
+        </p>
       </div>
     </section>
   );

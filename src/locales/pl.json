@@ -15,11 +15,12 @@
   "benefits": {
     "sectionTitle": "Dlaczego N2Wash.com?",
     "sectionSubtitle": "Korzyści, które zmienią Twój biznes",
+    "moreText": "...i wiele innych korzyści",
     "items": [
       {
-        "icon": "UserX",
-        "title": "Mniej nieobecności",
-        "description": "Automatyczne przypomnienia SMS i email redukują no-shows nawet o 70%"
+        "icon": "BookOpen",
+        "title": "Koniec z zeszytem",
+        "description": "Cyfrowe zarządzanie eliminuje chaos i nieporozumienia"
       },
       {
         "icon": "PhoneOff",
@@ -27,14 +28,9 @@
         "description": "Klienci sami przekładają i anulują rezerwacje przez publiczny kalendarz"
       },
       {
-        "icon": "CalendarPlus",
-        "title": "Szybkie rezerwacje",
-        "description": "Intuicyjny interfejs pozwala stworzyć rezerwację w kilka sekund"
-      },
-      {
-        "icon": "BookOpen",
-        "title": "Koniec z zeszytem",
-        "description": "Cyfrowe zarządzanie eliminuje chaos i nieporozumienia"
+        "icon": "UserX",
+        "title": "Mniej nieobecności",
+        "description": "Automatyczne przypomnienia SMS i email redukują no-shows nawet o 70%"
       },
       {
         "icon": "Users",
@@ -47,25 +43,9 @@
         "description": "Generator wycen detailingu z gotowymi szablonami usług"
       },
       {
-        "icon": "TrendingUp",
-        "title": "Wsparcie sprzedaży",
-        "description": "Inteligentne sugestie upsellingu zwiększają wartość zamówienia"
-      },
-      {
-        "icon": "UserCog",
-        "title": "Dostęp dla pracowników",
-        "description": "Osobne konta z kontrolą uprawnień dla całego zespołu"
-      },
-      {
-        "icon": "ClipboardCheck",
-        "title": "Protokoły przyjęcia",
-        "description": "Szybka dokumentacja stanu pojazdu ze zdjęciami"
-      },
-      {
         "icon": "Smartphone",
         "title": "Wszystko z telefonu",
-        "description": "Pełna funkcjonalność w kieszeni - zarządzaj biznesem gdziekolwiek jesteś",
-        "highlighted": true
+        "description": "Pełna funkcjonalność w kieszeni - zarządzaj biznesem gdziekolwiek jesteś"
       }
     ]
   },
