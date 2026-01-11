@@ -38,7 +38,7 @@ const Footer = () => {
                   className="flex items-center gap-3 text-background/70 hover:text-background transition-colors text-sm"
                 >
                   <Phone className="w-4 h-4" />
-                  {footer.phone1}
+                  {footer.phone1} (Tomek)
                 </a>
               </li>
               <li>
@@ -47,7 +47,7 @@ const Footer = () => {
                   className="flex items-center gap-3 text-background/70 hover:text-background transition-colors text-sm"
                 >
                   <Phone className="w-4 h-4" />
-                  {footer.phone2}
+                  {footer.phone2} (Rafał)
                 </a>
               </li>
               <li>
