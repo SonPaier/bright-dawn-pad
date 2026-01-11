@@ -24,7 +24,7 @@ const Benefits = () => {
   const benefits = t("benefits");
 
   return (
-    <section id="benefits" className="py-20 md:py-32">
+    <section id="benefits" className="py-20 md:py-32 bg-section-alt">
       <div className="container px-4">
         <header className="text-center mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">

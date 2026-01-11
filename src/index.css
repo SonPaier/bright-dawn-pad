@@ -21,8 +21,10 @@
     --secondary: 210 30% 94%;
     --secondary-foreground: 215 35% 12%;
 
-    --muted: 210 20% 96%;
+    --muted: 205 60% 97%;
     --muted-foreground: 215 15% 50%;
+    
+    --section-alt: 205 70% 96%;
 
     --accent: 195 100% 50%;
     --accent-foreground: 215 35% 12%;
