@@ -5,6 +5,7 @@ import Benefits from "@/components/landing/Benefits";
 import Testimonials from "@/components/landing/Testimonials";
 import Pricing from "@/components/landing/Pricing";
 import Footer from "@/components/landing/Footer";
+import ScrollFadeIn from "@/components/landing/ScrollFadeIn";
 
 const Index = () => {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -18,10 +19,18 @@ const Index = () => {
       <div ref={heroRef}>
         <Hero />
       </div>
-      <AppPreview />
-      <Benefits />
-      <Testimonials />
-      <Pricing onScrollToContact={scrollToContact} />
+      <ScrollFadeIn>
+        <AppPreview />
+      </ScrollFadeIn>
+      <ScrollFadeIn delay={0.1}>
+        <Benefits />
+      </ScrollFadeIn>
+      <ScrollFadeIn delay={0.1}>
+        <Testimonials />
+      </ScrollFadeIn>
+      <ScrollFadeIn delay={0.1}>
+        <Pricing onScrollToContact={scrollToContact} />
+      </ScrollFadeIn>
       <Footer />
     </main>
   );
