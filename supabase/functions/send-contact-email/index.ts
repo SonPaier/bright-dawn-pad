@@ -45,7 +45,7 @@ const handler = async (req: Request): Promise<Response> => {
     await transporter.sendMail({
       from: Deno.env.get("SMTP_FROM"),
       to: "hello@n2wash.com",
-      subject: `Nowe zapytanie o prezentację - N2WASH`,
+      subject: `Nowe zapytanie o prezentację - N2Wash.com`,
       html: `
         <h2>Nowe zapytanie o prezentację</h2>
         <p><strong>${contactType}:</strong> ${contact}</p>
