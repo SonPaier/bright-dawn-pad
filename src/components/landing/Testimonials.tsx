@@ -17,14 +17,18 @@ const Testimonials = () => {
           </p>
         </header>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
+        <div className={`max-w-4xl mx-auto ${testimonials.items.length === 1 ? '' : 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8'}`}>
           {testimonials.items.map((testimonial, index) => (
             <TestimonialCard
               key={index}
               name={testimonial.name}
               company={testimonial.company}
+              companyUrl={testimonial.companyUrl}
+              location={testimonial.location}
+              logo={testimonial.logo}
               text={testimonial.text}
               rating={testimonial.rating}
+              fullWidth={testimonials.items.length === 1}
             />
           ))}
         </div>

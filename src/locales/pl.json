@@ -54,21 +54,12 @@
     "sectionSubtitle": "Sprawdź, co mówią o nas właściciele myjni i detailerzy",
     "items": [
       {
-        "name": "Marcin Kowalski",
-        "company": "Auto Detailing Pro",
+        "name": "Armen",
+        "company": "ARM-CAR Detailing & Wrapping",
+        "companyUrl": "https://armcarautospa.pl/",
+        "location": "Gdańsk",
+        "logo": "armcar",
         "text": "Od kiedy używam N2Wash.com, nie muszę już odbierać telefonów w trakcie pracy. Klienci sami rezerwują i przekładają wizyty. Oszczędzam co najmniej 2 godziny dziennie.",
-        "rating": 5
-      },
-      {
-        "name": "Anna Nowak",
-        "company": "Myjnia Express Wrocław",
-        "text": "Protokoły przyjęcia pojazdu to game changer. Mam dokumentację każdego auta i zero reklamacji. System jest prosty nawet dla moich starszych pracowników.",
-        "rating": 5
-      },
-      {
-        "name": "Tomasz Wiśniewski",
-        "company": "Premium Car Care",
-        "text": "Wreszcie mam porządek w rezerwacjach i bazę klientów. Funkcja przypomnień praktycznie wyeliminowała no-shows. Polecam każdemu detailerowi!",
         "rating": 5
       }
     ]
