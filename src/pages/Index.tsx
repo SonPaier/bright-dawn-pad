@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import Header from "@/components/landing/Header";
 import Hero from "@/components/landing/Hero";
 import AppPreview from "@/components/landing/AppPreview";
 import Benefits from "@/components/landing/Benefits";
@@ -11,11 +12,13 @@ const Index = () => {
   const heroRef = useRef<HTMLDivElement>(null);
 
   const scrollToContact = () => {
-    heroRef.current?.scrollIntoView({ behavior: "smooth" });
+    const footer = document.querySelector("#footer");
+    footer?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <main className="min-h-screen bg-background">
+      <Header />
       <div ref={heroRef}>
         <Hero />
       </div>
@@ -23,15 +26,23 @@ const Index = () => {
         <AppPreview />
       </ScrollFadeIn>
       <ScrollFadeIn delay={0.1}>
-        <Benefits />
+        <section id="benefits">
+          <Benefits />
+        </section>
       </ScrollFadeIn>
       <ScrollFadeIn delay={0.1}>
-        <Testimonials />
+        <section id="testimonials">
+          <Testimonials />
+        </section>
       </ScrollFadeIn>
       <ScrollFadeIn delay={0.1}>
-        <Pricing onScrollToContact={scrollToContact} />
+        <section id="pricing">
+          <Pricing onScrollToContact={scrollToContact} />
+        </section>
       </ScrollFadeIn>
-      <Footer />
+      <footer id="footer">
+        <Footer />
+      </footer>
     </main>
   );
 };
