@@ -70,7 +70,7 @@ const PricingCalculator = ({ onScrollToContact }: PricingCalculatorProps) => {
       {/* Stations stepper */}
       <div className="mb-8">
         <Label className="block text-center text-sm text-muted-foreground mb-3">
-          Liczba {stations === 1 ? "stanowiska" : stations < 5 ? "stanowisk" : "stanowisk"}
+          Liczba stanowisk
         </Label>
         <div className="flex justify-center">
           <Stepper

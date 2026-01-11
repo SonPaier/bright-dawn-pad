@@ -34,11 +34,20 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href={`tel:${footer.phone.replace(/\s/g, "")}`}
+                  href={`tel:${footer.phone1.replace(/\s/g, "")}`}
                   className="flex items-center gap-3 text-background/70 hover:text-background transition-colors text-sm"
                 >
                   <Phone className="w-4 h-4" />
-                  {footer.phone}
+                  {footer.phone1}
+                </a>
+              </li>
+              <li>
+                <a
+                  href={`tel:${footer.phone2.replace(/\s/g, "")}`}
+                  className="flex items-center gap-3 text-background/70 hover:text-background transition-colors text-sm"
+                >
+                  <Phone className="w-4 h-4" />
+                  {footer.phone2}
                 </a>
               </li>
               <li>
