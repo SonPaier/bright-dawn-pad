@@ -62,7 +62,7 @@ const Header = () => {
               <button
                 key={link.href}
                 onClick={() => scrollToSection(link.href)}
-                className={`text-sm font-medium transition-colors ${
+                className={`text-base font-medium transition-colors ${
                   isScrolled
                     ? "text-foreground/80 hover:text-primary"
                     : "text-white hover:text-white/80"
