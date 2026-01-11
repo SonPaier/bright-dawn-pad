@@ -49,7 +49,9 @@ const Header = () => {
               e.preventDefault();
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
-            className="text-xl md:text-2xl font-bold text-primary hover:opacity-80 transition-opacity"
+            className={`text-xl md:text-2xl font-bold transition-colors ${
+              isScrolled ? "text-primary hover:opacity-80" : "text-white hover:text-white/80"
+            }`}
           >
             N2Wash.com
           </a>
@@ -60,7 +62,11 @@ const Header = () => {
               <button
                 key={link.href}
                 onClick={() => scrollToSection(link.href)}
-                className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
+                className={`text-sm font-medium transition-colors ${
+                  isScrolled
+                    ? "text-foreground/80 hover:text-primary"
+                    : "text-white hover:text-white/80"
+                }`}
               >
                 {link.label}
               </button>
@@ -71,7 +77,7 @@ const Header = () => {
           <Button
             variant="ghost"
             size="icon"
-            className="md:hidden"
+            className={`md:hidden ${!isScrolled ? "text-white hover:text-white/80 hover:bg-white/10" : ""}`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? (
