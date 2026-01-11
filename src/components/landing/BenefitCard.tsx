@@ -1,30 +1,18 @@
 import { LucideIcon } from "lucide-react";
-import { cn } from "@/lib/utils";
 
 interface BenefitCardProps {
   icon: LucideIcon;
   title: string;
   description: string;
-  highlighted?: boolean;
 }
 
-const BenefitCard = ({ icon: Icon, title, description, highlighted }: BenefitCardProps) => {
+const BenefitCard = ({ icon: Icon, title, description }: BenefitCardProps) => {
   return (
     <article
-      className={cn(
-        "group relative p-6 rounded-2xl border transition-all duration-300 hover:-translate-y-1",
-        highlighted
-          ? "bg-gradient-to-br from-primary/10 to-sky-500/10 border-primary/30 shadow-lg shadow-primary/10"
-          : "bg-card border-border hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5"
-      )}
+      className="group relative p-6 rounded-2xl border bg-card border-border hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 hover:-translate-y-1"
     >
       <div
-        className={cn(
-          "w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-colors",
-          highlighted
-            ? "bg-primary text-primary-foreground"
-            : "bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground"
-        )}
+        className="w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-colors bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground"
       >
         <Icon className="w-6 h-6" />
       </div>

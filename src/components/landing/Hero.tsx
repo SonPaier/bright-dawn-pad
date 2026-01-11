@@ -74,8 +74,8 @@ const Hero = () => {
         alt="" 
         className="absolute inset-0 w-full h-full object-cover"
       />
-      {/* Dark blue overlay - more transparent to show image */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-primary/70 to-sky-900/80" />
+      {/* Dark blue overlay with multiply blend to enhance photo colors */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-primary/70 to-sky-900/80 mix-blend-multiply" />
       
       <div className="container relative z-10 px-4 py-20 md:py-32">
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
@@ -93,7 +93,7 @@ const Hero = () => {
               placeholder={hero.placeholder}
               value={contact}
               onChange={(e) => setContact(e.target.value)}
-              className="h-14 px-6 text-base rounded-xl border-border/50 bg-card/50 backdrop-blur-sm focus:border-primary"
+              className="h-14 px-6 text-base rounded-xl border-border bg-card text-foreground focus:border-primary"
             />
             <Button
               type="submit"
