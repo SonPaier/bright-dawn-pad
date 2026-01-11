@@ -68,12 +68,14 @@ const Hero = () => {
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
       {/* Background image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBg})` }}
+      {/* Background image */}
+      <img 
+        src={heroBg} 
+        alt="" 
+        className="absolute inset-0 w-full h-full object-cover"
       />
-      {/* Dark blue overlay */}
-      <div className="absolute inset-0 bg-primary/90" />
+      {/* Dark blue overlay - more transparent to show image */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-primary/70 to-sky-900/80" />
       
       <div className="container relative z-10 px-4 py-20 md:py-32">
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
