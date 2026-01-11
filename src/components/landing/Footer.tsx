@@ -12,7 +12,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <h3 className="text-2xl font-bold text-gradient-water mb-4">
-              N2WASH
+              N2Wash.com
             </h3>
             <p className="text-background/70 text-sm leading-relaxed max-w-xs">
               CRM i system rezerwacji dla myjni samochodowych i studiów detailingu.
