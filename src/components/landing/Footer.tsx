@@ -1,4 +1,5 @@
 import { Mail, Phone, Globe } from "lucide-react";
+import { Link } from "react-router-dom";
 import { useTranslation } from "@/hooks/useTranslation";
 
 const Footer = () => {
@@ -69,12 +70,12 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Informacje</h4>
             <ul className="space-y-3">
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/polityka-prywatnosci"
                   className="text-background/70 hover:text-background transition-colors text-sm"
                 >
                   {footer.privacy}
-                </a>
+                </Link>
               </li>
               <li>
                 <a
