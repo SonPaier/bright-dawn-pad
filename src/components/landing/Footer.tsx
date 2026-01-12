@@ -78,12 +78,12 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/regulamin"
                   className="text-background/70 hover:text-background transition-colors text-sm"
                 >
                   {footer.terms}
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

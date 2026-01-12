@@ -7,22 +7,24 @@ const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-foreground/95 backdrop-blur-md border-b border-background/10">
-        <div className="container px-4 py-4 flex items-center justify-between">
-          <Link to="/" className="flex items-center">
-            <img 
-              src={logo} 
-              alt="N2Wash.com" 
-              className="h-8 md:h-10"
-            />
-          </Link>
-          <Link 
-            to="/" 
-            className="flex items-center gap-2 text-background/70 hover:text-background transition-colors text-sm font-medium"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            Powrót na stronę główną
-          </Link>
+      <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-md shadow-sm border-b border-border">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-between h-16 md:h-20">
+            <Link to="/" className="transition-all hover:opacity-80">
+              <img 
+                src={logo} 
+                alt="N2Wash.com" 
+                className="h-6 md:h-7 w-auto"
+              />
+            </Link>
+            <Link 
+              to="/" 
+              className="flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors text-sm font-medium"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              Powrót na stronę główną
+            </Link>
+          </div>
         </div>
       </header>
 
