@@ -2,6 +2,7 @@ import { Check } from "lucide-react";
 import { useTranslation } from "@/hooks/useTranslation";
 import benefitTwojBiznes from "@/assets/benefit-twoj-biznes.jpg";
 import benefitZadowoleniKlienci from "@/assets/benefit-zadowoleni-klienci.jpg";
+import benefitOferty from "@/assets/benefit-oferty.jpg";
 
 interface FeatureItem {
   title: string;
@@ -15,7 +16,7 @@ const BenefitsZigZag = () => {
   const features: FeatureItem[] = benefits.features || [];
 
   return (
-    <section id="benefits" className="py-20 md:py-32 bg-section-alt">
+    <section id="benefits" className="py-20 md:py-32 bg-white border-y border-gray-200">
       <div className="container px-4">
         {/* Header */}
         <header className="text-center mb-16 md:mb-24">
@@ -31,7 +32,7 @@ const BenefitsZigZag = () => {
         <div className="space-y-16 md:space-y-24 max-w-6xl mx-auto">
           {features.map((feature, index) => {
             const isReversed = index % 2 === 1;
-            const images: (string | null)[] = [null, benefitZadowoleniKlienci, null, null];
+            const images: (string | null)[] = [null, benefitZadowoleniKlienci, null, benefitOferty];
             const currentImage = images[index];
             
             return (
