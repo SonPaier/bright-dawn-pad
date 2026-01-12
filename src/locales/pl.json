@@ -1,7 +1,7 @@
 {
   "hero": {
     "title": "Skup się na detailingu, chaos zostaw nam.",
-    "subtitle": "Poznaj jedyny CRM i system rezerwacji stworzony przy udziale doświadczonych detailerów i właścicieli myjni.",
+    "subtitle": "Poznaj jedyny CRM i system rezerwacji stworzony przy udziale doświadczonych detailerów i właścicieli myjni ręcznych.",
     "cta": "Umów się na prezentację",
     "placeholder": "Twój email lub numer telefonu",
     "success": "Dziękujemy! Skontaktujemy się wkrótce.",
@@ -106,7 +106,7 @@
     "phone1": "+48 666 610 222",
     "phone2": "+48 666 610 011",
     "website": "n2wash.com",
-    "copyright": "© 2025 N2Wash.com. Wszelkie prawa zastrzeżone.",
+    "copyright": "© 2026 N2Wash.com. Wszelkie prawa zastrzeżone.",
     "privacy": "Polityka prywatności",
     "terms": "Regulamin"
   },
