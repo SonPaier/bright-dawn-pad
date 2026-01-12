@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "@/hooks/useTranslation";
+import logoN2Wash from "@/assets/n2washcom-logo.svg";
 
 const Header = () => {
   const { t } = useTranslation();
@@ -49,11 +50,15 @@ const Header = () => {
               e.preventDefault();
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
-            className={`text-xl md:text-2xl font-bold transition-colors ${
-              isScrolled ? "text-primary hover:opacity-80" : "text-white hover:text-white/80"
-            }`}
+            className="transition-all hover:opacity-80"
           >
-            N2Wash.com
+            <img 
+              src={logoN2Wash} 
+              alt="N2Wash.com" 
+              className={`h-6 md:h-7 w-auto transition-all duration-300 ${
+                isScrolled ? "" : "brightness-0 invert"
+              }`}
+            />
           </a>
 
           {/* Desktop Navigation */}
