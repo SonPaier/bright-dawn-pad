@@ -120,7 +120,7 @@ const PricingCalculator = ({ onScrollToContact }: PricingCalculatorProps) => {
                 <div className="w-5 h-5 rounded-full bg-green-500/10 flex items-center justify-center flex-shrink-0">
                   <Check className="w-3 h-3 text-green-600" />
                 </div>
-                <span className="text-sm text-muted-foreground">Podstawowa analityka i raporty</span>
+                <span className="text-sm text-muted-foreground">Podstawowa analityka</span>
               </div>
             </div>
           </div>
