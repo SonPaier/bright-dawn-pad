@@ -3,7 +3,13 @@ import { useTranslation } from "@/hooks/useTranslation";
 import { Stepper } from "@/components/ui/stepper";
 import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
-import { Check } from "lucide-react";
+import { Check, HelpCircle } from "lucide-react";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 interface PricingCalculatorProps {
   onScrollToContact: () => void;
@@ -66,23 +72,59 @@ const PricingCalculator = ({ onScrollToContact }: PricingCalculatorProps) => {
         </p>
         
         {/* Included features */}
-        <div className="mt-4 text-left inline-block">
-          <p className="font-semibold text-foreground text-sm mb-2">Zawarte w cenie:</p>
-          <div className="space-y-1">
-            <div className="flex items-center gap-2">
-              <div className="w-5 h-5 rounded-full bg-green-500/10 flex items-center justify-center flex-shrink-0">
-                <Check className="w-3 h-3 text-green-600" />
+        <TooltipProvider delayDuration={100}>
+          <div className="mt-4 text-left inline-block">
+            <p className="font-semibold text-foreground text-sm mb-2">Zawarte w cenie:</p>
+            <div className="space-y-1.5">
+              <div className="flex items-center gap-2">
+                <div className="w-5 h-5 rounded-full bg-green-500/10 flex items-center justify-center flex-shrink-0">
+                  <Check className="w-3 h-3 text-green-600" />
+                </div>
+                <span className="text-sm text-muted-foreground">Główny kalendarz</span>
               </div>
-              <span className="text-sm text-muted-foreground">Kalendarz</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-5 h-5 rounded-full bg-green-500/10 flex items-center justify-center flex-shrink-0">
-                <Check className="w-3 h-3 text-green-600" />
+              <div className="flex items-center gap-2">
+                <div className="w-5 h-5 rounded-full bg-green-500/10 flex items-center justify-center flex-shrink-0">
+                  <Check className="w-3 h-3 text-green-600" />
+                </div>
+                <span className="text-sm text-muted-foreground">Rezerwacje online 24/7</span>
               </div>
-              <span className="text-sm text-muted-foreground">Rezerwacje online 24/7</span>
+              <div className="flex items-center gap-2">
+                <div className="w-5 h-5 rounded-full bg-green-500/10 flex items-center justify-center flex-shrink-0">
+                  <Check className="w-3 h-3 text-green-600" />
+                </div>
+                <span className="text-sm text-muted-foreground">100 powiadomień SMS</span>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <HelpCircle className="w-4 h-4 text-muted-foreground/60 cursor-help" />
+                  </TooltipTrigger>
+                  <TooltipContent className="max-w-xs">
+                    <p>Sam decyduj, o czym chcesz powiadamiać swoich klientów. Po przekroczeniu 100 SMSów, kolejne podlegają opłacie (13 gr netto / SMS)</p>
+                  </TooltipContent>
+                </Tooltip>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-5 h-5 rounded-full bg-green-500/10 flex items-center justify-center flex-shrink-0">
+                  <Check className="w-3 h-3 text-green-600" />
+                </div>
+                <span className="text-sm text-muted-foreground">Obsługa aut z placu</span>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <HelpCircle className="w-4 h-4 text-muted-foreground/60 cursor-help" />
+                  </TooltipTrigger>
+                  <TooltipContent className="max-w-xs">
+                    <p>Klient może pozostawić Ci pojazd przed halą - wprowadź go do systemu, ale zajmij się nim w dogodnym dla siebie czasie</p>
+                  </TooltipContent>
+                </Tooltip>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-5 h-5 rounded-full bg-green-500/10 flex items-center justify-center flex-shrink-0">
+                  <Check className="w-3 h-3 text-green-600" />
+                </div>
+                <span className="text-sm text-muted-foreground">Podstawowa analityka i raporty</span>
+              </div>
             </div>
           </div>
-        </div>
+        </TooltipProvider>
       </div>
 
       {/* Stations stepper */}
