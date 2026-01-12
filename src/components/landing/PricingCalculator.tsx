@@ -26,20 +26,7 @@ const PricingCalculator = ({ onScrollToContact }: PricingCalculatorProps) => {
 
   return (
     <div className="bg-card rounded-3xl border border-border p-6 md:p-10 shadow-xl max-w-lg mx-auto">
-      {/* Price display */}
-      <div className="text-center mb-8">
-        <div className="flex items-baseline justify-center gap-1">
-          <span className="text-5xl md:text-6xl font-bold text-foreground">
-            {pricePerStation.toFixed(0)}
-          </span>
-          <span className="text-2xl text-muted-foreground">{pricing.currency}</span>
-        </div>
-        <p className="text-muted-foreground mt-1">
-          {pricing.netPrice} {pricing.perStation} / {isYearly ? pricing.perYear.split(" ")[0].toLowerCase() : pricing.perMonth.split(" ")[0].toLowerCase()}
-        </p>
-      </div>
-
-      {/* Yearly toggle */}
+      {/* Yearly toggle - moved to top */}
       <div className="flex items-center justify-center gap-4 mb-8 p-4 rounded-xl bg-muted/50">
         <Label
           htmlFor="billing-toggle"
@@ -66,6 +53,23 @@ const PricingCalculator = ({ onScrollToContact }: PricingCalculatorProps) => {
           )}
         </div>
       </div>
+
+      {/* Price display */}
+      <div className="text-center mb-8">
+        <div className="flex items-baseline justify-center gap-1">
+          <span className="text-5xl md:text-6xl font-bold text-foreground">
+            {pricePerStation.toFixed(0)}
+          </span>
+          <span className="text-2xl text-muted-foreground">{pricing.currency}</span>
+        </div>
+        <p className="text-muted-foreground mt-1">
+          {pricing.netPrice} {pricing.perStation} / {isYearly ? pricing.perYear.split(" ")[0].toLowerCase() : pricing.perMonth.split(" ")[0].toLowerCase()}
+        </p>
+        <p className="text-sm text-muted-foreground mt-2">
+          Kalendarz, Rezerwacje online 24/7
+        </p>
+      </div>
+
 
       {/* Stations stepper */}
       <div className="mb-8">
