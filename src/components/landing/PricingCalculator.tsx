@@ -3,6 +3,7 @@ import { useTranslation } from "@/hooks/useTranslation";
 import { Stepper } from "@/components/ui/stepper";
 import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
+import { Check } from "lucide-react";
 
 interface PricingCalculatorProps {
   onScrollToContact: () => void;
@@ -46,11 +47,9 @@ const PricingCalculator = ({ onScrollToContact }: PricingCalculatorProps) => {
           >
             {pricing.yearly}
           </Label>
-          {isYearly && (
-            <span className="text-xs font-semibold px-2 py-1 rounded-full bg-green-500/10 text-green-600">
-              {pricing.yearlyDiscount}
-            </span>
-          )}
+          <span className="text-xs font-semibold px-2 py-1 rounded-full bg-green-500/10 text-green-600">
+            {pricing.yearlyDiscount}
+          </span>
         </div>
       </div>
 
@@ -65,16 +64,31 @@ const PricingCalculator = ({ onScrollToContact }: PricingCalculatorProps) => {
         <p className="text-muted-foreground mt-1">
           {pricing.netPrice} {pricing.perStation} / {isYearly ? pricing.perYear.split(" ")[0].toLowerCase() : pricing.perMonth.split(" ")[0].toLowerCase()}
         </p>
-        <p className="text-sm text-muted-foreground mt-2">
-          Kalendarz, Rezerwacje online 24/7
-        </p>
+        
+        {/* Included features */}
+        <div className="mt-4 text-left inline-block">
+          <p className="font-semibold text-foreground text-sm mb-2">Zawarte w cenie:</p>
+          <div className="space-y-1">
+            <div className="flex items-center gap-2">
+              <div className="w-5 h-5 rounded-full bg-green-500/10 flex items-center justify-center flex-shrink-0">
+                <Check className="w-3 h-3 text-green-600" />
+              </div>
+              <span className="text-sm text-muted-foreground">Kalendarz</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-5 h-5 rounded-full bg-green-500/10 flex items-center justify-center flex-shrink-0">
+                <Check className="w-3 h-3 text-green-600" />
+              </div>
+              <span className="text-sm text-muted-foreground">Rezerwacje online 24/7</span>
+            </div>
+          </div>
+        </div>
       </div>
-
 
       {/* Stations stepper */}
       <div className="mb-8">
         <Label className="block text-center text-sm text-muted-foreground mb-3">
-          Liczba stanowisk
+          Liczba stanowisk dla pojazdów w Twojej firmie
         </Label>
         <div className="flex justify-center">
           <Stepper
