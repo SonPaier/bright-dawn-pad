@@ -1,8 +1,9 @@
 import { Check } from "lucide-react";
 import { useTranslation } from "@/hooks/useTranslation";
-import benefitTwojBiznes from "@/assets/benefit-twoj-biznes.jpg";
-import benefitZadowoleniKlienci from "@/assets/benefit-zadowoleni-klienci.jpg";
-import benefitOferty from "@/assets/benefit-oferty.jpg";
+import benefit1 from "@/assets/benefit-1.jpg";
+import benefit2 from "@/assets/benefit-2.jpg";
+import benefit3 from "@/assets/benefit-3.jpg";
+import benefit4 from "@/assets/benefit-4.jpg";
 
 interface FeatureItem {
   title: string;
@@ -32,7 +33,7 @@ const BenefitsZigZag = () => {
         <div className="space-y-16 md:space-y-24 max-w-6xl mx-auto">
           {features.map((feature, index) => {
             const isReversed = index % 2 === 1;
-            const images: (string | null)[] = [null, benefitZadowoleniKlienci, null, benefitOferty];
+            const images: string[] = [benefit1, benefit2, benefit3, benefit4];
             const currentImage = images[index];
             
             return (
@@ -42,21 +43,13 @@ const BenefitsZigZag = () => {
               >
                 {/* Image */}
                 <div className="w-full lg:w-1/2">
-                  {currentImage ? (
-                    <div className="aspect-[4/3] rounded-2xl overflow-hidden">
-                      <img 
-                        src={currentImage} 
-                        alt={feature.title}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  ) : (
-                    <div className="aspect-[4/3] bg-muted rounded-2xl border border-border flex items-center justify-center">
-                      <span className="text-muted-foreground text-sm">
-                        Placeholder #{index + 1}
-                      </span>
-                    </div>
-                  )}
+                  <div className="aspect-[4/3] rounded-2xl overflow-hidden">
+                    <img 
+                      src={currentImage} 
+                      alt={feature.title}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 </div>
 
                 {/* Content */}
