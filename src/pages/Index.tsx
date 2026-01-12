@@ -2,7 +2,7 @@ import { useRef } from "react";
 import Header from "@/components/landing/Header";
 import Hero from "@/components/landing/Hero";
 import AppPreview from "@/components/landing/AppPreview";
-import Benefits from "@/components/landing/Benefits";
+import BenefitsZigZag from "@/components/landing/BenefitsZigZag";
 import Testimonials from "@/components/landing/Testimonials";
 import Pricing from "@/components/landing/Pricing";
 import Footer from "@/components/landing/Footer";
@@ -26,9 +26,7 @@ const Index = () => {
         <AppPreview />
       </ScrollFadeIn>
       <ScrollFadeIn delay={0.1}>
-        <section id="benefits">
-          <Benefits />
-        </section>
+        <BenefitsZigZag />
       </ScrollFadeIn>
       <ScrollFadeIn delay={0.1}>
         <section id="testimonials">
