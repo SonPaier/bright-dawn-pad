@@ -1,6 +1,7 @@
 import { Check } from "lucide-react";
 import { useTranslation } from "@/hooks/useTranslation";
 import benefitTwojBiznes from "@/assets/benefit-twoj-biznes.jpg";
+import benefitZadowoleniKlienci from "@/assets/benefit-zadowoleni-klienci.jpg";
 
 interface FeatureItem {
   title: string;
@@ -30,7 +31,7 @@ const BenefitsZigZag = () => {
         <div className="space-y-16 md:space-y-24 max-w-6xl mx-auto">
           {features.map((feature, index) => {
             const isReversed = index % 2 === 1;
-            const images: (string | null)[] = [null, benefitTwojBiznes, null, null];
+            const images: (string | null)[] = [benefitZadowoleniKlienci, benefitTwojBiznes, null, null];
             const currentImage = images[index];
             
             return (
