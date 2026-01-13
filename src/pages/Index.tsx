@@ -28,11 +28,13 @@ const Index = () => {
       <ScrollFadeIn delay={0.1}>
         <BenefitsZigZag />
       </ScrollFadeIn>
+      {/* Sekcja opinii tymczasowo ukryta
       <ScrollFadeIn delay={0.1}>
         <section id="testimonials">
           <Testimonials />
         </section>
       </ScrollFadeIn>
+      */}
       <ScrollFadeIn delay={0.1}>
         <section id="pricing">
           <Pricing onScrollToContact={scrollToContact} />
