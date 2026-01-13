@@ -66,14 +66,15 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-      {/* Background image */}
-      {/* Background image */}
-      <img 
-        src={heroBg} 
-        alt="" 
-        className="absolute inset-0 w-full h-full object-cover"
-      />
+    <section className="relative min-h-[100vh] flex items-center justify-center overflow-hidden">
+      {/* Background image with 16:10 aspect ratio preserved */}
+      <div className="absolute inset-0 w-full h-full">
+        <img 
+          src={heroBg} 
+          alt="" 
+          className="w-full h-full object-cover object-center"
+        />
+      </div>
       {/* Dark blue overlay with multiply blend to enhance photo colors */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-primary/70 to-sky-900/80 mix-blend-multiply" />
       
