@@ -1,4 +1,7 @@
+import { useState } from "react";
 import { useTranslation } from "@/hooks/useTranslation";
+import { Switch } from "@/components/ui/switch";
+import { Label } from "@/components/ui/label";
 import PricingCard from "./PricingCard";
 
 interface PricingProps {
@@ -33,6 +36,7 @@ const detailingFeatures = [
 const Pricing = ({ onScrollToContact }: PricingProps) => {
   const { t } = useTranslation();
   const pricing = t("pricing");
+  const [isYearly, setIsYearly] = useState(false);
 
   const scrollToHero = () => {
     const hero = document.querySelector("#hero");
@@ -42,7 +46,7 @@ const Pricing = ({ onScrollToContact }: PricingProps) => {
   return (
     <section id="pricing" className="py-20 md:py-32 bg-section-alt">
       <div className="container px-4">
-        <header className="text-center mb-12 md:mb-16">
+        <header className="text-center mb-8 md:mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">
             {pricing.sectionTitle}
           </h2>
@@ -51,13 +55,44 @@ const Pricing = ({ onScrollToContact }: PricingProps) => {
           </p>
         </header>
 
-        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 max-w-5xl mx-auto items-start">
+        {/* Billing Toggle */}
+        <div className="flex items-center justify-center gap-4 mb-10 md:mb-14">
+          <Label
+            htmlFor="billing-toggle"
+            className={`cursor-pointer transition-colors text-base ${
+              !isYearly ? "text-foreground font-medium" : "text-muted-foreground"
+            }`}
+          >
+            Miesięcznie
+          </Label>
+          <Switch
+            id="billing-toggle"
+            checked={isYearly}
+            onCheckedChange={setIsYearly}
+          />
+          <div className="flex items-center gap-2">
+            <Label
+              htmlFor="billing-toggle"
+              className={`cursor-pointer transition-colors text-base ${
+                isYearly ? "text-foreground font-medium" : "text-muted-foreground"
+              }`}
+            >
+              Rocznie
+            </Label>
+            <span className="text-xs font-semibold px-2 py-1 rounded-full bg-green-500/10 text-green-600">
+              20% taniej
+            </span>
+          </div>
+        </div>
+
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 max-w-5xl mx-auto items-stretch">
           {/* Myjnia Package */}
           <PricingCard
             title="Myjnia"
             firstStationPrice={129}
             additionalStationPrice={49}
             features={myjniaFeatures}
+            isYearly={isYearly}
             onScrollToHero={scrollToHero}
           />
 
@@ -68,6 +103,7 @@ const Pricing = ({ onScrollToContact }: PricingProps) => {
             additionalStationPrice={49}
             features={detailingFeatures}
             includesPackage="Myjnia"
+            isYearly={isYearly}
             onScrollToHero={scrollToHero}
             isHighlighted
           />
