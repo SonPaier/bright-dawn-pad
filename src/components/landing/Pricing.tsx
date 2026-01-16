@@ -1,14 +1,43 @@
-import { Check } from "lucide-react";
 import { useTranslation } from "@/hooks/useTranslation";
-import PricingCalculator from "./PricingCalculator";
+import PricingCard from "./PricingCard";
 
 interface PricingProps {
   onScrollToContact: () => void;
 }
 
+const myjniaFeatures = [
+  { text: "Główny kalendarz" },
+  { text: "Rezerwacje online 24/7" },
+  {
+    text: "100 powiadomień SMS",
+    tooltip:
+      "Sam decyduj, o czym chcesz powiadamiać swoich klientów. Po przekroczeniu 100 SMSów, kolejne podlegają opłacie (13 gr netto / SMS)",
+  },
+  { text: "Zarządzanie relacjami z klientami" },
+  {
+    text: "Obsługa aut z placu",
+    tooltip:
+      "Klient może pozostawić Ci pojazd przed halą - wprowadź go do systemu, ale zajmij się nim w dogodnym dla siebie czasie",
+  },
+  { text: "Widok dla pracowników" },
+  { text: "Analityka i raporty" },
+];
+
+const detailingFeatures = [
+  { text: "Tworzenie i zarządzanie ofertami detailingu" },
+  { text: "Protokół przyjęcia pojazdu" },
+  { text: "Wsparcie sprzedaży" },
+  { text: "Automatyczne przypomnienia o przeglądach serwisowych" },
+];
+
 const Pricing = ({ onScrollToContact }: PricingProps) => {
   const { t } = useTranslation();
   const pricing = t("pricing");
+
+  const scrollToHero = () => {
+    const hero = document.querySelector("#hero");
+    hero?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <section id="pricing" className="py-20 md:py-32 bg-section-alt">
@@ -23,35 +52,25 @@ const Pricing = ({ onScrollToContact }: PricingProps) => {
         </header>
 
         <div className="grid lg:grid-cols-2 gap-8 md:gap-12 max-w-5xl mx-auto items-start">
-          {/* Calculator */}
-          <PricingCalculator onScrollToContact={onScrollToContact} />
+          {/* Myjnia Package */}
+          <PricingCard
+            title="Myjnia"
+            firstStationPrice={129}
+            additionalStationPrice={49}
+            features={myjniaFeatures}
+            onScrollToHero={scrollToHero}
+          />
 
-          {/* Additional modules */}
-          <div className="bg-card rounded-3xl border border-border p-6 md:p-10">
-            <h3 className="text-xl font-bold text-foreground mb-2">
-              {pricing.additionalModules.title}
-            </h3>
-            <p className="text-muted-foreground mb-6">
-              {pricing.additionalModules.subtitle}
-            </p>
-
-            <ul className="space-y-4">
-              {pricing.additionalModules.items.map((item, index) => (
-                <li key={index} className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <Check className="w-4 h-4 text-primary" />
-                  </div>
-                  <span className="text-foreground">{item}</span>
-                </li>
-              ))}
-            </ul>
-
-            <div className="mt-8 p-4 rounded-xl bg-muted/50 text-center">
-              <p className="text-sm text-muted-foreground">
-                Potrzebujesz więcej? Skontaktuj się z nami, aby otrzymać indywidualną wycenę.
-              </p>
-            </div>
-          </div>
+          {/* Detailing Package */}
+          <PricingCard
+            title="Detailing"
+            firstStationPrice={199}
+            additionalStationPrice={49}
+            features={detailingFeatures}
+            includesPackage="Myjnia"
+            onScrollToHero={scrollToHero}
+            isHighlighted
+          />
         </div>
       </div>
     </section>
