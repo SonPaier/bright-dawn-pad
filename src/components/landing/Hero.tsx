@@ -6,74 +6,69 @@ import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import { z } from "zod";
 import heroBg from "@/assets/hero-bg.jpg";
-
 const contactSchema = z.object({
-  contact: z.string().refine(
-    (val) => {
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      const phoneRegex = /^\d{9}$/;
-      return emailRegex.test(val) || phoneRegex.test(val.replace(/\s/g, ""));
-    },
-    { message: "Podaj poprawny email lub numer telefonu (9 cyfr)" }
-  ),
+  contact: z.string().refine(val => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const phoneRegex = /^\d{9}$/;
+    return emailRegex.test(val) || phoneRegex.test(val.replace(/\s/g, ""));
+  }, {
+    message: "Podaj poprawny email lub numer telefonu (9 cyfr)"
+  })
 });
-
 const Hero = () => {
-  const { t } = useTranslation();
+  const {
+    t
+  } = useTranslation();
   const hero = t("hero");
-  const { toast } = useToast();
+  const {
+    toast
+  } = useToast();
   const [contact, setContact] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
-    const result = contactSchema.safeParse({ contact });
+    const result = contactSchema.safeParse({
+      contact
+    });
     if (!result.success) {
       toast({
         title: "Błąd",
         description: hero.validationError,
-        variant: "destructive",
+        variant: "destructive"
       });
       return;
     }
-
     setIsLoading(true);
-    
     try {
-      const { data, error } = await supabase.functions.invoke('send-contact-email', {
-        body: { contact }
+      const {
+        data,
+        error
+      } = await supabase.functions.invoke('send-contact-email', {
+        body: {
+          contact
+        }
       });
-      
       if (error) throw error;
-      
       toast({
         title: "Sukces!",
-        description: hero.success,
+        description: hero.success
       });
-      
       setContact("");
     } catch (error) {
       console.error("Error sending email:", error);
       toast({
         title: "Błąd",
         description: hero.error,
-        variant: "destructive",
+        variant: "destructive"
       });
     } finally {
       setIsLoading(false);
     }
   };
-
-  return (
-    <section id="hero" className="relative min-h-[100vh] flex items-center justify-center overflow-hidden">
+  return <section id="hero" className="relative min-h-[100vh] flex items-center justify-center overflow-hidden">
       {/* Background image with 16:10 aspect ratio preserved */}
       <div className="absolute inset-0 w-full h-full">
-        <img 
-          src={heroBg} 
-          alt="" 
-          className="w-full h-full object-cover object-center"
-        />
+        <img src={heroBg} alt="" className="w-full h-full object-cover object-center" />
       </div>
       {/* Dark blue overlay with multiply blend to enhance photo colors */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-primary/70 to-sky-900/80 mix-blend-multiply" />
@@ -89,29 +84,17 @@ const Hero = () => {
           </p>
           
           <form onSubmit={handleSubmit} className="mt-10 md:mt-12 flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
-            <Input
-              type="text"
-              placeholder={hero.placeholder}
-              value={contact}
-              onChange={(e) => setContact(e.target.value)}
-              className="h-14 px-6 text-base rounded-xl border-border bg-card text-foreground focus:border-primary"
-            />
-            <Button
-              type="submit"
-              disabled={isLoading}
-              className="h-14 px-8 text-base font-semibold rounded-xl bg-gradient-to-r from-primary to-sky-500 hover:from-primary/90 hover:to-sky-500/90 shadow-lg shadow-primary/25 transition-all duration-300 hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-0.5"
-            >
+            <Input type="text" placeholder={hero.placeholder} value={contact} onChange={e => setContact(e.target.value)} className="h-14 px-6 text-base rounded-xl border-border bg-card text-foreground focus:border-primary" />
+            <Button type="submit" disabled={isLoading} className="h-14 px-8 text-base font-semibold rounded-xl bg-gradient-to-r from-primary to-sky-500 hover:from-primary/90 hover:to-sky-500/90 shadow-lg shadow-primary/25 transition-all duration-300 hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-0.5">
               {isLoading ? "Wysyłanie..." : hero.cta}
             </Button>
           </form>
           
-          <p className="mt-4 text-sm text-white/70">
+          <p className="mt-4 text-white/70 text-base">
             Wypróbuj bezpłatnie przez 7 dni. Bez karty i zobowiązań!
           </p>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
