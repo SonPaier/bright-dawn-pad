@@ -17,6 +17,7 @@ const myjniaFeatures = [
       "Sam decyduj, o czym chcesz powiadamiać swoich klientów. Po przekroczeniu 100 SMSów, kolejne podlegają opłacie (13 gr netto / SMS)",
   },
   { text: "Zarządzanie relacjami z klientami" },
+  { text: "Zarządzanie zespołem" },
   {
     text: "Obsługa aut z placu",
     tooltip:
