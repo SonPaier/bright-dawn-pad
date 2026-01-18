@@ -79,7 +79,7 @@ const Hero = () => {
             {hero.title}
           </h1>
           
-          <p className="mt-6 md:mt-8 text-lg md:text-xl lg:text-2xl text-white/80 font-light max-w-3xl mx-auto leading-relaxed">
+          <p className="mt-6 md:mt-8 text-lg md:text-xl lg:text-2xl text-white/80 max-w-3xl mx-auto leading-relaxed font-medium">
             {hero.subtitle}
           </p>
           
