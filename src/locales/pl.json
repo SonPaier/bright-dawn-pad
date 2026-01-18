@@ -17,7 +17,7 @@
     "sectionSubtitle": "Korzyści, które zmienią Twój biznes",
     "features": [
       {
-        "title": "Centrum Dowodzenia: Pełna kontrola bez chaosu",
+        "title": "Centrum Dowodzenia: pełna kontrola bez chaosu",
         "subtitle": "Zapomnij o zeszytach i rozrzuconych notatkach. Twój główny kalendarz to inteligentne serce firmy, które łączy grafik z bazą klientów.",
         "points": [
           "Koniec z chaosem: Intuicyjny widok, który pozwala błyskawicznie sprawdzić obłożenie i statusy prac.",
@@ -41,15 +41,16 @@
         "subtitle": "Twój zespół zawsze wie, co robić, a Ty masz pełną kontrolę nad grafikiem, niezależnie od tego, gdzie jesteś.",
         "points": [
           "Precyzyjne planowanie: Czas usługi automatycznie dostosowany do rozmiaru auta. Koniec z \"dziurami\" w grafiku i nakładającymi się terminami.",
-          "Podgląd na żywo dla pracowników: Ekran na hali zastępuje bieganie do biura. Pracownicy widzą zmiany w czasie rzeczywistym."
+          "Podgląd na żywo dla pracowników: Ekran na hali zastępuje bieganie do biura. Pracownicy widzą zmiany w czasie rzeczywistym.",
+          "Zarządzanie zespołem: Planuj pracę w oparciu o realną dostępność załogi i miej pewność, że każde stanowisko jest optymalnie wykorzystane."
         ]
       },
       {
         "title": "Wyższe zyski dzięki profesjonalnym ofertom",
         "subtitle": "Przestań tracić pieniądze przez zapomniane dodatki i nieaktualne cenniki. Zarabiaj więcej na każdym aucie.",
         "points": [
-          "Błyskawiczny detailing: Twórz profesjonalne, interaktywne oferty w kilka minut. Szybka odpowiedź to większa szansa na domknięcie sprzedaży.",
-          "Upselling, który działa: System automatycznie podpowiada usługi dodatkowe, o których Ty (lub Twój pracownik) moglibyście zapomnieć.",
+          "Błyskawiczny detailing: Twórz profesjonalnie wyglądające oferty w kilka minut – zwiększ swoją szansę na domknięcie sprzedaży.",
+          "Wsparcie sprzedaży: System automatycznie podpowiada usługi dodatkowe, o których Ty (lub Twój pracownik) moglibyście zapomnieć.",
           "Pilnujemy Twoich pieniędzy: System pamięta o klientach po usługach premium. W odpowiednim czasie sam wyśle zaproszenie na płatny przegląd powłoki."
         ]
       }
