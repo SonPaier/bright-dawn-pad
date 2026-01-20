@@ -89,10 +89,6 @@ const Hero = () => {
               {isLoading ? "Wysyłanie..." : hero.cta}
             </Button>
           </form>
-          
-          <p className="mt-4 text-white/70 text-base">
-            Wypróbuj bezpłatnie przez 7 dni. Bez karty i zobowiązań!
-          </p>
         </div>
       </div>
     </section>;
