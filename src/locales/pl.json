@@ -53,6 +53,24 @@
           "Wsparcie sprzedaży: System automatycznie podpowiada usługi dodatkowe, o których Ty (lub Twój pracownik) moglibyście zapomnieć.",
           "Pilnujemy Twoich pieniędzy: System pamięta o klientach po usługach premium. W odpowiednim czasie sam wyśle zaproszenie na płatny przegląd powłoki."
         ]
+      },
+      {
+        "title": "Pełna kontrola nad zespołem",
+        "subtitle": "Miej realny wgląd w pracę załogi i planuj grafik w oparciu o faktyczną dostępność.",
+        "points": [
+          "Ewidencja czasu pracy: Pracownicy raportują czas bezpośrednio z tabletu lub telefonu – na koniec miesiąca masz gotowe podsumowanie.",
+          "Przypisywanie do stanowisk: Określ, kto pracuje na jakim stanowisku lub przy jakiej rezerwacji – zero nieporozumień.",
+          "Planowanie grafiku: Układaj dyżury w oparciu o dostępność załogi i obłożenie – zawsze masz właściwe osoby w odpowiednim czasie."
+        ]
+      },
+      {
+        "title": "Koniec z papierami – profesjonalne protokoły przyjęć",
+        "subtitle": "Dokumentuj stan pojazdu szybko, czytelnie i bezpiecznie – bez kartek i nieczytelnych podpisów.",
+        "points": [
+          "Bez kartek i bałaganu: Protokół uzupełniony już o dane z oferty – nie przepisujesz niczego ręcznie.",
+          "Zdjęcia w jednym miejscu: Wgraj zdjęcia stanu auta bezpośrednio do protokołu – wszystko udokumentowane.",
+          "Automatyczna wysyłka i podpis: Protokół trafia do klienta automatycznie, z możliwością złożenia podpisu cyfrowego."
+        ]
       }
     ]
   },

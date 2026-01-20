@@ -4,6 +4,8 @@ import benefit1 from "@/assets/benefit-1.jpg";
 import benefit2 from "@/assets/benefit-2.jpg";
 import benefit3 from "@/assets/benefit-3.jpg";
 import benefit4 from "@/assets/benefit-4.jpg";
+import benefit5 from "@/assets/benefit-5.jpg";
+import benefit6 from "@/assets/benefit-6.jpg";
 
 interface FeatureItem {
   title: string;
@@ -33,7 +35,7 @@ const BenefitsZigZag = () => {
         <div className="space-y-16 md:space-y-24 max-w-6xl mx-auto">
           {features.map((feature, index) => {
             const isReversed = index % 2 === 1;
-            const images: string[] = [benefit1, benefit2, benefit3, benefit4];
+            const images: string[] = [benefit1, benefit2, benefit3, benefit4, benefit5, benefit6];
             const currentImage = images[index];
             
             return (
