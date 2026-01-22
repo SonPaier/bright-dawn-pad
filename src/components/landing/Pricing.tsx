@@ -3,6 +3,7 @@ import { useTranslation } from "@/hooks/useTranslation";
 import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
 import PricingCard from "./PricingCard";
+import { Rocket } from "lucide-react";
 
 interface PricingProps {
   onScrollToContact: () => void;
@@ -108,6 +109,23 @@ const Pricing = ({ onScrollToContact }: PricingProps) => {
             onScrollToHero={scrollToHero}
             isHighlighted
           />
+        </div>
+
+        {/* Help Section */}
+        <div className="mt-12 md:mt-16 max-w-3xl mx-auto">
+          <div className="bg-background rounded-2xl p-8 md:p-10 text-center border border-border/50 shadow-sm">
+            <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-primary/10 mb-5">
+              <Rocket className="w-7 h-7 text-primary" />
+            </div>
+            <h3 className="text-xl md:text-2xl font-bold text-foreground mb-3">
+              Pomagamy Ci wystartować
+            </h3>
+            <p className="text-muted-foreground leading-relaxed">
+              Pomagamy ustawić aplikację dokładnie pod Twoje usługi i cennik. 
+              Przenosimy też Twoją bazę klientów – z Excela, zeszytu, czy dowolnego 
+              innego systemu, którego używasz. Bez stresu, bez dodatkowych opłat.
+            </p>
+          </div>
         </div>
       </div>
     </section>
