@@ -118,7 +118,7 @@ const Pricing = ({ onScrollToContact }: PricingProps) => {
               <Rocket className="w-7 h-7 text-primary" />
             </div>
             <h3 className="text-xl md:text-2xl font-bold text-foreground mb-3">
-              Pomagamy Ci wystartować
+              Działasz od pierwszego dnia!
             </h3>
             <p className="text-muted-foreground leading-relaxed">
               Pomagamy ustawić aplikację dokładnie pod Twoje usługi i cennik. 
