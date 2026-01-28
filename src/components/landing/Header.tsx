@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "@/hooks/useTranslation";
+import HeaderNav from "./HeaderNav";
 import logoN2Wash from "@/assets/n2washcom-logo.svg";
 
 const Header = () => {
@@ -18,20 +20,46 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navLinks = [
-    { label: nav.benefits, href: "#benefits" },
-    { label: nav.testimonials, href: "#testimonials" },
-    { label: nav.pricing, href: "#pricing" },
-    { label: nav.contact, href: "#footer" },
+  const navItems = [
+    {
+      label: nav.crm,
+      href: "/crm",
+      children: [
+        { label: nav.crmMyjnia, href: "/crm/crm-dla-myjni-samochodowych" },
+        { label: nav.crmDetailing, href: "/crm/crm-dla-studia-detailingu" },
+      ],
+    },
+    {
+      label: nav.funkcje,
+      href: "/funkcje",
+      children: [
+        { label: nav.crmKlientow, href: "/funkcje/crm-klientow" },
+        { label: nav.kalendarzRezerwacji, href: "/funkcje/kalendarz-rezerwacji" },
+        { label: nav.generatorOfert, href: "/funkcje/generator-ofert" },
+        { label: nav.rezerwacjeOnline, href: "/funkcje/rezerwacje-online" },
+        { label: nav.smsPrzypomnienia, href: "/funkcje/sms-przypomnienia" },
+        { label: nav.zarzadzanieZespolem, href: "/funkcje/zarzadzanie-zespolem" },
+        { label: nav.protokolPrzyjecia, href: "/funkcje/protokol-przyjecia-pojazdu" },
+        { label: nav.analitykaRaporty, href: "/funkcje/analityka-raporty" },
+      ],
+    },
+    { label: nav.cennik, href: "/cennik-crm-myjnia-detailing" },
+    { label: nav.opinie, href: "/opinie" },
+    { label: nav.dlaczegoN2wash, href: "/dlaczego-n2wash" },
+    {
+      label: nav.blog,
+      href: "/blog",
+      children: [
+        { label: nav.blogZyski, href: "/blog/jak-zwiekszyc-zyski-w-myjni" },
+        { label: nav.blogRezerwacje, href: "/blog/jak-nie-zgubic-rezerwacji-w-myjni" },
+        { label: nav.blogKlienci, href: "/blog/jak-zarzadzac-klientami-w-detailingu" },
+        { label: nav.blogCrmVsZeszyt, href: "/blog/crm-vs-zeszyt-w-myjni" },
+      ],
+    },
+    { label: nav.kontakt, href: "/kontakt" },
   ];
 
-  const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-    setIsMobileMenuOpen(false);
-  };
+  const closeMobileMenu = () => setIsMobileMenuOpen(false);
 
   return (
     <header
@@ -44,39 +72,33 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a
-            href="#"
-            onClick={(e) => {
-              e.preventDefault();
-              window.scrollTo({ top: 0, behavior: "smooth" });
-            }}
+          <Link
+            to="/"
             className="transition-all hover:opacity-80"
           >
-            <img 
-              src={logoN2Wash} 
-              alt="N2Wash.com" 
+            <img
+              src={logoN2Wash}
+              alt="N2Wash.com"
               className={`h-6 md:h-7 w-auto transition-all duration-300 ${
                 isScrolled ? "" : "brightness-0 invert"
               }`}
             />
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <button
-                key={link.href}
-                onClick={() => scrollToSection(link.href)}
-                className={`text-base font-medium transition-colors ${
-                  isScrolled
-                    ? "text-foreground/80 hover:text-primary"
-                    : "text-white hover:text-white/80"
-                }`}
-              >
-                {link.label}
-              </button>
-            ))}
-          </nav>
+          <HeaderNav items={navItems} isScrolled={isScrolled} />
+
+          {/* CTA Button - Desktop */}
+          <Link
+            to="/umow-prezentacje"
+            className={`hidden md:inline-flex items-center justify-center px-5 py-2 text-sm font-medium rounded-lg transition-colors ${
+              isScrolled
+                ? "bg-primary text-primary-foreground hover:bg-primary/90"
+                : "bg-white text-primary hover:bg-white/90"
+            }`}
+          >
+            {nav.umowPrezentacje}
+          </Link>
 
           {/* Mobile Menu Button */}
           <Button
@@ -95,19 +117,23 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <nav className="md:hidden py-4 border-t border-border bg-background/95 backdrop-blur-md">
-            <div className="flex flex-col gap-2">
-              {navLinks.map((link) => (
-                <button
-                  key={link.href}
-                  onClick={() => scrollToSection(link.href)}
-                  className="text-left px-4 py-3 text-sm font-medium text-foreground/80 hover:text-primary hover:bg-accent/50 rounded-lg transition-colors"
-                >
-                  {link.label}
-                </button>
-              ))}
+          <div className="md:hidden border-t border-border bg-background/95 backdrop-blur-md max-h-[70vh] overflow-y-auto">
+            <HeaderNav
+              items={navItems}
+              isScrolled={true}
+              onItemClick={closeMobileMenu}
+              isMobile
+            />
+            <div className="px-4 pb-4">
+              <Link
+                to="/umow-prezentacje"
+                onClick={closeMobileMenu}
+                className="block w-full text-center px-5 py-3 text-sm font-medium rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
+              >
+                {nav.umowPrezentacje}
+              </Link>
             </div>
-          </nav>
+          </div>
         )}
       </div>
     </header>

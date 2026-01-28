@@ -130,9 +130,29 @@
     "terms": "Regulamin"
   },
   "nav": {
-    "benefits": "Dlaczego warto?",
-    "pricing": "Cennik",
-    "testimonials": "Klienci o nas",
-    "contact": "Kontakt"
+    "crm": "CRM",
+    "crmMyjnia": "CRM dla myjni samochodowych",
+    "crmDetailing": "CRM dla studia detailingu",
+    "funkcje": "Funkcje",
+    "crmKlientow": "CRM klientów",
+    "kalendarzRezerwacji": "Kalendarz rezerwacji",
+    "generatorOfert": "Generator ofert",
+    "rezerwacjeOnline": "Rezerwacje online",
+    "smsPrzypomnienia": "SMS przypomnienia",
+    "zarzadzanieZespolem": "Zarządzanie zespołem",
+    "protokolPrzyjecia": "Protokół przyjęcia pojazdu",
+    "analitykaRaporty": "Analityka i raporty",
+    "cennik": "Cennik",
+    "opinie": "Opinie",
+    "caseStudies": "Case Studies",
+    "dlaczegoN2wash": "Dlaczego N2Wash?",
+    "blog": "Blog",
+    "blogZyski": "Jak zwiększyć zyski w myjni",
+    "blogRezerwacje": "Jak nie zgubić rezerwacji",
+    "blogKlienci": "Jak zarządzać klientami",
+    "blogCrmVsZeszyt": "CRM vs zeszyt w myjni",
+    "umowPrezentacje": "Umów prezentację",
+    "demo": "Demo",
+    "kontakt": "Kontakt"
   }
 }
