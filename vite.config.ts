@@ -15,11 +15,8 @@ export default defineConfig(async ({ mode }) => {
     plugins.push(
       prerender({
         routes: ["/", "/polityka-prywatnosci", "/regulamin"],
-        renderer: "@prerenderer/renderer-puppeteer",
-        rendererOptions: {
-          // Give the SPA a moment to hydrate and render dynamic content.
-          renderAfterTime: 2000,
-        },
+        // Use JSDOM renderer to avoid requiring a real Chrome binary in the build environment.
+        renderer: "@prerenderer/renderer-jsdom",
       })
     );
   }
