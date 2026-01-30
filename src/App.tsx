@@ -10,6 +10,7 @@ import PlaceholderPage from "./pages/PlaceholderPage";
 import CrmMyjnia from "./pages/CrmMyjnia";
 import CrmDetailing from "./pages/CrmDetailing";
 import KalendarzRezerwacji from "./pages/KalendarzRezerwacji";
+import GeneratorOfert from "./pages/GeneratorOfert";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,7 +33,7 @@ const App = () => (
           <Route path="/funkcje" element={<PlaceholderPage />} />
           <Route path="/funkcje/crm-klientow" element={<PlaceholderPage />} />
           <Route path="/funkcje/kalendarz-rezerwacji" element={<KalendarzRezerwacji />} />
-          <Route path="/funkcje/generator-ofert" element={<PlaceholderPage />} />
+          <Route path="/funkcje/generator-ofert" element={<GeneratorOfert />} />
           <Route path="/funkcje/rezerwacje-online" element={<PlaceholderPage />} />
           <Route path="/funkcje/sms-przypomnienia" element={<PlaceholderPage />} />
           <Route path="/funkcje/zarzadzanie-zespolem" element={<PlaceholderPage />} />
