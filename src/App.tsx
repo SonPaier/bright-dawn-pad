@@ -14,6 +14,7 @@ import GeneratorOfert from "./pages/GeneratorOfert";
 import SmsPrzypomnienia from "./pages/SmsPrzypomnienia";
 import ZarzadzanieZespolem from "./pages/ZarzadzanieZespolem";
 import ProtokolPrzyjecia from "./pages/ProtokolPrzyjecia";
+import AnalitykaRaporty from "./pages/AnalitykaRaporty";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -39,7 +40,7 @@ const App = () => (
           <Route path="/funkcje/sms-przypomnienia" element={<SmsPrzypomnienia />} />
           <Route path="/funkcje/zarzadzanie-zespolem" element={<ZarzadzanieZespolem />} />
           <Route path="/funkcje/protokol-przyjecia-pojazdu" element={<ProtokolPrzyjecia />} />
-          <Route path="/funkcje/analityka-raporty" element={<PlaceholderPage />} />
+          <Route path="/funkcje/analityka-raporty" element={<AnalitykaRaporty />} />
 
           {/* Main Pages */}
           <Route path="/cennik-crm-myjnia-detailing" element={<PlaceholderPage />} />
