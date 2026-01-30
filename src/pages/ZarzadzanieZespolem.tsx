@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { ArrowLeft, Users, Clock, Calendar, Layers, Monitor, Tablet, Eye, BarChart3, ChevronRight, AlertTriangle, Lock } from "lucide-react";
+import { Users, Clock, Calendar, Layers, Monitor, Tablet, Eye, BarChart3, AlertTriangle, Lock } from "lucide-react";
 import Header from "@/components/landing/Header";
 import Footer from "@/components/landing/Footer";
 import { Button } from "@/components/ui/button";
@@ -24,20 +24,6 @@ const ZarzadzanieZespolem = () => {
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-primary via-primary/90 to-sky-900 text-white py-16 md:py-24">
           <div className="container mx-auto px-4">
-            <Link
-              to="/"
-              className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-colors mb-8"
-            >
-              <ArrowLeft className="h-4 w-4" />
-              Strona główna
-            </Link>
-
-            <div className="flex items-center gap-2 text-white/60 text-sm mb-4">
-              <Link to="/funkcje" className="hover:text-white transition-colors">Funkcje</Link>
-              <ChevronRight className="h-4 w-4" />
-              <span className="text-white">Zarządzanie zespołem</span>
-            </div>
-
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold max-w-4xl leading-tight">
               Zarządzanie Zespołem w Myjni i Detailingu – Grafik i Ewidencja Czasu
             </h1>
@@ -46,19 +32,12 @@ const ZarzadzanieZespolem = () => {
               Ewidencja czasu pracy, grafik, widok na żywo dla hali. Przypisywanie pracowników do stanowisk i zleceń.
             </p>
 
-            <div className="mt-8 flex flex-col sm:flex-row gap-4">
+            <div className="mt-8">
               <Button 
                 asChild
                 className="h-12 px-8 text-base font-semibold rounded-xl bg-white text-primary hover:bg-white/90"
               >
                 <Link to="/umow-prezentacje">Umów prezentację</Link>
-              </Button>
-              <Button 
-                asChild
-                variant="outline"
-                className="h-12 px-8 text-base font-semibold rounded-xl border-white/30 text-white hover:bg-white/10"
-              >
-                <Link to="/demo">Wypróbuj demo</Link>
               </Button>
             </div>
           </div>
@@ -348,21 +327,12 @@ const ZarzadzanieZespolem = () => {
             <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8">
               Ewidencja czasu, grafik i widok na żywo dla hali. Zacznij zarządzać zespołem profesjonalnie.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                asChild
-                className="h-12 px-8 text-base font-semibold rounded-xl bg-white text-primary hover:bg-white/90"
-              >
-                <Link to="/umow-prezentacje">Umów bezpłatną prezentację</Link>
-              </Button>
-              <Button 
-                asChild
-                variant="outline"
-                className="h-12 px-8 text-base font-semibold rounded-xl border-white/30 text-white hover:bg-white/10"
-              >
-                <Link to="/cennik-crm-myjnia-detailing">Zobacz cennik</Link>
-              </Button>
-            </div>
+            <Button 
+              asChild
+              className="h-12 px-8 text-base font-semibold rounded-xl bg-white text-primary hover:bg-white/90"
+            >
+              <Link to="/umow-prezentacje">Umów bezpłatną prezentację</Link>
+            </Button>
           </div>
         </section>
       </main>
