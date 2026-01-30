@@ -44,16 +44,6 @@ const Header = () => {
     { label: nav.cennik, href: "/cennik-crm-myjnia-detailing" },
     { label: nav.opinie, href: "/opinie" },
     { label: nav.dlaczegoN2wash, href: "/dlaczego-n2wash" },
-    {
-      label: nav.blog,
-      href: "/blog",
-      children: [
-        { label: nav.blogZyski, href: "/blog/jak-zwiekszyc-zyski-w-myjni" },
-        { label: nav.blogRezerwacje, href: "/blog/jak-nie-zgubic-rezerwacji-w-myjni" },
-        { label: nav.blogKlienci, href: "/blog/jak-zarzadzac-klientami-w-detailingu" },
-        { label: nav.blogCrmVsZeszyt, href: "/blog/crm-vs-zeszyt-w-myjni" },
-      ],
-    },
     { label: nav.kontakt, href: "/kontakt" },
   ];
 
