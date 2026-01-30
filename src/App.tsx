@@ -16,6 +16,7 @@ import ZarzadzanieZespolem from "./pages/ZarzadzanieZespolem";
 import ProtokolPrzyjecia from "./pages/ProtokolPrzyjecia";
 import AnalitykaRaporty from "./pages/AnalitykaRaporty";
 import CennikPage from "./pages/CennikPage";
+import OpiniePage from "./pages/OpiniePage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -45,7 +46,7 @@ const App = () => (
 
           {/* Main Pages */}
           <Route path="/cennik-crm-myjnia-detailing" element={<CennikPage />} />
-          <Route path="/opinie" element={<PlaceholderPage />} />
+          <Route path="/opinie" element={<OpiniePage />} />
           <Route path="/case-studies" element={<PlaceholderPage />} />
           <Route path="/dlaczego-n2wash" element={<PlaceholderPage />} />
 
