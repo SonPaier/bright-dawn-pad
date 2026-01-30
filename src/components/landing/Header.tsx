@@ -33,10 +33,8 @@ const Header = () => {
       label: nav.funkcje,
       href: "/funkcje",
       children: [
-        { label: nav.crmKlientow, href: "/funkcje/crm-klientow" },
         { label: nav.kalendarzRezerwacji, href: "/funkcje/kalendarz-rezerwacji" },
         { label: nav.generatorOfert, href: "/funkcje/generator-ofert" },
-        { label: nav.rezerwacjeOnline, href: "/funkcje/rezerwacje-online" },
         { label: nav.smsPrzypomnienia, href: "/funkcje/sms-przypomnienia" },
         { label: nav.zarzadzanieZespolem, href: "/funkcje/zarzadzanie-zespolem" },
         { label: nav.protokolPrzyjecia, href: "/funkcje/protokol-przyjecia-pojazdu" },
