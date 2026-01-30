@@ -12,6 +12,7 @@ import CrmDetailing from "./pages/CrmDetailing";
 import KalendarzRezerwacji from "./pages/KalendarzRezerwacji";
 import GeneratorOfert from "./pages/GeneratorOfert";
 import SmsPrzypomnienia from "./pages/SmsPrzypomnienia";
+import ZarzadzanieZespolem from "./pages/ZarzadzanieZespolem";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -35,7 +36,7 @@ const App = () => (
           <Route path="/funkcje/kalendarz-rezerwacji" element={<KalendarzRezerwacji />} />
           <Route path="/funkcje/generator-ofert" element={<GeneratorOfert />} />
           <Route path="/funkcje/sms-przypomnienia" element={<SmsPrzypomnienia />} />
-          <Route path="/funkcje/zarzadzanie-zespolem" element={<PlaceholderPage />} />
+          <Route path="/funkcje/zarzadzanie-zespolem" element={<ZarzadzanieZespolem />} />
           <Route path="/funkcje/protokol-przyjecia-pojazdu" element={<PlaceholderPage />} />
           <Route path="/funkcje/analityka-raporty" element={<PlaceholderPage />} />
 
