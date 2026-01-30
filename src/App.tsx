@@ -19,6 +19,7 @@ import CennikPage from "./pages/CennikPage";
 import OpiniePage from "./pages/OpiniePage";
 import CaseStudiesPage from "./pages/CaseStudiesPage";
 import DlaczegoN2WashPage from "./pages/DlaczegoN2WashPage";
+import KontaktPage from "./pages/KontaktPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -62,7 +63,7 @@ const App = () => (
           {/* Contact & Demo */}
           <Route path="/umow-prezentacje" element={<PlaceholderPage />} />
           <Route path="/demo" element={<PlaceholderPage />} />
-          <Route path="/kontakt" element={<PlaceholderPage />} />
+          <Route path="/kontakt" element={<KontaktPage />} />
 
           {/* Legal */}
           <Route path="/polityka-prywatnosci" element={<PrivacyPolicy />} />
