@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import PlaceholderPage from "./pages/PlaceholderPage";
+import CrmMyjnia from "./pages/CrmMyjnia";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -22,7 +23,7 @@ const App = () => (
 
           {/* CRM Routes */}
           <Route path="/crm" element={<PlaceholderPage />} />
-          <Route path="/crm/crm-dla-myjni-samochodowych" element={<PlaceholderPage />} />
+          <Route path="/crm/crm-dla-myjni-samochodowych" element={<CrmMyjnia />} />
           <Route path="/crm/crm-dla-studia-detailingu" element={<PlaceholderPage />} />
 
           {/* Funkcje Routes */}
