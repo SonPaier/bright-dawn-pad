@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "@/hooks/useTranslation";
 import HeaderNav from "./HeaderNav";
@@ -9,6 +9,8 @@ import logoN2Wash from "@/assets/n2washcom-logo.svg";
 const Header = () => {
   const { t } = useTranslation();
   const nav = t("nav");
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -19,6 +21,14 @@ const Header = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // Close mobile menu when route changes
+  useEffect(() => {
+    setIsMobileMenuOpen(false);
+  }, [location.pathname]);
+
+  // Determine if header should have solid background
+  const hasSolidBackground = !isHomePage || isScrolled;
 
   const navItems = [
     {
@@ -43,6 +53,7 @@ const Header = () => {
     },
     { label: nav.cennik, href: "/cennik-crm-myjnia-detailing" },
     { label: nav.opinie, href: "/opinie" },
+    { label: "Historie Klientów", href: "/case-studies" },
     { label: nav.dlaczegoN2wash, href: "/dlaczego-n2wash" },
     { label: nav.kontakt, href: "/kontakt" },
   ];
@@ -52,8 +63,10 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-background/95 backdrop-blur-md shadow-sm border-b border-border"
+        hasSolidBackground
+          ? isHomePage
+            ? "bg-background/95 backdrop-blur-md shadow-sm border-b border-border"
+            : "bg-primary shadow-sm"
           : "bg-transparent"
       }`}
     >
@@ -68,19 +81,19 @@ const Header = () => {
               src={logoN2Wash}
               alt="N2Wash.com"
               className={`h-6 md:h-7 w-auto transition-all duration-300 ${
-                isScrolled ? "" : "brightness-0 invert"
+                hasSolidBackground && isHomePage ? "" : "brightness-0 invert"
               }`}
             />
           </Link>
 
           {/* Desktop Navigation */}
-          <HeaderNav items={navItems} isScrolled={isScrolled} />
+          <HeaderNav items={navItems} isScrolled={hasSolidBackground && isHomePage} />
 
           {/* CTA Button - Desktop */}
           <Link
             to="/umow-prezentacje"
             className={`hidden md:inline-flex items-center justify-center px-5 py-2 text-sm font-medium rounded-lg transition-colors ${
-              isScrolled
+              hasSolidBackground && isHomePage
                 ? "bg-primary text-primary-foreground hover:bg-primary/90"
                 : "bg-white text-primary hover:bg-white/90"
             }`}
@@ -92,7 +105,7 @@ const Header = () => {
           <Button
             variant="ghost"
             size="icon"
-            className={`md:hidden ${!isScrolled ? "text-white hover:text-white/80 hover:bg-white/10" : ""}`}
+            className={`md:hidden ${!hasSolidBackground ? "text-white hover:text-white/80 hover:bg-white/10" : isHomePage ? "" : "text-white hover:text-white/80 hover:bg-white/10"}`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? (

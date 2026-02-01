@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -19,25 +19,24 @@ interface HeaderNavProps {
 const HeaderNav = ({ items, isScrolled, onItemClick, isMobile = false }: HeaderNavProps) => {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
-  const handleMouseEnter = (label: string) => {
-    if (!isMobile) {
-      setOpenDropdown(label);
-    }
-  };
-
-  const handleMouseLeave = () => {
-    if (!isMobile) {
-      setOpenDropdown(null);
-    }
-  };
-
   const handleClick = (label: string, hasChildren: boolean) => {
-    if (isMobile && hasChildren) {
+    if (hasChildren) {
       setOpenDropdown(openDropdown === label ? null : label);
-    } else if (!hasChildren) {
+    } else {
       onItemClick?.();
     }
   };
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (openDropdown && !(event.target as Element).closest('.dropdown-container')) {
+        setOpenDropdown(null);
+      }
+    };
+    document.addEventListener('click', handleClickOutside);
+    return () => document.removeEventListener('click', handleClickOutside);
+  }, [openDropdown]);
 
   const isAnchorLink = (href: string) => href.startsWith("#");
 
@@ -114,13 +113,15 @@ const HeaderNav = ({ items, isScrolled, onItemClick, isMobile = false }: HeaderN
       {items.map((item) => (
         <div
           key={item.label}
-          className="relative"
-          onMouseEnter={() => handleMouseEnter(item.label)}
-          onMouseLeave={handleMouseLeave}
+          className="relative dropdown-container"
         >
           {item.children ? (
             <>
               <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  handleClick(item.label, true);
+                }}
                 className={cn(
                   "flex items-center gap-1 px-4 py-2 text-sm font-medium rounded-lg transition-colors",
                   isScrolled
