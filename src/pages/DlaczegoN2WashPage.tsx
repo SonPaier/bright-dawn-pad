@@ -123,7 +123,7 @@ const DlaczegoN2WashPage = () => {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="pt-28 pb-12 md:pt-36 md:pb-16 bg-gradient-to-b from-primary/5 to-background">
+        <section className="pt-32 pb-16 md:pt-48 md:pb-24 bg-gradient-to-b from-primary/5 to-background">
           <div className="container px-4">
             <div className="max-w-3xl mx-auto text-center">
               <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
