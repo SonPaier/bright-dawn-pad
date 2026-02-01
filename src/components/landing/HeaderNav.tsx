@@ -55,11 +55,14 @@ const HeaderNav = ({ items, isScrolled, onItemClick, isMobile = false }: HeaderN
     return (
       <nav className="flex flex-col gap-1 py-4">
         {items.map((item) => (
-          <div key={item.label}>
+          <div key={item.label} className="dropdown-container">
             {item.children ? (
               <>
                 <button
-                  onClick={() => handleClick(item.label, true)}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setOpenDropdown(openDropdown === item.label ? null : item.label);
+                  }}
                   className="w-full flex items-center justify-between px-4 py-3 text-sm font-medium text-foreground/80 hover:text-primary hover:bg-accent/50 rounded-lg transition-colors"
                 >
                   {item.label}

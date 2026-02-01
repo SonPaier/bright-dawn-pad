@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import Header from "@/components/landing/Header";
 import Footer from "@/components/landing/Footer";
 import { useTranslation } from "@/hooks/useTranslation";
-import { Mail, Phone, Globe, MapPin, Clock, ArrowRight } from "lucide-react";
+import { Mail, Phone, MapPin, ArrowRight } from "lucide-react";
 
 const KontaktPage = () => {
   const { t } = useTranslation();
@@ -29,24 +29,17 @@ const KontaktPage = () => {
     },
     {
       icon: Phone,
-      label: "Telefon (Tomek)",
+      label: "Tomek",
       value: footer.phone1,
       href: `tel:${footer.phone1.replace(/\s/g, "")}`,
-      description: "Dział sprzedaży i wdrożeń",
+      description: "Sprzedaż, wdrożenia, wsparcie",
     },
     {
       icon: Phone,
-      label: "Telefon (Rafał)",
+      label: "Rafał",
       value: footer.phone2,
       href: `tel:${footer.phone2.replace(/\s/g, "")}`,
-      description: "Dział wsparcia technicznego",
-    },
-    {
-      icon: Globe,
-      label: "Strona www",
-      value: footer.website,
-      href: `https://${footer.website}`,
-      description: "Nasza strona główna",
+      description: "Sprzedaż, wdrożenia, wsparcie",
     },
   ];
 
@@ -72,13 +65,11 @@ const KontaktPage = () => {
         {/* Contact Cards */}
         <section className="py-20 md:py-28 bg-section-alt">
           <div className="container px-4">
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
               {contacts.map((contact, index) => (
                 <a
                   key={index}
                   href={contact.href}
-                  target={contact.icon === Globe ? "_blank" : undefined}
-                  rel={contact.icon === Globe ? "noopener noreferrer" : undefined}
                   className="bg-card rounded-2xl border border-border p-6 text-center hover:shadow-lg hover:border-primary/30 transition-all group"
                 >
                   <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-primary/10 mb-4 group-hover:bg-primary/20 transition-colors">
@@ -93,53 +84,18 @@ const KontaktPage = () => {
           </div>
         </section>
 
-        {/* Quick Info Section */}
+        {/* Location Section */}
         <section className="py-20 md:py-28 bg-background">
           <div className="container px-4">
-            <div className="max-w-4xl mx-auto">
-              <div className="grid md:grid-cols-2 gap-8">
-                {/* Working Hours */}
-                <div className="bg-card rounded-2xl border border-border p-8">
-                  <div className="flex items-center gap-3 mb-6">
-                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                      <Clock className="w-6 h-6 text-primary" />
-                    </div>
-                    <h2 className="text-xl font-bold text-foreground">Godziny pracy</h2>
-                  </div>
-                  <div className="space-y-3">
-                    <div className="flex justify-between text-sm">
-                      <span className="text-muted-foreground">Poniedziałek - Piątek</span>
-                      <span className="font-medium text-foreground">9:00 - 17:00</span>
-                    </div>
-                    <div className="flex justify-between text-sm">
-                      <span className="text-muted-foreground">Sobota</span>
-                      <span className="font-medium text-foreground">10:00 - 14:00</span>
-                    </div>
-                    <div className="flex justify-between text-sm">
-                      <span className="text-muted-foreground">Niedziela</span>
-                      <span className="font-medium text-foreground">Zamknięte</span>
-                    </div>
-                  </div>
-                  <p className="text-xs text-muted-foreground mt-4">
-                    * Wsparcie techniczne dla klientów dostępne również poza godzinami pracy
-                  </p>
+            <div className="max-w-2xl mx-auto">
+              <div className="bg-card rounded-2xl border border-border p-8 text-center">
+                <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-primary/10 mb-6">
+                  <MapPin className="w-7 h-7 text-primary" />
                 </div>
-
-                {/* Location */}
-                <div className="bg-card rounded-2xl border border-border p-8">
-                  <div className="flex items-center gap-3 mb-6">
-                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                      <MapPin className="w-6 h-6 text-primary" />
-                    </div>
-                    <h2 className="text-xl font-bold text-foreground">Lokalizacja</h2>
-                  </div>
-                  <p className="text-muted-foreground leading-relaxed mb-4">
-                    Działamy zdalnie na terenie całej Polski. Prezentacje i wdrożenia przeprowadzamy online.
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    Możliwe spotkania osobiste po wcześniejszym umówieniu w regionie Trójmiasta.
-                  </p>
-                </div>
+                <h2 className="text-xl font-bold text-foreground mb-4">Lokalizacja</h2>
+                <p className="text-muted-foreground leading-relaxed">
+                  Działamy zdalnie na terenie całej Polski. Prezentacje i wdrożenia przeprowadzamy zdalnie, w obrębie Trójmiasta i okolic, na miejscu.
+                </p>
               </div>
             </div>
           </div>
