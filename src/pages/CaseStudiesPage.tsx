@@ -32,7 +32,7 @@ const CaseStudiesPage = () => {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="py-16 md:py-24 bg-gradient-to-b from-muted to-background">
+        <section className="pt-24 md:pt-32 pb-10 md:pb-14 bg-gradient-to-b from-muted to-background">
           <div className="container px-4">
             <div className="max-w-3xl mx-auto">
               <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight text-center">
