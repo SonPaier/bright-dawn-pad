@@ -141,7 +141,7 @@ const CaseStudiesPage = () => {
               
               <div className="grid grid-cols-3 gap-4">
                 <StatBox
-                  value="10h"
+                  value="40h"
                   label="odzyskanego czasu"
                   sublabel="tygodniowo"
                   variant="primary"
