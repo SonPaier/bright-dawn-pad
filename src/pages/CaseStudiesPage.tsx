@@ -3,7 +3,7 @@ import Header from "@/components/landing/Header";
 import Footer from "@/components/landing/Footer";
 import StatBox from "@/components/case-study/StatBox";
 import ImagePlaceholder from "@/components/case-study/ImagePlaceholder";
-import logoArmcar from "@/assets/logo-armcar.png";
+
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { 
@@ -35,19 +35,23 @@ const CaseStudiesPage = () => {
         <section className="py-16 md:py-24 bg-gradient-to-b from-muted to-background">
           <div className="container px-4">
             <div className="max-w-3xl mx-auto">
-              <div className="flex justify-center mb-6">
-                <img 
-                  src={logoArmcar} 
-                  alt="ARM-CAR Detailing & Wrapping" 
-                  className="h-12 md:h-16 object-contain"
-                />
-              </div>
-              <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight mb-4 text-center">
+              <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight text-center">
                 Jak studio Arm Car Detailing odzyskało{" "}
                 <span className="text-primary">10 godzin tygodniowo</span>{" "}
                 i zwiększyło obroty dzięki N2Wash
               </h1>
-              <p className="text-base md:text-lg text-foreground/80 text-center">
+            </div>
+          </div>
+        </section>
+
+        {/* O kliencie Section */}
+        <section className="py-10 md:py-14">
+          <div className="container px-4">
+            <div className="max-w-3xl mx-auto">
+              <h2 className="text-xl md:text-3xl font-bold text-foreground mb-6">
+                O kliencie
+              </h2>
+              <p className="text-foreground/80 leading-relaxed">
                 Armen, właściciel gdańskiego studia Arm Car Detailing & Wrapping, zna swój fach jak mało kto. 
                 Od lat buduje markę kojarzoną z precyzją – od mycia premium, przez zabezpieczanie lakieru 
                 foliami PPF, aż po kompleksowy wrapping. Jednak sukces przyniósł ze sobą niespodziewanego 
@@ -135,7 +139,7 @@ const CaseStudiesPage = () => {
                 Konkretne rezultaty, które mówią same za siebie
               </p>
               
-              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+              <div className="grid grid-cols-3 gap-4">
                 <StatBox
                   value="10h"
                   label="odzyskanego czasu"
@@ -155,13 +159,6 @@ const CaseStudiesPage = () => {
                   label="pomyłek"
                   sublabel="w rezerwacjach"
                   variant="success"
-                  size="md"
-                />
-                <StatBox
-                  value="425 zł"
-                  label="brutto miesięcznie"
-                  sublabel="dla 4 stanowisk"
-                  variant="neutral"
                   size="md"
                 />
               </div>
