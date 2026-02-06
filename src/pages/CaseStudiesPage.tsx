@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import Header from "@/components/landing/Header";
 import Footer from "@/components/landing/Footer";
 import StatBox from "@/components/case-study/StatBox";
-import QuoteCard from "@/components/case-study/QuoteCard";
 import ImagePlaceholder from "@/components/case-study/ImagePlaceholder";
 import logoArmcar from "@/assets/logo-armcar.png";
 import { Button } from "@/components/ui/button";
@@ -33,22 +32,22 @@ const CaseStudiesPage = () => {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="py-32 md:py-48 bg-gradient-to-b from-muted to-background">
+        <section className="py-16 md:py-24 bg-gradient-to-b from-muted to-background">
           <div className="container px-4">
-            <div className="max-w-4xl mx-auto text-center">
-              <div className="flex justify-center mb-8">
+            <div className="max-w-3xl mx-auto">
+              <div className="flex justify-center mb-6">
                 <img 
                   src={logoArmcar} 
                   alt="ARM-CAR Detailing & Wrapping" 
-                  className="h-16 md:h-20 object-contain"
+                  className="h-12 md:h-16 object-contain"
                 />
               </div>
-              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
+              <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight mb-4 text-center">
                 Jak studio Arm Car Detailing odzyskało{" "}
                 <span className="text-primary">10 godzin tygodniowo</span>{" "}
                 i zwiększyło obroty dzięki N2Wash
               </h1>
-              <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
+              <p className="text-base md:text-lg text-foreground/80 text-center">
                 Armen, właściciel gdańskiego studia Arm Car Detailing & Wrapping, zna swój fach jak mało kto. 
                 Od lat buduje markę kojarzoną z precyzją – od mycia premium, przez zabezpieczanie lakieru 
                 foliami PPF, aż po kompleksowy wrapping. Jednak sukces przyniósł ze sobą niespodziewanego 
@@ -59,121 +58,111 @@ const CaseStudiesPage = () => {
         </section>
 
         {/* Wyzwanie Section */}
-        <section className="py-20 md:py-32">
+        <section className="py-10 md:py-14">
           <div className="container px-4">
-            <div className="max-w-5xl mx-auto">
-              <h2 className="text-2xl md:text-4xl font-bold text-foreground mb-12 text-center">
+            <div className="max-w-3xl mx-auto">
+              <h2 className="text-xl md:text-3xl font-bold text-foreground mb-6">
                 Wyzwanie: Codzienność w cieniu papierowego zeszytu
               </h2>
               
-              <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
-                <ImagePlaceholder 
-                  description="Zdjęcie papierowego zeszytu z rezerwacjami lub chaotycznego biurka studia"
-                  aspectRatio="4:3"
-                />
-                
-                <div className="space-y-6">
-                  <p className="text-lg text-muted-foreground leading-relaxed">
-                    Przed wdrożeniem N2Wash, sercem firmy był papierowy kalendarz i arkusz w Excelu. 
-                    Każda rezerwacja wymagała fizycznej obecności właściciela przy zeszycie lub dziesiątek 
-                    telefonów po godzinach pracy.
-                  </p>
-                  <p className="text-lg text-muted-foreground leading-relaxed">
-                    Statystyki były nieubłagane: <strong className="text-foreground">co dziesiąty zapis 
-                    kończył się pomyłką w terminach</strong>, a <strong className="text-foreground">5-10% 
-                    klientów po prostu nie pojawiało się na wizycie</strong>. Armen pracował po 50 godzin 
-                    tygodniowo, czując narastające zmęczenie ciągłą koniecznością bycia „pod telefonem" 
-                    przez całą dobę.
-                  </p>
-                </div>
-              </div>
-              
-              <QuoteCard
-                text="Musiałem być dostępny non-stop. Pół dnia spędzałem na telefonach zamiast rozwijać biznes. Bałem się, że stracę klienta, jeśli nie odbieram wieczorem."
-                author="Armen"
-                role="Właściciel, ARM-CAR Detailing & Wrapping"
-                logo={logoArmcar}
-                size="lg"
+              <ImagePlaceholder 
+                description="Zdjęcie papierowego zeszytu z rezerwacjami lub chaotycznego biurka studia"
+                aspectRatio="16:9"
+                className="mb-6"
               />
+              
+              <p className="text-foreground/80 leading-relaxed mb-4">
+                Przed wdrożeniem N2Wash, sercem firmy był papierowy kalendarz i arkusz w Excelu. 
+                Każda rezerwacja wymagała fizycznej obecności właściciela przy zeszycie lub dziesiątek 
+                telefonów po godzinach pracy.
+              </p>
+              <p className="text-foreground/80 leading-relaxed mb-6">
+                Statystyki były nieubłagane: <strong className="text-foreground">co dziesiąty zapis 
+                kończył się pomyłką w terminach</strong>, a <strong className="text-foreground">5-10% 
+                klientów po prostu nie pojawiało się na wizycie</strong>. Armen pracował po 50 godzin 
+                tygodniowo, czując narastające zmęczenie ciągłą koniecznością bycia „pod telefonem" 
+                przez całą dobę.
+              </p>
+              
+              <blockquote className="border-l-4 border-primary pl-6 py-2 my-6 bg-muted/30 rounded-r-lg">
+                <p className="text-foreground italic text-lg">
+                  „Musiałem być dostępny non-stop. Pół dnia spędzałem na telefonach zamiast rozwijać biznes. Bałem się, że stracę klienta, jeśli nie odbieram wieczorem."
+                </p>
+              </blockquote>
             </div>
           </div>
         </section>
 
         {/* Rozwiązanie Section */}
-        <section className="py-20 md:py-32 bg-muted/30">
+        <section className="py-10 md:py-14 bg-muted/30">
           <div className="container px-4">
-            <div className="max-w-5xl mx-auto">
-              <h2 className="text-2xl md:text-4xl font-bold text-foreground mb-12 text-center">
+            <div className="max-w-3xl mx-auto">
+              <h2 className="text-xl md:text-3xl font-bold text-foreground mb-6">
                 Rozwiązanie: Cyfrowa rewolucja w trzy dni
               </h2>
               
-              <div className="grid lg:grid-cols-2 gap-12 items-center">
-                <div className="order-2 lg:order-1 space-y-6">
-                  <p className="text-lg text-muted-foreground leading-relaxed">
-                    Decyzja o przejściu na system SaaS często wiąże się z obawą o skomplikowane wdrożenie. 
-                    W przypadku Arm Car Detailing proces ten został skrócony do minimum.
-                  </p>
-                  <p className="text-lg text-muted-foreground leading-relaxed">
-                    Zespół N2Wash <strong className="text-foreground">w zaledwie trzy dni</strong> przeniósł 
-                    bazę klientów i cennik do aplikacji. Armen, zamiast tracić czas na naukę systemu, 
-                    otrzymał gotowe narzędzie, które od pierwszego dnia wyeliminowało błędy i puste przebiegi.
-                  </p>
-                  <p className="text-lg text-muted-foreground leading-relaxed">
-                    <strong className="text-foreground">Koszt systemu okazał się inwestycją</strong>, która 
-                    zwraca się już przy jednej uratowanej rezerwacji.
-                  </p>
-                </div>
-                
-                <div className="order-1 lg:order-2">
-                  <ImagePlaceholder 
-                    description="Screenshot kalendarza N2Wash lub widok aplikacji na tablecie"
-                    aspectRatio="4:3"
-                  />
-                </div>
-              </div>
+              <ImagePlaceholder 
+                description="Screenshot kalendarza N2Wash lub widok aplikacji na tablecie"
+                aspectRatio="16:9"
+                className="mb-6"
+              />
+              
+              <p className="text-foreground/80 leading-relaxed mb-4">
+                Decyzja o przejściu na system SaaS często wiąże się z obawą o skomplikowane wdrożenie. 
+                W przypadku Arm Car Detailing proces ten został skrócony do minimum.
+              </p>
+              <p className="text-foreground/80 leading-relaxed mb-4">
+                Zespół N2Wash <strong className="text-foreground">w zaledwie trzy dni</strong> przeniósł 
+                bazę klientów i cennik do aplikacji. Armen, zamiast tracić czas na naukę systemu, 
+                otrzymał gotowe narzędzie, które od pierwszego dnia wyeliminowało błędy i puste przebiegi.
+              </p>
+              <p className="text-foreground/80 leading-relaxed">
+                <strong className="text-foreground">Koszt systemu okazał się inwestycją</strong>, która 
+                zwraca się już przy jednej uratowanej rezerwacji.
+              </p>
             </div>
           </div>
         </section>
 
         {/* Metrics Grid */}
-        <section className="py-20 md:py-32">
+        <section className="py-10 md:py-14">
           <div className="container px-4">
-            <div className="max-w-5xl mx-auto">
-              <h2 className="text-2xl md:text-4xl font-bold text-foreground mb-4 text-center">
+            <div className="max-w-3xl mx-auto">
+              <h2 className="text-xl md:text-3xl font-bold text-foreground mb-2 text-center">
                 Kluczowe zmiany w liczbach
               </h2>
-              <p className="text-lg text-muted-foreground text-center mb-12 max-w-2xl mx-auto">
+              <p className="text-foreground/70 text-center mb-6">
                 Konkretne rezultaty, które mówią same za siebie
               </p>
               
-              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
                 <StatBox
                   value="10h"
                   label="odzyskanego czasu"
                   sublabel="tygodniowo"
                   variant="primary"
-                  size="lg"
+                  size="md"
                 />
                 <StatBox
                   value="+10%"
                   label="wzrost obrotów"
                   sublabel="miesięcznie"
                   variant="success"
-                  size="lg"
+                  size="md"
                 />
                 <StatBox
                   value="0%"
                   label="pomyłek"
                   sublabel="w rezerwacjach"
                   variant="success"
-                  size="lg"
+                  size="md"
                 />
                 <StatBox
                   value="425 zł"
                   label="brutto miesięcznie"
                   sublabel="dla 4 stanowisk"
                   variant="neutral"
-                  size="lg"
+                  size="md"
                 />
               </div>
             </div>
@@ -181,115 +170,100 @@ const CaseStudiesPage = () => {
         </section>
 
         {/* Rezultaty Section */}
-        <section className="py-20 md:py-32 bg-muted/30">
+        <section className="py-10 md:py-14 bg-muted/30">
           <div className="container px-4">
-            <div className="max-w-5xl mx-auto">
-              <h2 className="text-2xl md:text-4xl font-bold text-foreground mb-12 text-center">
+            <div className="max-w-3xl mx-auto">
+              <h2 className="text-xl md:text-3xl font-bold text-foreground mb-6">
                 Rezultaty: Zarządzanie oparte na danych
               </h2>
               
-              <div className="space-y-12">
-                <div className="grid lg:grid-cols-2 gap-12 items-center">
-                  <div className="space-y-6">
-                    <p className="text-lg text-muted-foreground leading-relaxed">
-                      N2Wash zmienił studio w organizację sterowaną danymi. Funkcja ewidencji czasu pracy 
-                      pozwoliła Armenowi zrozumieć, ile realnie trwają poszczególne usługi, co umożliwiło
-                      <strong className="text-foreground"> precyzyjną korektę cennika i wyższą rentowność</strong>.
-                    </p>
-                    <p className="text-lg text-muted-foreground leading-relaxed">
-                      Najbardziej spektakularnym efektem była jednak <strong className="text-foreground">niemal 
-                      całkowita eliminacja zjawiska „no-show"</strong> dzięki automatycznym przypomnieniom SMS 
-                      wysyłanym do klientów.
-                    </p>
-                  </div>
-                  
-                  <ImagePlaceholder 
-                    description="Dashboard z raportami i statystykami lub widok tabletu pracownika"
-                    aspectRatio="4:3"
-                  />
-                </div>
-                
-                <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl">
-                  Pracownicy zyskali autonomię – sami raportują postępy na tabletach, dodają dokumentację 
-                  zdjęciową i wysyłają powiadomienia o odbiorze auta. Dzięki temu Armen może zarządzać 
-                  studiem zdalnie, mając wgląd w każdą rezerwację i czas pracy zespołu bezpośrednio 
-                  ze swojego telefonu, bez konieczności ciągłego dzwonienia do pracowników.
+              <p className="text-foreground/80 leading-relaxed mb-4">
+                N2Wash zmienił studio w organizację sterowaną danymi. Funkcja ewidencji czasu pracy 
+                pozwoliła Armenowi zrozumieć, ile realnie trwają poszczególne usługi, co umożliwiło
+                <strong className="text-foreground"> precyzyjną korektę cennika i wyższą rentowność</strong>.
+              </p>
+              <p className="text-foreground/80 leading-relaxed mb-6">
+                Najbardziej spektakularnym efektem była jednak <strong className="text-foreground">niemal 
+                całkowita eliminacja zjawiska „no-show"</strong> dzięki automatycznym przypomnieniom SMS 
+                wysyłanym do klientów.
+              </p>
+              
+              <ImagePlaceholder 
+                description="Dashboard z raportami i statystykami lub widok tabletu pracownika"
+                aspectRatio="16:9"
+                className="mb-6"
+              />
+              
+              <p className="text-foreground/80 leading-relaxed mb-6">
+                Pracownicy zyskali autonomię – sami raportują postępy na tabletach, dodają dokumentację 
+                zdjęciową i wysyłają powiadomienia o odbiorze auta. Dzięki temu Armen może zarządzać 
+                studiem zdalnie, mając wgląd w każdą rezerwację i czas pracy zespołu bezpośrednio 
+                ze swojego telefonu, bez konieczności ciągłego dzwonienia do pracowników.
+              </p>
+              
+              <blockquote className="border-l-4 border-primary pl-6 py-2 my-6 bg-background/50 rounded-r-lg">
+                <p className="text-foreground italic text-lg">
+                  „Dzięki lepszej skuteczności ofert i zerowym no-show zarabiam więcej, pracując mniej. Koszt aplikacji zwraca się wielokrotnie już w pierwszym miesiącu."
                 </p>
-                
-                <QuoteCard
-                  text="Dzięki lepszej skuteczności ofert i zerowym no-show zarabiam więcej, pracując mniej. Koszt aplikacji zwraca się wielokrotnie już w pierwszym miesiącu."
-                  author="Armen"
-                  role="Właściciel, ARM-CAR Detailing & Wrapping"
-                  logo={logoArmcar}
-                  size="lg"
-                />
-              </div>
+              </blockquote>
             </div>
           </div>
         </section>
 
         {/* Benefits List Section */}
-        <section className="py-20 md:py-32">
+        <section className="py-10 md:py-14">
           <div className="container px-4">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-2xl md:text-4xl font-bold text-foreground mb-12 text-center">
+            <div className="max-w-3xl mx-auto">
+              <h2 className="text-xl md:text-3xl font-bold text-foreground mb-6">
                 Co zyskało studio?
               </h2>
               
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-card rounded-2xl border border-border p-6 hover:border-primary/20 transition-colors">
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/10 to-sky-500/10 flex items-center justify-center flex-shrink-0">
-                      <MessageSquare className="w-6 h-6 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-foreground text-lg mb-2">Automatyczne przypomnienia SMS</h3>
-                      <p className="text-muted-foreground">
-                        Koniec z zapominalskimi klientami – no-show spadło niemal do zera.
-                      </p>
-                    </div>
+              <div className="space-y-4">
+                <div className="flex items-start gap-4 p-4 bg-card rounded-xl border border-border">
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <MessageSquare className="w-5 h-5 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-foreground mb-1">Automatyczne przypomnienia SMS</h3>
+                    <p className="text-foreground/70 text-sm">
+                      Koniec z zapominalskimi klientami – no-show spadło niemal do zera.
+                    </p>
                   </div>
                 </div>
                 
-                <div className="bg-card rounded-2xl border border-border p-6 hover:border-primary/20 transition-colors">
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/10 to-sky-500/10 flex items-center justify-center flex-shrink-0">
-                      <FileText className="w-6 h-6 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-foreground text-lg mb-2">Generator ofert</h3>
-                      <p className="text-muted-foreground">
-                        Tworzenie profesjonalnych ofert w kilka minut, nawet z poziomu telefonu podczas treningu.
-                      </p>
-                    </div>
+                <div className="flex items-start gap-4 p-4 bg-card rounded-xl border border-border">
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <FileText className="w-5 h-5 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-foreground mb-1">Generator ofert</h3>
+                    <p className="text-foreground/70 text-sm">
+                      Tworzenie profesjonalnych ofert w kilka minut, nawet z poziomu telefonu podczas treningu.
+                    </p>
                   </div>
                 </div>
                 
-                <div className="bg-card rounded-2xl border border-border p-6 hover:border-primary/20 transition-colors">
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/10 to-sky-500/10 flex items-center justify-center flex-shrink-0">
-                      <Users className="w-6 h-6 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-foreground text-lg mb-2">Autonomia zespołu</h3>
-                      <p className="text-muted-foreground">
-                        Pracownicy sami zarządzają statusami prac i raportują czas wykonania usług.
-                      </p>
-                    </div>
+                <div className="flex items-start gap-4 p-4 bg-card rounded-xl border border-border">
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <Users className="w-5 h-5 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-foreground mb-1">Autonomia zespołu</h3>
+                    <p className="text-foreground/70 text-sm">
+                      Pracownicy sami zarządzają statusami prac i raportują czas wykonania usług.
+                    </p>
                   </div>
                 </div>
                 
-                <div className="bg-card rounded-2xl border border-border p-6 hover:border-primary/20 transition-colors">
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/10 to-sky-500/10 flex items-center justify-center flex-shrink-0">
-                      <RefreshCw className="w-6 h-6 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-foreground text-lg mb-2">Powracalność klientów</h3>
-                      <p className="text-muted-foreground">
-                        System automatycznie przypomina o przeglądach powłok, co zwiększyło liczbę powracających klientów o 30%.
-                      </p>
-                    </div>
+                <div className="flex items-start gap-4 p-4 bg-card rounded-xl border border-border">
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <RefreshCw className="w-5 h-5 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-foreground mb-1">Powracalność klientów</h3>
+                    <p className="text-foreground/70 text-sm">
+                      System automatycznie przypomina o przeglądach powłok, co zwiększyło liczbę powracających klientów o 30%.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -298,16 +272,16 @@ const CaseStudiesPage = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 md:py-32 bg-gradient-to-br from-primary/5 via-primary/3 to-sky-500/5">
+        <section className="py-12 md:py-16 bg-gradient-to-br from-primary/5 via-primary/3 to-sky-500/5">
           <div className="container px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-2xl md:text-4xl font-bold text-foreground mb-6">
+              <h2 className="text-xl md:text-3xl font-bold text-foreground mb-4">
                 Twój biznes też może działać bez Twojej ciągłej obecności
               </h2>
-              <p className="text-lg text-muted-foreground mb-10">
+              <p className="text-foreground/70 mb-8">
                 Jeśli masz dość zeszytów i uciekających rezerwacji – umów się na bezpłatną prezentację N2Wash.
               </p>
-              <Button asChild size="lg" className="text-lg px-8 py-6 h-auto rounded-full">
+              <Button asChild size="lg" className="text-base px-6 py-5 h-auto rounded-full">
                 <Link to="/kontakt">
                   Umów bezpłatną prezentację
                   <ArrowRight className="ml-2 w-5 h-5" />
