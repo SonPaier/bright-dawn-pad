@@ -155,8 +155,8 @@ const CaseStudiesPage = () => {
                   size="md"
                 />
                 <StatBox
-                  value="0%"
-                  label="pomyłek"
+                  value="0"
+                  label="no-show i pomyłek"
                   sublabel="w rezerwacjach"
                   variant="success"
                   size="md"
