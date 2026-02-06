@@ -143,7 +143,7 @@ const CaseStudiesPage = () => {
                 <StatBox
                   value="40h"
                   label="odzyskanego czasu"
-                  sublabel="tygodniowo"
+                  sublabel="miesięcznie"
                   variant="primary"
                   size="md"
                 />
