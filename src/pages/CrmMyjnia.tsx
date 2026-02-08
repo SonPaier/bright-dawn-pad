@@ -128,13 +128,9 @@ const CrmMyjnia = () => {
                   <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                     <Calendar className="w-5 h-5 text-primary" />
                   </div>
-                  <h3 className="text-xl md:text-2xl font-semibold text-foreground">
-                    Kalendarz rezerwacji dla 1-10 stanowisk
-                  </h3>
+                  <h3 className="text-xl md:text-2xl font-semibold text-foreground">Kalendarz rezerwacji dla wielu stanowisk</h3>
                 </div>
-                <p className="text-muted-foreground text-lg leading-relaxed">
-                  [Placeholder: Opis funkcji kalendarza - podział na stanowiska, drag & drop, widok dzienny/tygodniowy, szybkie dodawanie rezerwacji, kolory dla różnych usług.]
-                </p>
+                <p className="text-muted-foreground text-lg leading-relaxed">Widzisz wszystkie stanowiska na jednym ekranie. Od razu wiesz, gdzie jest wolne. Koniec z bazgraniem w zeszycie i nakładaniem się aut.</p>
               </div>
               <div className="flex-1 order-1 lg:order-2">
                 <div className="bg-muted rounded-2xl aspect-[4/3] flex items-center justify-center border border-border">
@@ -167,9 +163,7 @@ const CrmMyjnia = () => {
                     Widok na żywo dla pracowników na hali
                   </h3>
                 </div>
-                <p className="text-muted-foreground text-lg leading-relaxed">
-                  [Placeholder: Opis trybu halowego - duży ekran TV/monitor, aktualne i nadchodzące rezerwacje, informacje o pojeździe i usłudze, bez konieczności pytania managera.]
-                </p>
+                <p className="text-muted-foreground text-lg leading-relaxed">Monitor lub tablet na hali lub w biurze by każdy pracownik widział grafik. Koniec z ciągłym pytaniem managera „co teraz wjeżdża?”. Ty decydujesz, które detale rezerwacji widzi pracownik.</p>
               </div>
             </div>
 
@@ -184,9 +178,7 @@ const CrmMyjnia = () => {
                     Automatyczne SMS przypomnienia
                   </h3>
                 </div>
-                <p className="text-muted-foreground text-lg leading-relaxed">
-                  [Placeholder: Opis systemu SMS - przypomnienia 24h i 1h przed wizytą, potwierdzenia rezerwacji, możliwość personalizacji treści, statystyki dostarczenia.]
-                </p>
+                <p className="text-muted-foreground text-lg leading-relaxed">System sam wyśle SMS-a do klienta dzień wcześniej i godzinę przed myciem. Koniec z „zapominalskimi” i pustymi stanowiskami. Ty pracujesz, a telefon pilnuje Twoich pieniędzy.</p>
               </div>
               <div className="flex-1 order-1 lg:order-2">
                 <div className="bg-muted rounded-2xl aspect-[4/3] flex items-center justify-center border border-border">
