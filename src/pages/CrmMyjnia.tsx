@@ -41,9 +41,7 @@ const CrmMyjnia = () => {
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground text-center mb-6">
               Dlaczego myjnie ręczne potrzebują dedykowanego CRM?
             </h2>
-            <p className="text-muted-foreground text-center max-w-3xl mx-auto text-lg">
-              [Placeholder: Opis dlaczego tradycyjne metody zarządzania myjnią nie sprawdzają się w 2025 roku. Jak CRM pomaga zwiększyć przychody i oszczędzić czas.]
-            </p>
+            <p className="text-muted-foreground text-center max-w-3xl mx-auto text-lg">Prowadzenie myjni to nie tylko mycie aut – to walka o optymalne obłożenie grafiku. Uniwersalne programy do zarządzania czy arkusze w Excelu nie rozumieją specyfiki Twojej pracy. Dedykowany system CRM zamienia chaos w uporządkowaną maszynę do zarabiania pieniędzy. </p>
           </div>
         </section>
 
