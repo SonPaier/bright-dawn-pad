@@ -197,13 +197,9 @@ const CrmMyjnia = () => {
                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                   <BarChart3 className="w-5 h-5 text-primary" />
                 </div>
-                <h3 className="text-xl md:text-2xl font-semibold text-foreground">
-                  Raporty i analityka sprzedaży
-                </h3>
+                <h3 className="text-xl md:text-2xl font-semibold text-foreground">Raportowanie czasu pracy</h3>
               </div>
-              <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl">
-                [Placeholder: Opis raportów - dzienna/tygodniowa/miesięczna sprzedaż, najpopularniejsze usługi, statystyki pracowników, porównanie okresów, eksport do Excel.]
-              </p>
+              <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl">Pracownicy w prosty sposób raportują czas pracy na tablecie lub telefonie. Mogą podać czas pracy, lub klikać START / STOP, jeśli zależy Ci na dokładnym raportowaniu czasu przez pracowników.</p>
             </div>
           </div>
         </section>
