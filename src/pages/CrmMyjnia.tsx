@@ -210,9 +210,7 @@ const CrmMyjnia = () => {
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6">
               Gotowy, by usprawnić swoją myjnię?
             </h2>
-            <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8">
-              Dołącz do setek myjni, które już korzystają z N2Wash. Zacznij bezpłatny okres próbny już dziś.
-            </p>
+            <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8">Dołącz do wielu myjni, które już korzystają z N2Wash. Zacznij bezpłatny okres próbny już dziś.</p>
             <Button asChild className="h-12 px-8 text-base font-semibold rounded-xl bg-white text-primary hover:bg-white/90">
               <Link to="/umow-prezentacje">Umów bezpłatną prezentację</Link>
             </Button>
