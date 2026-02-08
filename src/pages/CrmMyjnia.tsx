@@ -60,12 +60,8 @@ const CrmMyjnia = () => {
                     <Clock className="w-6 h-6 text-destructive" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-foreground mb-3">
-                      Rezerwacje przez telefon w godzinach pracy
-                    </h3>
-                    <p className="text-muted-foreground">
-                      [Placeholder: Opis problemu z odbieraniem telefonów podczas pracy, utracone rezerwacje, frustracja klientów którzy nie mogą się dodzwonić.]
-                    </p>
+                    <h3 className="text-xl font-semibold text-foreground mb-3">Ciągłe telefony w trakcie pracy</h3>
+                    <p className="text-muted-foreground">Praca z lancą w ręku i ciągłe odbieranie rezerwacji to przepis na błędy. Nieodebrane połączenie to klient, który pojedzie do konkurencji.</p>
                   </div>
                 </div>
               </div>
@@ -80,9 +76,7 @@ const CrmMyjnia = () => {
                     <h3 className="text-xl font-semibold text-foreground mb-3">
                       Klienci zapominają o umówionych wizytach
                     </h3>
-                    <p className="text-muted-foreground">
-                      [Placeholder: Problem no-show, puste stanowiska, utracone przychody, brak systemu przypomnień.]
-                    </p>
+                    <p className="text-muted-foreground">Klient nie przyjeżdża, nie odbiera i nie uprzedza. Ty zostajesz z opłaconym pracownikiem, wolnym stanowiskiem i stratą w portfelu.</p>
                   </div>
                 </div>
               </div>
@@ -97,9 +91,7 @@ const CrmMyjnia = () => {
                     <h3 className="text-xl font-semibold text-foreground mb-3">
                       Brak historii mycia pojazdu
                     </h3>
-                    <p className="text-muted-foreground">
-                      [Placeholder: Niemożność sprawdzenia co było robione przy poprzedniej wizycie, brak personalizacji usługi, utracone szanse na upselling.]
-                    </p>
+                    <p className="text-muted-foreground">Brak bazy danych to zgadywanie przy każdym aucie. Tracisz szansę na dodatkową sprzedaż, bo nie wiesz, czego klient potrzebuje.</p>
                   </div>
                 </div>
               </div>
@@ -114,9 +106,7 @@ const CrmMyjnia = () => {
                     <h3 className="text-xl font-semibold text-foreground mb-3">
                       Trudności z organizacją pracy stanowisk
                     </h3>
-                    <p className="text-muted-foreground">
-                      [Placeholder: Chaos przy wielu stanowiskach, nakładające się rezerwacje, nieefektywne wykorzystanie zasobów.]
-                    </p>
+                    <p className="text-muted-foreground">Zapisy na kartkach lub w głowie prowadzą do błędów w rezerwacjach. Chaos na stanowiskach frustruje pracowników, klientów i psuje Twoją opinię.</p>
                   </div>
                 </div>
               </div>
