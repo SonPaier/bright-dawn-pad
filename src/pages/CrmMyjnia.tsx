@@ -19,11 +19,9 @@ const CrmMyjnia = () => {
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-primary via-primary/90 to-sky-900 text-white py-32 md:py-48">
           <div className="container mx-auto px-4">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold max-w-4xl leading-tight">CRM dla ręcznej myjni samochodowej – Oprogramowanie dla Małych i Średnich Myjni</h1>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold max-w-4xl leading-tight">CRM dla ręcznej myjni samochodowej</h1>
             
-            <p className="mt-6 text-lg md:text-xl text-white/80 max-w-2xl">
-              System CRM dedykowany dla myjni ręcznych. Rezerwacje, kalendarz, baza klientów, SMS. Idealne dla myjni 1-5 stanowisk.
-            </p>
+            <p className="mt-6 text-lg md:text-xl text-white/80 max-w-2xl">System CRM dedykowany dla myjni ręcznych. Rezerwacje, kalendarz, baza klientów, przypomnienia SMS, raportowanie czasu pracy.</p>
 
             <div className="mt-8">
               <Button asChild className="h-12 px-8 text-base font-semibold rounded-xl bg-white text-primary hover:bg-white/90">
