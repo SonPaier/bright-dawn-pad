@@ -4,40 +4,29 @@ import { Calendar, Users, MessageSquare, BarChart3, Monitor, Smartphone, Clock, 
 import Header from "@/components/landing/Header";
 import Footer from "@/components/landing/Footer";
 import { Button } from "@/components/ui/button";
-
 const CrmMyjnia = () => {
   useEffect(() => {
     // Update meta description for SEO
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute(
-        "content",
-        "System CRM dedykowany dla myjni ręcznych. Rezerwacje, kalendarz, baza klientów, SMS. Idealne dla myjni 1-5 stanowisk. Zacznij za 129 zł/msc."
-      );
+      metaDescription.setAttribute("content", "System CRM dedykowany dla myjni ręcznych. Rezerwacje, kalendarz, baza klientów, SMS. Idealne dla myjni 1-5 stanowisk. Zacznij za 129 zł/msc.");
     }
     document.title = "CRM dla Myjni Samochodowej – Oprogramowanie dla Małych i Średnich Myjni | N2Wash";
   }, []);
-
-  return (
-    <div className="min-h-screen bg-background flex flex-col">
+  return <div className="min-h-screen bg-background flex flex-col">
       <Header />
       <main className="flex-1 pt-20">
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-primary via-primary/90 to-sky-900 text-white py-32 md:py-48">
           <div className="container mx-auto px-4">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold max-w-4xl leading-tight">
-              CRM dla Myjni Samochodowej – Oprogramowanie dla Małych i Średnich Myjni
-            </h1>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold max-w-4xl leading-tight">CRM dla ręcznej myjni samochodowej – Oprogramowanie dla Małych i Średnich Myjni</h1>
             
             <p className="mt-6 text-lg md:text-xl text-white/80 max-w-2xl">
               System CRM dedykowany dla myjni ręcznych. Rezerwacje, kalendarz, baza klientów, SMS. Idealne dla myjni 1-5 stanowisk.
             </p>
 
             <div className="mt-8">
-              <Button 
-                asChild
-                className="h-12 px-8 text-base font-semibold rounded-xl bg-white text-primary hover:bg-white/90"
-              >
+              <Button asChild className="h-12 px-8 text-base font-semibold rounded-xl bg-white text-primary hover:bg-white/90">
                 <Link to="/umow-prezentacje">Umów prezentację</Link>
               </Button>
             </div>
@@ -250,18 +239,13 @@ const CrmMyjnia = () => {
             <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8">
               Dołącz do setek myjni, które już korzystają z N2Wash. Zacznij bezpłatny okres próbny już dziś.
             </p>
-            <Button 
-              asChild
-              className="h-12 px-8 text-base font-semibold rounded-xl bg-white text-primary hover:bg-white/90"
-            >
+            <Button asChild className="h-12 px-8 text-base font-semibold rounded-xl bg-white text-primary hover:bg-white/90">
               <Link to="/umow-prezentacje">Umów bezpłatną prezentację</Link>
             </Button>
           </div>
         </section>
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default CrmMyjnia;
