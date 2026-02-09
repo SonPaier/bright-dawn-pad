@@ -3,40 +3,26 @@ import Header from "@/components/landing/Header";
 import Footer from "@/components/landing/Footer";
 import StatBox from "@/components/case-study/StatBox";
 import ImagePlaceholder from "@/components/case-study/ImagePlaceholder";
-
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import caseStudy1 from "@/assets/case-study-1.jpg";
 import caseStudy2 from "@/assets/case-study-2.jpg";
 import caseStudy3 from "@/assets/case-study-3.jpg";
-
-import { 
-  MessageSquare,
-  FileText,
-  Users,
-  RefreshCw,
-  ArrowRight
-} from "lucide-react";
-
+import { MessageSquare, FileText, Users, RefreshCw, ArrowRight } from "lucide-react";
 const CaseStudiesPage = () => {
   useEffect(() => {
     document.title = "ARM-CAR Detailing Case Study – Jak Odzyskać 10h Tygodniowo | N2Wash";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute(
-        "content",
-        "Case study ARM-CAR Detailing z Gdańska. Zobacz jak N2Wash pomógł zwiększyć obroty o 10% i zaoszczędzić 10 godzin tygodniowo."
-      );
+      metaDescription.setAttribute("content", "Case study ARM-CAR Detailing z Gdańska. Zobacz jak N2Wash pomógł zwiększyć obroty o 10% i zaoszczędzić 10 godzin tygodniowo.");
     }
   }, []);
-
-  return (
-    <div className="min-h-screen bg-background flex flex-col">
+  return <div className="min-h-screen bg-background flex flex-col">
       <Header />
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="pt-24 md:pt-32 pb-10 md:pb-14 bg-gradient-to-b from-muted to-background">
+        <section className="pt-24 pb-10 md:pb-14 bg-gradient-to-b from-muted to-background bg-white py-[12px] my-[40px] md:pt-[104px]">
           <div className="container px-4">
             <div className="max-w-3xl mx-auto">
               <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight text-center">
@@ -49,7 +35,7 @@ const CaseStudiesPage = () => {
         </section>
 
         {/* O kliencie Section */}
-        <section className="py-10 md:py-14">
+        <section className="py-10 md:py-[57px] pt-[24px]">
           <div className="container px-4">
             <div className="max-w-3xl mx-auto">
               <h2 className="text-xl md:text-3xl font-bold text-foreground mb-6">
@@ -66,7 +52,7 @@ const CaseStudiesPage = () => {
         </section>
 
         {/* Wyzwanie Section */}
-        <section className="py-10 md:py-14">
+        <section className="py-10 md:py-14 pb-[24px]">
           <div className="container px-4">
             <div className="max-w-3xl mx-auto">
               <h2 className="text-xl md:text-3xl font-bold text-foreground mb-6">
@@ -136,34 +122,16 @@ const CaseStudiesPage = () => {
               </p>
               
               <div className="grid grid-cols-3 gap-4">
-                <StatBox
-                  value="40h"
-                  label="odzyskanego czasu"
-                  sublabel="miesięcznie"
-                  variant="primary"
-                  size="md"
-                />
-                <StatBox
-                  value="+10%"
-                  label="wzrost obrotów"
-                  sublabel="miesięcznie"
-                  variant="success"
-                  size="md"
-                />
-                <StatBox
-                  value="0"
-                  label="no-show i pomyłek"
-                  sublabel="w rezerwacjach"
-                  variant="success"
-                  size="md"
-                />
+                <StatBox value="40h" label="odzyskanego czasu" sublabel="miesięcznie" variant="primary" size="md" />
+                <StatBox value="+10%" label="wzrost obrotów" sublabel="miesięcznie" variant="success" size="md" />
+                <StatBox value="0" label="no-show i pomyłek" sublabel="w rezerwacjach" variant="success" size="md" />
               </div>
             </div>
           </div>
         </section>
 
         {/* Rezultaty Section */}
-        <section className="py-10 md:py-14 bg-muted/30">
+        <section className="py-10 md:py-14 bg-muted/30 pb-[24px]">
           <div className="container px-4">
             <div className="max-w-3xl mx-auto">
               <h2 className="text-xl md:text-3xl font-bold text-foreground mb-6">
@@ -282,8 +250,6 @@ const CaseStudiesPage = () => {
       </main>
       
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default CaseStudiesPage;
