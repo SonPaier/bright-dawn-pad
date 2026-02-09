@@ -114,12 +114,10 @@ const CaseStudiesPage = () => {
         <section className="py-10 md:py-14">
           <div className="container px-4">
             <div className="max-w-3xl mx-auto">
-              <h2 className="text-xl md:text-3xl font-bold text-foreground mb-2 text-center">
+              <h2 className="text-xl md:text-3xl font-bold text-foreground mb-2 text-left pb-[24px]">
                 Kluczowe zmiany w liczbach
               </h2>
-              <p className="text-foreground/70 text-center mb-6">
-                Konkretne rezultaty, które mówią same za siebie
-              </p>
+              
               
               <div className="grid grid-cols-3 gap-4">
                 <StatBox value="40h" label="odzyskanego czasu" sublabel="miesięcznie" variant="primary" size="md" />
