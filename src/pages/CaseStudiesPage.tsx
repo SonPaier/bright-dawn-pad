@@ -193,7 +193,7 @@ const CaseStudiesPage = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Generator ofert</h3>
                     <p className="text-foreground/70 text-sm">
-                      Tworzenie profesjonalnych ofert w kilka minut, nawet z poziomu telefonu podczas treningu.
+                      Tworzenie profesjonalnych ofert w kilka minut – w dowolnej chwili i z dowolnego urządzenia.          
                     </p>
                   </div>
                 </div>
@@ -217,7 +217,7 @@ const CaseStudiesPage = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Powracalność klientów</h3>
                     <p className="text-foreground/70 text-sm">
-                      System automatycznie przypomina o przeglądach powłok, co zwiększyło liczbę powracających klientów o 30%.
+                      System automatycznie przypomina o przeglądach powłok, co zwiększyło liczbę powracających klientów .
                     </p>
                   </div>
                 </div>
