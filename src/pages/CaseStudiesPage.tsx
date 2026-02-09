@@ -22,7 +22,7 @@ const CaseStudiesPage = () => {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="pt-24 pb-10 md:pb-14 bg-gradient-to-b from-muted to-background bg-white py-[12px] my-[40px] md:pt-[104px]">
+        <section className="pt-24 pb-10 md:pb-14 bg-gradient-to-b from-muted to-background bg-white py-[12px] md:pt-[104px] my-0">
           <div className="container px-4">
             <div className="max-w-3xl mx-auto">
               <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight text-center">
