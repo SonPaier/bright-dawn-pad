@@ -6,6 +6,10 @@ import ImagePlaceholder from "@/components/case-study/ImagePlaceholder";
 
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import caseStudy1 from "@/assets/case-study-1.jpg";
+import caseStudy2 from "@/assets/case-study-2.jpg";
+import caseStudy3 from "@/assets/case-study-3.jpg";
+
 import { 
   MessageSquare,
   FileText,
@@ -69,11 +73,7 @@ const CaseStudiesPage = () => {
                 Wyzwanie: Codzienność w cieniu papierowego zeszytu
               </h2>
               
-              <ImagePlaceholder 
-                description="Zdjęcie papierowego zeszytu z rezerwacjami lub chaotycznego biurka studia"
-                aspectRatio="16:9"
-                className="mb-6"
-              />
+              <img src={caseStudy1} alt="Aplikacja folii ochronnej PPF na Mercedesa w studiu Arm Car Detailing" className="w-full rounded-2xl mb-6" />
               
               <p className="text-foreground/80 leading-relaxed mb-4">
                 Przed wdrożeniem N2Wash, sercem firmy był papierowy kalendarz i arkusz w Excelu. 
@@ -105,11 +105,7 @@ const CaseStudiesPage = () => {
                 Rozwiązanie: Cyfrowa rewolucja w trzy dni
               </h2>
               
-              <ImagePlaceholder 
-                description="Screenshot kalendarza N2Wash lub widok aplikacji na tablecie"
-                aspectRatio="16:9"
-                className="mb-6"
-              />
+              <img src={caseStudy2} alt="Kalendarz N2Wash na tablecie i telefonie w studiu detailingowym" className="w-full rounded-2xl mb-6" />
               
               <p className="text-foreground/80 leading-relaxed mb-4">
                 Decyzja o przejściu na system SaaS często wiąże się z obawą o skomplikowane wdrożenie. 
@@ -185,11 +181,7 @@ const CaseStudiesPage = () => {
                 wysyłanym do klientów.
               </p>
               
-              <ImagePlaceholder 
-                description="Dashboard z raportami i statystykami lub widok tabletu pracownika"
-                aspectRatio="16:9"
-                className="mb-6"
-              />
+              <img src={caseStudy3} alt="Protokół przyjęcia pojazdu i kalendarz rezerwacji N2Wash na tabletach" className="w-full rounded-2xl mb-6" />
               
               <p className="text-foreground/80 leading-relaxed mb-6">
                 Pracownicy zyskali autonomię – sami raportują postępy na tabletach, dodają dokumentację 
