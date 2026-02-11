@@ -141,6 +141,9 @@ const CaseStudiesPage = () => {
                 pozwoliła Armenowi zrozumieć, ile realnie trwają poszczególne usługi, co umożliwiło
                 <strong className="text-foreground"> precyzyjną korektę cennika i wyższą rentowność</strong>.
               </p>
+              <p className="text-foreground/80 leading-relaxed mb-4">
+                Co więcej, Armen nie musi już prowadzić oddzielnych arkuszy czasu pracy, dzwonić do pracowników aby sprawdzić dostępność, ani zgadywać ile kto przepracował w miesiącu. Wszystko dostępne jest z poziomu aplikacji N2Wash.
+              </p>
               <p className="text-foreground/80 leading-relaxed mb-6">
                 Najbardziej spektakularnym efektem była jednak <strong className="text-foreground">niemal 
                 całkowita eliminacja zjawiska „no-show"</strong> dzięki automatycznym przypomnieniom SMS 
