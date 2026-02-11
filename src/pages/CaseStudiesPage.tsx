@@ -167,6 +167,14 @@ Czy aplikacja nie będzie skomplikowana w codziennym użyciu? Czy będzie dział
 
 Co więcej, Armen nie musi już prowadzić oddzielnych arkuszy czasu pracy, dzwonić do pracowników aby sprawdzić dostępność, ani zgadywać ile kto przepracował w miesiącu. Wszystko dostępne jest z poziomu aplikacji N2Wash.
               </p>
+
+              <p className="text-foreground/80 leading-relaxed mb-6">
+                <strong className="text-foreground">Jedną z opcji systemu, którą Armen bardzo ceni, jest generator ofert.</strong> Wcześniej stworzenie szczegółowej oferty detailingowej (np. korekta + ceramika + folia na reflektory) zajmowało mu średnio 30 minut. Teraz tworzy profesjonalne oferty <strong className="text-foreground">w kilka minut</strong> – nawet podczas swoich treningów na siłowni. System wysyła ofertę do klienta e-mailem. Szybkie odpowiedzi pozytywnie wpływają na skuteczność sprzedaży – klient niepotrzebnie nie czeka kilka dni na przedstawienie oferty, co zmniejsza ryzyko przejścia do konkurencji.
+              </p>
+
+              <p className="text-foreground/80 leading-relaxed mb-6">
+                Dodatkowo N2Wash zapewnia porządek: na liście ofert można łatwo sprawdzić, czy klient już się zapoznał z propozycją i na jakim etapie sprzedaży jesteśmy.
+              </p>
             </div>
           </div>
         </section>
