@@ -156,7 +156,7 @@ Czy aplikacja nie będzie skomplikowana w codziennym użyciu? Czy będzie dział
               
               <blockquote className="border-l-4 border-primary pl-6 py-2 my-6 bg-background/50 rounded-r-lg">
                 <p className="text-foreground italic text-lg">
-                  „Dzięki lepszej skuteczności ofert i praktycznie zerowym no-show zarabiam więcej, pracując mniej. Koszt aplikacji zwraca się wielokrotnie już w pierwszym miesiącu."
+                  „Wcześniej musiałem przeszukiwać zeszyt, żeby znaleźć numer do klienta. Teraz klikam w rezerwację i dzwonię bezpośrednio z aplikacji."
                 </p>
               </blockquote>
 
@@ -175,6 +175,12 @@ Co więcej, Armen nie musi już prowadzić oddzielnych arkuszy czasu pracy, dzwo
               <p className="text-foreground/80 leading-relaxed mb-6">
                 Dodatkowo N2Wash zapewnia porządek: na liście ofert można łatwo sprawdzić, czy klient już się zapoznał z propozycją i na jakim etapie sprzedaży jesteśmy.
               </p>
+
+              <blockquote className="border-l-4 border-primary pl-6 py-2 my-6 bg-background/50 rounded-r-lg">
+                <p className="text-foreground italic text-lg">
+                  „Dzięki lepszej skuteczności ofert i praktycznie zerowym no-show zarabiam więcej, pracując mniej. Koszt aplikacji zwraca się wielokrotnie już w pierwszym miesiącu."
+                </p>
+              </blockquote>
             </div>
           </div>
         </section>
