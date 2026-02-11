@@ -42,10 +42,10 @@ const CaseStudiesPage = () => {
                 O kliencie
               </h2>
               <p className="text-foreground/80 leading-relaxed">
-                Armen, właściciel gdańskiego studia Arm Car Detailing & Wrapping, zna swój fach jak mało kto. 
-                Od lat buduje markę kojarzoną z precyzją – od mycia premium, przez zabezpieczanie lakieru 
-                foliami PPF, aż po kompleksowy wrapping. Jednak sukces przyniósł ze sobą niespodziewanego 
-                przeciwnika: chaos organizacyjny.
+                
+Arm Car Detailing & Wrapping to studio detailingowe z Gdańska. Firma dysponuje czterema stanowiskami: dwa przeznaczone na myjnię ręczną, jedno na detailing oraz jedno na oklejanie folią ochronną PPF. W ofercie znajduje się pełen zakres usług – od mycia premium, przez korekty lakieru i aplikację powłok ceramicznych, aż po wrapping i zmianę koloru karoserii.
+
+Armen, właściciel studia, zna swój fach jak mało kto. Jednak sukces w branży przyniósł ze sobą niespodziewanego przeciwnika: chaos organizacyjny.
               </p>
             </div>
           </div>
