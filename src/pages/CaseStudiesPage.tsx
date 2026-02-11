@@ -154,22 +154,19 @@ Czy aplikacja nie będzie skomplikowana w codziennym użyciu? Czy będzie dział
                 wysyłanym do klientów. Armen uruchomił również dostęp do publicznego kalendarza online, dzięki czemu już teraz jedna piąta klientów samodzielnie rezerwuje swoje wizyty.
               </p>
               
+              <blockquote className="border-l-4 border-primary pl-6 py-2 my-6 bg-background/50 rounded-r-lg">
+                <p className="text-foreground italic text-lg">
+                  „Dzięki lepszej skuteczności ofert i praktycznie zerowym no-show zarabiam więcej, pracując mniej. Koszt aplikacji zwraca się wielokrotnie już w pierwszym miesiącu."
+                </p>
+              </blockquote>
+
               <img src={caseStudy3} alt="Protokół przyjęcia pojazdu i kalendarz rezerwacji N2Wash na tabletach" className="w-full rounded-2xl mb-6" />
               
               <p className="text-foreground/80 leading-relaxed mb-6">
                 Pracownicy zyskali autonomię – sami raportują postępy na tabletach, dodają dokumentację zdjęciową i wysyłają powiadomienia o odbiorze auta. Dzięki temu Armen może zarządzać studiem zdalnie, mając wgląd w każdą rezerwację i czas pracy zespołu bezpośrednio ze swojego telefonu, bez konieczności ciągłego dzwonienia do pracowników.
 
 Co więcej, Armen nie musi już prowadzić oddzielnych arkuszy czasu pracy, dzwonić do pracowników aby sprawdzić dostępność, ani zgadywać ile kto przepracował w miesiącu. Wszystko dostępne jest z poziomu aplikacji N2Wash.
-
-
-
               </p>
-              
-              <blockquote className="border-l-4 border-primary pl-6 py-2 my-6 bg-background/50 rounded-r-lg">
-                <p className="text-foreground italic text-lg">
-                  „Dzięki lepszej skuteczności ofert i praktycznie zerowym no-show zarabiam więcej, pracując mniej. Koszt aplikacji zwraca się wielokrotnie już w pierwszym miesiącu."
-                </p>
-              </blockquote>
             </div>
           </div>
         </section>
