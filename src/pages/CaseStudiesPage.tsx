@@ -122,7 +122,7 @@ const CaseStudiesPage = () => {
               <div className="grid grid-cols-3 gap-4">
                 <StatBox value="40h" label="odzyskanego czasu" sublabel="miesięcznie" variant="primary" size="md" />
                 <StatBox value="+10%" label="wzrost obrotów" sublabel="miesięcznie" variant="success" size="md" />
-                <StatBox value="0" label="no-show i pomyłek" sublabel="w rezerwacjach" variant="success" size="md" />
+                <StatBox value="-90%" label="no-show i pomyłek" sublabel="w rezerwacjach" variant="success" size="md" />
               </div>
             </div>
           </div>
