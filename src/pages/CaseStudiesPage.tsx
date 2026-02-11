@@ -52,7 +52,7 @@ Armen, właściciel studia, zna swój fach jak mało kto. Jednak sukces w branż
         </section>
 
         {/* Wyzwanie Section */}
-        <section className="py-10 md:py-14 pb-[24px]">
+        <section className="py-10 md:py-14 pb-[24px] bg-white">
           <div className="container px-4">
             <div className="max-w-3xl mx-auto">
               <h2 className="text-xl md:text-3xl font-bold text-foreground mb-6">
@@ -115,7 +115,7 @@ Czy aplikacja nie będzie skomplikowana w codziennym użyciu? Czy będzie dział
         </section>
 
         {/* Metrics Grid */}
-        <section className="py-10 md:py-14">
+        <section className="py-10 md:py-14 bg-white">
           <div className="container px-4">
             <div className="max-w-3xl mx-auto">
               <h2 className="text-xl md:text-3xl font-bold text-foreground mb-2 text-left pb-[24px]">
@@ -186,7 +186,7 @@ Co więcej, Armen nie musi już prowadzić oddzielnych arkuszy czasu pracy, dzwo
         </section>
 
         {/* Benefits List Section */}
-        <section className="py-10 md:py-14">
+        <section className="py-10 md:py-14 bg-white">
           <div className="container px-4">
             <div className="max-w-3xl mx-auto">
               <h2 className="text-xl md:text-3xl font-bold text-foreground mb-6">
