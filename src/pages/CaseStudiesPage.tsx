@@ -136,14 +136,14 @@ Czy aplikacja nie będzie skomplikowana w codziennym użyciu? Czy będzie dział
         <section className="py-10 md:py-14 bg-muted/30 pb-[24px]">
           <div className="container px-4">
             <div className="max-w-3xl mx-auto">
-              <h2 className="text-xl md:text-3xl font-bold text-foreground mb-6">
-                Rezultaty: Zarządzanie oparte na danych
-              </h2>
+              <h2 className="text-xl md:text-3xl font-bold text-foreground mb-6">Rezultaty: oszczędność czasu i wzrost rentowności          
+
+            </h2>
               
-              <p className="text-foreground/80 leading-relaxed mb-4">
-                N2Wash zmienił studio w organizację sterowaną danymi. Funkcja ewidencji czasu pracy 
-                pozwoliła Armenowi zrozumieć, ile realnie trwają poszczególne usługi, co umożliwiło
-                <strong className="text-foreground"> precyzyjną korektę cennika i wyższą rentowność</strong>.
+              <p className="text-foreground/80 leading-relaxed mb-4">N2Wash zmienił sposób działania studia. Funkcja ewidencji czasu pracy pozwoliła Armenowi zrozumieć, ile realnie trwają poszczególne usługi, co umożliwiło precyzyjną korektę cennika i wyższą rentowność.
+
+
+              <strong className="text-foreground"> precyzyjną korektę cennika i wyższą rentowność</strong>.
               </p>
               <p className="text-foreground/80 leading-relaxed mb-4">
                 Co więcej, Armen nie musi już prowadzić oddzielnych arkuszy czasu pracy, dzwonić do pracowników aby sprawdzić dostępność, ani zgadywać ile kto przepracował w miesiącu. Wszystko dostępne jest z poziomu aplikacji N2Wash.
