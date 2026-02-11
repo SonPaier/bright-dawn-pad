@@ -151,7 +151,7 @@ Czy aplikacja nie będzie skomplikowana w codziennym użyciu? Czy będzie dział
               <p className="text-foreground/80 leading-relaxed mb-6">
                 Najbardziej spektakularnym efektem była jednak <strong className="text-foreground">niemal 
                 całkowita eliminacja zjawiska „no-show"</strong> dzięki automatycznym przypomnieniom SMS 
-                wysyłanym do klientów.
+                wysyłanym do klientów. Armen uruchomił również dostęp do publicznego kalendarza online, dzięki czemu już teraz jedna piąta klientów samodzielnie rezerwuje swoje wizyty.
               </p>
               
               <img src={caseStudy3} alt="Protokół przyjęcia pojazdu i kalendarz rezerwacji N2Wash na tabletach" className="w-full rounded-2xl mb-6" />
