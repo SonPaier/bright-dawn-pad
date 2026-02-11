@@ -94,7 +94,7 @@ const CaseStudiesPage = () => {
               <img src={caseStudy2} alt="Kalendarz N2Wash na tablecie i telefonie w studiu detailingowym" className="w-full rounded-2xl mb-6" />
               
               <p className="text-foreground/80 leading-relaxed mb-4">
-                Decyzja o przejściu na system SaaS często wiąże się z obawą o skomplikowane wdrożenie. 
+                Decyzja o przejściu na w pełni cyfrowy system często wiąże się z obawą o skomplikowane wdrożenie. 
                 W przypadku Arm Car Detailing proces ten został skrócony do minimum.
               </p>
               <p className="text-foreground/80 leading-relaxed mb-4">
@@ -104,7 +104,7 @@ const CaseStudiesPage = () => {
               </p>
               <p className="text-foreground/80 leading-relaxed">
                 <strong className="text-foreground">Koszt systemu okazał się inwestycją</strong>, która 
-                zwraca się już przy jednej uratowanej rezerwacji.
+                zwraca się już przy dwóch uratowanych rezerwacjach.
               </p>
             </div>
           </div>
@@ -158,7 +158,7 @@ const CaseStudiesPage = () => {
               
               <blockquote className="border-l-4 border-primary pl-6 py-2 my-6 bg-background/50 rounded-r-lg">
                 <p className="text-foreground italic text-lg">
-                  „Dzięki lepszej skuteczności ofert i zerowym no-show zarabiam więcej, pracując mniej. Koszt aplikacji zwraca się wielokrotnie już w pierwszym miesiącu."
+                  „Dzięki lepszej skuteczności ofert i praktycznie zerowym no-show zarabiam więcej, pracując mniej. Koszt aplikacji zwraca się wielokrotnie już w pierwszym miesiącu."
                 </p>
               </blockquote>
             </div>
