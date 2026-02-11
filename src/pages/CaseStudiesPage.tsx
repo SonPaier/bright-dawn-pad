@@ -104,8 +104,7 @@ Czy aplikacja nie będzie skomplikowana w codziennym użyciu? Czy będzie dział
               </p>
               <p className="text-foreground/80 leading-relaxed mb-4">
                 Zespół N2Wash <strong className="text-foreground">w zaledwie trzy dni</strong> przeniósł 
-                bazę klientów i cennik do aplikacji. Armen, zamiast tracić czas na naukę systemu, 
-                otrzymał gotowe narzędzie, które od pierwszego dnia wyeliminowało błędy i puste przebiegi.
+                bazę klientów i cennik do aplikacji. Armen otrzymał gotowe narzędzie, które już od pierwszego dnia wyeliminowało błędy i ograniczyło puste przebiegi.
               </p>
               <p className="text-foreground/80 leading-relaxed">
                 <strong className="text-foreground">Koszt systemu okazał się inwestycją</strong>, która 
