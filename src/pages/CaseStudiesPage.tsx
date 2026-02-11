@@ -98,8 +98,9 @@ Armen, właściciel studia, zna swój fach jak mało kto. Jednak sukces w branż
               <img src={caseStudy2} alt="Kalendarz N2Wash na tablecie i telefonie w studiu detailingowym" className="w-full rounded-2xl mb-6" />
               
               <p className="text-foreground/80 leading-relaxed mb-4">
-                Decyzja o przejściu na w pełni cyfrowy system często wiąże się z obawą o skomplikowane wdrożenie. 
-                W przypadku Arm Car Detailing proces ten został skrócony do minimum.
+                Jak każdy właściciel biznesu, Armen miał wątpliwości przed podjęciem decyzji o zmianie systemu na w pełni cyfrowy.
+
+Czy aplikacja nie będzie skomplikowana w codziennym użyciu? Czy będzie działać sprawnie na telefonie? Czy pracownicy – przyzwyczajeni do zeszytu – przestawią się na nową technologię? Czy system będzie naprawdę dostosowany do specyfiki myjni i detailingu?
               </p>
               <p className="text-foreground/80 leading-relaxed mb-4">
                 Zespół N2Wash <strong className="text-foreground">w zaledwie trzy dni</strong> przeniósł 
@@ -255,6 +256,5 @@ Armen, właściciel studia, zna swój fach jak mało kto. Jednak sukces w branż
       </main>
       
       <Footer />
-    </div>;
-};
+    </div>;};
 export default CaseStudiesPage;
