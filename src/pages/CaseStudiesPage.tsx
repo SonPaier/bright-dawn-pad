@@ -66,12 +66,16 @@ Armen, właściciel studia, zna swój fach jak mało kto. Jednak sukces w branż
                 Każda rezerwacja wymagała fizycznej obecności właściciela przy zeszycie lub dziesiątek 
                 telefonów po godzinach pracy.
               </p>
-              <p className="text-foreground/80 leading-relaxed mb-6">
+              <p className="text-foreground/80 leading-relaxed mb-4">
                 Statystyki były nieubłagane: <strong className="text-foreground">co dziesiąty zapis 
                 kończył się pomyłką w terminach</strong>, a <strong className="text-foreground">5-10% 
-                klientów po prostu nie pojawiało się na wizycie</strong>. Armen pracował po 50 godzin 
-                tygodniowo, czując narastające zmęczenie ciągłą koniecznością bycia „pod telefonem" 
-                przez całą dobę.
+                klientów po prostu nie pojawiało się na wizycie</strong>.
+              </p>
+              <p className="text-foreground/80 leading-relaxed mb-4">
+                Nakładające się terminy, zgubione rezerwacje i nieczytelne, przekreślone wpisy w zeszycie były codziennością. Klienci twierdzili, że byli zapisani na inną godzinę niż ta w zeszycie, co prowadziło do konfliktów i utraty zaufania.
+              </p>
+              <p className="text-foreground/80 leading-relaxed mb-6">
+                Brak dostępu do kalendarza poza biurem (zeszyt nie był przecież mobilny) utrudniał szybkie zapisywanie klientów czy dokonywanie zmian. Armen pracował po 50 godzin tygodniowo, czując narastające zmęczenie ciągłą koniecznością bycia „pod telefonem" przez całą dobę.
               </p>
               
               <blockquote className="border-l-4 border-primary pl-6 py-2 my-6 bg-muted/30 rounded-r-lg">
