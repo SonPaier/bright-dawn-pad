@@ -48,10 +48,10 @@ const StatBox = ({
       <p className={cn("font-bold", sizeStyles[size].value, valueStyles[variant])}>
         {value}
       </p>
-      <p className={cn("mt-1 text-base text-secondary-foreground", sizeStyles[size].label)}>
+      <p className={cn("mt-1 text-lg text-secondary-foreground", sizeStyles[size].label)}>
         {label}
       </p>
-      {sublabel && <p className={cn("text-muted-foreground/70 mt-0.5 text-base", sizeStyles[size].label)}>
+      {sublabel && <p className={cn("mt-0.5 text-lg text-secondary-foreground", sizeStyles[size].label)}>
           {sublabel}
         </p>}
     </div>;
