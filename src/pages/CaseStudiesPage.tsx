@@ -145,9 +145,9 @@ Czy aplikacja nie będzie skomplikowana w codziennym użyciu? Czy będzie dział
 
               <strong className="text-foreground"> precyzyjną korektę cennika i wyższą rentowność</strong>.
               </p>
-              <p className="text-foreground/80 leading-relaxed mb-4">
-                Co więcej, Armen nie musi już prowadzić oddzielnych arkuszy czasu pracy, dzwonić do pracowników aby sprawdzić dostępność, ani zgadywać ile kto przepracował w miesiącu. Wszystko dostępne jest z poziomu aplikacji N2Wash.
-              </p>
+              
+
+
               <p className="text-foreground/80 leading-relaxed mb-6">
                 Najbardziej spektakularnym efektem była jednak <strong className="text-foreground">niemal 
                 całkowita eliminacja zjawiska „no-show"</strong> dzięki automatycznym przypomnieniom SMS 
@@ -157,10 +157,12 @@ Czy aplikacja nie będzie skomplikowana w codziennym użyciu? Czy będzie dział
               <img src={caseStudy3} alt="Protokół przyjęcia pojazdu i kalendarz rezerwacji N2Wash na tabletach" className="w-full rounded-2xl mb-6" />
               
               <p className="text-foreground/80 leading-relaxed mb-6">
-                Pracownicy zyskali autonomię – sami raportują postępy na tabletach, dodają dokumentację 
-                zdjęciową i wysyłają powiadomienia o odbiorze auta. Dzięki temu Armen może zarządzać 
-                studiem zdalnie, mając wgląd w każdą rezerwację i czas pracy zespołu bezpośrednio 
-                ze swojego telefonu, bez konieczności ciągłego dzwonienia do pracowników.
+                Pracownicy zyskali autonomię – sami raportują postępy na tabletach, dodają dokumentację zdjęciową i wysyłają powiadomienia o odbiorze auta. Dzięki temu Armen może zarządzać studiem zdalnie, mając wgląd w każdą rezerwację i czas pracy zespołu bezpośrednio ze swojego telefonu, bez konieczności ciągłego dzwonienia do pracowników.
+
+Co więcej, Armen nie musi już prowadzić oddzielnych arkuszy czasu pracy, dzwonić do pracowników aby sprawdzić dostępność, ani zgadywać ile kto przepracował w miesiącu. Wszystko dostępne jest z poziomu aplikacji N2Wash.
+
+
+
               </p>
               
               <blockquote className="border-l-4 border-primary pl-6 py-2 my-6 bg-background/50 rounded-r-lg">
@@ -255,5 +257,4 @@ Czy aplikacja nie będzie skomplikowana w codziennym użyciu? Czy będzie dział
       </main>
       
       <Footer />
-    </div>;};
-export default CaseStudiesPage;
+    </div>;};export default CaseStudiesPage;
