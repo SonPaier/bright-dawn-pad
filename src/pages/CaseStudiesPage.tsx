@@ -163,7 +163,7 @@ Czy aplikacja nie będzie skomplikowana w codziennym użyciu? Czy będzie dział
               <img src={caseStudy3} alt="Protokół przyjęcia pojazdu i kalendarz rezerwacji N2Wash na tabletach" className="w-full rounded-2xl mb-6" />
               
               <p className="text-foreground/80 leading-relaxed mb-6">
-                Pracownicy zyskali autonomię – sami raportują postępy na tabletach, dodają dokumentację zdjęciową i wysyłają powiadomienia o odbiorze auta. Dzięki temu Armen może zarządzać studiem zdalnie, mając wgląd w każdą rezerwację i czas pracy zespołu bezpośrednio ze swojego telefonu, bez konieczności ciągłego dzwonienia do pracowników.
+                <strong className="text-foreground">Pracownicy zyskali autonomię</strong> – sami raportują postępy na tabletach, dodają dokumentację zdjęciową i wysyłają powiadomienia o odbiorze auta. Dzięki temu Armen może zarządzać studiem zdalnie, mając wgląd w każdą rezerwację i czas pracy zespołu bezpośrednio ze swojego telefonu, bez konieczności ciągłego dzwonienia do pracowników.
 
 Co więcej, Armen nie musi już prowadzić oddzielnych arkuszy czasu pracy, dzwonić do pracowników aby sprawdzić dostępność, ani zgadywać ile kto przepracował w miesiącu. Wszystko dostępne jest z poziomu aplikacji N2Wash.
               </p>
