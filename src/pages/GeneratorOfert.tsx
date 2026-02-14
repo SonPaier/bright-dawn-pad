@@ -50,7 +50,7 @@ const GeneratorOfert = () => {
               Dlaczego profesjonalna oferta ma znaczenie?
             </h2>
             <p className="text-muted-foreground text-center max-w-3xl mx-auto text-lg mb-12">
-              [Placeholder: Opis wpływu profesjonalnej oferty na decyzje klienta - pierwsze wrażenie, budowanie zaufania, wyróżnienie się od konkurencji, wyższe ceny akceptowane przez klientów.]
+              Klient, który dostaje profesjonalną ofertę z logo Twojej firmy, wariantami cenowymi i czytelnym opisem usług – traktuje Cię poważniej. To buduje zaufanie i pozwala uzasadnić wyższe ceny. A Ty oszczędzasz czas, bo nie musisz liczyć wszystkiego na kartce.
             </p>
 
             <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -60,7 +60,7 @@ const GeneratorOfert = () => {
                 </div>
                 <h3 className="text-xl font-semibold text-foreground mb-2">5 minut</h3>
                 <p className="text-muted-foreground">
-                  [Placeholder: Czas potrzebny na stworzenie profesjonalnej oferty]
+                  Tyle zajmuje stworzenie rozbudowanej, profesjonalnej oferty z wariantami cenowymi i dodatkami.
                 </p>
               </div>
               <div className="text-center">
@@ -69,7 +69,7 @@ const GeneratorOfert = () => {
                 </div>
                 <h3 className="text-xl font-semibold text-foreground mb-2">+40% konwersji</h3>
                 <p className="text-muted-foreground">
-                  [Placeholder: Wzrost skuteczności dzięki profesjonalnym ofertom]
+                  Profesjonalnie wyglądająca oferta zwiększa szansę na domknięcie sprzedaży w porównaniu do wyceny „na oko".
                 </p>
               </div>
               <div className="text-center">
@@ -78,7 +78,7 @@ const GeneratorOfert = () => {
                 </div>
                 <h3 className="text-xl font-semibold text-foreground mb-2">Twój branding</h3>
                 <p className="text-muted-foreground">
-                  [Placeholder: Oferty z logo i kolorami Twojej firmy]
+                  Oferty z Twoim logo, kolorami firmowymi i danymi kontaktowymi – wyglądają jak od dużej firmy.
                 </p>
               </div>
             </div>
@@ -114,7 +114,7 @@ const GeneratorOfert = () => {
                         Szablony
                       </h3>
                       <p className="text-muted-foreground">
-                        [Placeholder: Opis szablonów ofert - gotowe szablony dla PPF, ceramic coating, korekty lakieru, detailingu wnętrza, możliwość tworzenia własnych szablonów.]
+                        Gotowe szablony dla PPF, powłok ceramicznych, korekty lakieru czy detailingu wnętrza. Możesz też tworzyć własne szablony dopasowane do Twojej oferty usługowej.
                       </p>
                     </div>
                   </div>
@@ -129,7 +129,7 @@ const GeneratorOfert = () => {
                         Usługi
                       </h3>
                       <p className="text-muted-foreground">
-                        [Placeholder: Opis dodawania usług - warianty cenowe (basic/standard/premium), dodatki opcjonalne, automatyczne kalkulacje, rabaty i promocje.]
+                        Dodawaj warianty cenowe (np. tańszy i droższy), opcjonalne dodatki i rabaty. System automatycznie kalkuluje ceny – koniec z ręcznym liczeniem na kartce.
                       </p>
                     </div>
                   </div>
@@ -167,7 +167,7 @@ const GeneratorOfert = () => {
                   Wyślij bezpośrednio z systemu
                 </h3>
                 <p className="text-muted-foreground text-sm">
-                  [Placeholder: Opis wysyłki - email z linkiem do oferty, personalizowana wiadomość, historia wysyłek.]
+                  Jednym kliknięciem wysyłasz ofertę do klienta prosto z aplikacji. Link do oferty trafia na email lub SMS – bez konieczności tworzenia PDF-ów.
                 </p>
               </div>
 
@@ -180,7 +180,7 @@ const GeneratorOfert = () => {
                   Klient ogląda ofertę w przeglądarce
                 </h3>
                 <p className="text-muted-foreground text-sm">
-                  [Placeholder: Opis widoku klienta - responsywny design, zdjęcia usług, przejrzysty układ, bez konieczności pobierania PDF.]
+                  Klient otwiera link i widzi ofertę dopasowaną do telefonu lub komputera. Przejrzysty układ, zdjęcia usług, opisy wariantów – bez pobierania plików.
                 </p>
               </div>
 
@@ -193,7 +193,7 @@ const GeneratorOfert = () => {
                   Branding Twojej firmy
                 </h3>
                 <p className="text-muted-foreground text-sm">
-                  [Placeholder: Opis brandingu - logo firmy, kolory firmowe, dane kontaktowe, profesjonalny wygląd.]
+                  Oferta z Twoim logo, kolorami firmowymi i danymi kontaktowymi. Profesjonalny wygląd, który buduje zaufanie klienta.
                 </p>
               </div>
 
@@ -206,7 +206,7 @@ const GeneratorOfert = () => {
                   Status: obejrzana
                 </h3>
                 <p className="text-muted-foreground text-sm">
-                  [Placeholder: Opis śledzenia - powiadomienie gdy klient otworzy ofertę, statystyki wyświetleń, czas spędzony na ofercie.]
+                  Wiesz, czy i kiedy klient otworzył ofertę. Dzięki temu wiesz, kiedy zadzwonić i dopytać – zwiększasz skuteczność sprzedaży.
                 </p>
               </div>
             </div>
@@ -244,7 +244,7 @@ const GeneratorOfert = () => {
                   Integracja z widgetem do ofertowania na Twojej stronie
                 </h2>
                 <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                  [Placeholder: Opis widgetu - klienci mogą sami wybrać usługi i otrzymać wstępną wycenę, formularz kontaktowy z danymi pojazdu, automatyczne tworzenie leada w CRM, oszczędność czasu na rozmowy telefoniczne.]
+                  Osadź widget na swojej stronie WWW, by klienci mogli sami wybrać interesujące ich usługi i otrzymać wstępną wycenę. Formularz zbiera dane pojazdu i automatycznie tworzy zapytanie w Twoim CRM – oszczędzasz czas na rozmowy telefoniczne.
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-center gap-3">
