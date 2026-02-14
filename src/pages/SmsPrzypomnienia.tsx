@@ -50,7 +50,7 @@ const SmsPrzypomnienia = () => {
               Problem no-show w branży automotive
             </h2>
             <p className="text-muted-foreground text-center max-w-3xl mx-auto text-lg mb-12">
-              [Placeholder: Opis problemu no-show - ile rezerwacji przepada, koszt pustego stanowiska, frustracja zespołu, utracone przychody, wpływ na planowanie dnia.]
+              Nawet 15-25% rezerwacji w myjniach i studiach detailingu nie dochodzi do skutku. Puste stanowisko to utracone przychody i zmarnowany czas zespołu. Automatyczne przypomnienia SMS rozwiązują ten problem – klient pamięta o wizycie, a Ty nie musisz do niego dzwonić.
             </p>
 
             <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 max-w-5xl mx-auto">
@@ -63,15 +63,15 @@ const SmsPrzypomnienia = () => {
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-2">
                       <span className="text-destructive font-bold">✕</span>
-                      <span>[Placeholder: 15-25% rezerwacji nie dochodzi do skutku]</span>
+                      <span>15-25% rezerwacji nie dochodzi do skutku</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-destructive font-bold">✕</span>
-                      <span>[Placeholder: Puste stanowiska = utracone przychody]</span>
+                      <span>Puste stanowiska = utracone przychody</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-destructive font-bold">✕</span>
-                      <span>[Placeholder: Ręczne dzwonienie do klientów]</span>
+                      <span>Ręczne dzwonienie do klientów zabiera czas</span>
                     </li>
                   </ul>
                 </div>
@@ -85,15 +85,15 @@ const SmsPrzypomnienia = () => {
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-2">
                       <span className="text-primary font-bold">✓</span>
-                      <span>[Placeholder: Tylko 3-5% no-show]</span>
+                      <span>Tylko 3-5% no-show dzięki przypomnieniom</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-primary font-bold">✓</span>
-                      <span>[Placeholder: Automatyczne przypomnienia]</span>
+                      <span>Automatyczne przypomnienia bez Twojego udziału</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-primary font-bold">✓</span>
-                      <span>[Placeholder: Więcej czasu na obsługę klientów]</span>
+                      <span>Więcej czasu na obsługę klientów na hali</span>
                     </li>
                   </ul>
                 </div>
@@ -121,7 +121,7 @@ const SmsPrzypomnienia = () => {
                       Potwierdzenie rezerwacji
                     </h3>
                     <p className="text-muted-foreground mb-4">
-                      [Placeholder: Opis SMS potwierdzenia - wysyłany natychmiast po rezerwacji, data, godzina, adres, możliwość anulowania.]
+                      Wysyłany automatycznie zaraz po utworzeniu rezerwacji. Klient dostaje datę, godzinę, adres i możliwość odwołania wizyty jednym SMS-em.
                     </p>
                     <div className="bg-muted rounded-lg p-4 text-sm">
                       <p className="text-muted-foreground italic">
@@ -143,7 +143,7 @@ const SmsPrzypomnienia = () => {
                       Przypomnienie 24h i 1h przed wizytą
                     </h3>
                     <p className="text-muted-foreground mb-4">
-                      [Placeholder: Opis przypomnień - automatyczne wysyłanie, konfigurowalny czas, personalizacja treści.]
+                      System sam wysyła przypomnienie 24h i opcjonalnie 1h przed wizytą. Ty konfigurujesz czas i treść wiadomości – reszta dzieje się automatycznie.
                     </p>
                     <div className="bg-muted rounded-lg p-4 text-sm">
                       <p className="text-muted-foreground italic">
@@ -165,7 +165,7 @@ const SmsPrzypomnienia = () => {
                       Informacja o gotowym pojeździe
                     </h3>
                     <p className="text-muted-foreground mb-4">
-                      [Placeholder: Opis SMS o gotowości - wysyłany po zakończeniu usługi, informacja o odbiorze, godziny otwarcia.]
+                      Po zakończeniu usługi wysyłasz klientowi SMS o gotowości pojazdu do odbioru – z godziną zamknięcia i adresem. Jedno kliknięcie w aplikacji.
                     </p>
                     <div className="bg-muted rounded-lg p-4 text-sm">
                       <p className="text-muted-foreground italic">
@@ -187,7 +187,7 @@ const SmsPrzypomnienia = () => {
                       Przypomnienie o odświeżeniu powłoki i serwisach
                     </h3>
                     <p className="text-muted-foreground mb-4">
-                      [Placeholder: Opis przypomnień serwisowych - automatyczne po X miesiącach, przeglądy ceramiki, PPF, odświeżenie wosku.]
+                      System pamięta o klientach po usługach premium. W odpowiednich cyklach (np. co 6 miesięcy) sam wyśle zaproszenie na płatny przegląd powłoki ceramicznej czy serwis folii PPF – to stały, łatwy dochód.
                     </p>
                     <div className="bg-muted rounded-lg p-4 text-sm">
                       <p className="text-muted-foreground italic">
@@ -211,7 +211,7 @@ const SmsPrzypomnienia = () => {
                   </h3>
                 </div>
                 <p className="text-muted-foreground">
-                  [Placeholder: Opis powiązania SMS z usługami - każda usługa może mieć swój szablon SMS, różne przypomnienia dla różnych typów usług (mycie vs detailing), automatyczne dopasowanie treści do kontekstu.]
+                  Każda usługa w Twoim cenniku może mieć własny szablon SMS. Inne przypomnienie dostanie klient umówiony na mycie, a inne na wielodniowy detailing. Treść automatycznie dopasowuje się do kontekstu rezerwacji.
                 </p>
               </div>
             </div>
@@ -238,7 +238,7 @@ const SmsPrzypomnienia = () => {
                   mniej no-show dzięki przypomnieniom
                 </h4>
                 <p className="text-muted-foreground">
-                  [Placeholder: Szczegóły statystyki - badania branżowe, doświadczenia klientów N2Wash, porównanie przed/po wdrożeniu.]
+                  Klienci korzystający z automatycznych przypomnień SMS w N2Wash odnotowują drastyczny spadek nieobecności – z kilkunastu procent do zaledwie kilku.
                 </p>
               </div>
 
@@ -254,7 +254,7 @@ const SmsPrzypomnienia = () => {
                   większy zysk z usług premium
                 </h4>
                 <p className="text-muted-foreground">
-                  [Placeholder: Szczegóły statystyki - przychody z przeglądów powłok, powracający klienci, wartość życiowa klienta.]
+                  Automatyczne przypomnienia o przeglądach powłok i serwisach PPF generują stały dochód z powracających klientów. Odświeżanie powłoki to szybka i łatwa usługa – wystarczy, że klient o niej przypomni sobie dzięki SMS.
                 </p>
               </div>
             </div>
@@ -285,7 +285,7 @@ const SmsPrzypomnienia = () => {
                 </div>
 
                 <p className="text-muted-foreground mb-8">
-                  [Placeholder: Opis pakietu SMS - co wliczone w cenę, typy wiadomości, brak ukrytych opłat, statystyki wykorzystania w panelu.]
+                  W każdym pakiecie (Myjnia i Detailing) dostajesz 100 SMS-ów miesięcznie bez dodatkowych opłat. Wykorzystujesz je na potwierdzenia, przypomnienia i powiadomienia o gotowości pojazdu. W panelu widzisz ile SMS-ów zostało.
                 </p>
 
                 <div className="border-t border-border pt-8">
@@ -293,7 +293,7 @@ const SmsPrzypomnienia = () => {
                     Co dalej? Dokup pakiety SMS
                   </h4>
                   <p className="text-muted-foreground mb-6">
-                    [Placeholder: Opis dokupowania pakietów - elastyczne pakiety (100, 500, 1000 SMS), atrakcyjne ceny hurtowe, automatyczne doładowanie, powiadomienia o niskim stanie.]
+                    Potrzebujesz więcej? Dokup elastyczne pakiety SMS w atrakcyjnych cenach hurtowych. Możesz też włączyć automatyczne doładowanie – system sam uzupełni pulę, gdy się wyczerpie.
                   </p>
                   
                   <div className="grid sm:grid-cols-3 gap-4">
