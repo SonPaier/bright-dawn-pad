@@ -233,7 +233,7 @@ const CrmDetailing = () => {
 
                 </h3>
               </div>
-              <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl">Dzięki historii rezerwacji Klienta, znasz jego nawyki. System
+              <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl">Dzięki historii rezerwacji Klienta, znasz jego nawyki. System automatycznie podpowiada dodatkowe usługi do zaproponowania Klientowi, na podstawie jego poprzednich rezerwacji.
 
               </p>
             </div>
