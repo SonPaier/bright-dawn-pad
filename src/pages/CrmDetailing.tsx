@@ -77,7 +77,7 @@ const CrmDetailing = () => {
                     <h3 className="text-xl font-semibold text-foreground mb-3">Wielodniowe zlecenia
 
                     </h3>
-                    <p className="text-muted-foreground">Usługi car-detailing jak położenie powłoki ceramicznej czy folii PPF to najczęściej praca od 2 do 5 dni. Dobry kalendarz dla studia detailingu, pozwała szybko dodawacć iwielodniowe rezerwacje.
+                    <p className="text-muted-foreground">Usługi car-detailing jak położenie powłoki ceramicznej czy folii PPF to najczęściej praca od 2 do 5 dni. Dobry kalendarz dla studia detailingu, pozwaa szybko dodawać wielodniowe rezerwacje.
 
                     </p>
                   </div>
@@ -94,8 +94,8 @@ const CrmDetailing = () => {
                     <h3 className="text-xl font-semibold text-foreground mb-3">
                       Złożone oferty z wariantami cenowymi
                     </h3>
-                    <p className="text-muted-foreground">
-                      [Placeholder: Problem tworzenia profesjonalnych ofert - różne warianty (basic/standard/premium), opcje dodatkowe, rabaty, długi czas na ręczne przygotowanie.]
+                    <p className="text-muted-foreground">Klient często prosi o ofertę PPF Full body oraz na PPF Full Front plus Powłoka ceramiczna na resztę karoserii. Przygotowanie dobrze opisanej i rozbudowanej oferty jest czasochłonne.
+
                     </p>
                   </div>
                 </div>
@@ -111,8 +111,8 @@ const CrmDetailing = () => {
                     <h3 className="text-xl font-semibold text-foreground mb-3">
                       Protokoły przyjęcia pojazdu ze zdjęciami
                     </h3>
-                    <p className="text-muted-foreground">
-                      [Placeholder: Konieczność dokumentowania stanu pojazdu przed pracą - istniejące uszkodzenia, rysy, odpryski, ochrona przed reklamacjami.]
+                    <p className="text-muted-foreground">Protokół przyjęcia samochodu jest na złe czasy. Stan licznika, zdjęcia samochodu, podpis Klienta - wszystko to chroni Twoje studio przed nieprzewidzianymi sytuacjami.
+
                     </p>
                   </div>
                 </div>
@@ -128,8 +128,8 @@ const CrmDetailing = () => {
                     <h3 className="text-xl font-semibold text-foreground mb-3">
                       Przypomnienia o przeglądach powłoki ceramicznej
                     </h3>
-                    <p className="text-muted-foreground">
-                      [Placeholder: Utracone przychody z przeglądów - klienci zapominają o terminach, brak systemu follow-up, konkurencja przejmuje klientów.]
+                    <p className="text-muted-foreground">Przypomnienia SMS o odświeżeniu powłoki ceramicznej, to skuteczna strategia na stały dochód. Jednak bez dobrego harmonogramu przypomnień SMS nie jest to łatwe zadanie.
+
                     </p>
                   </div>
                 </div>
