@@ -50,7 +50,7 @@ const KalendarzRezerwacji = () => {
               Jak działa kalendarz rezerwacji N2Wash?
             </h2>
             <p className="text-muted-foreground text-center max-w-3xl mx-auto text-lg mb-12">
-              [Placeholder: Ogólny opis działania kalendarza - intuicyjny interfejs, szybkie dodawanie rezerwacji, widok na żywo dla całego zespołu, synchronizacja w czasie rzeczywistym.]
+              Intuicyjny interfejs, który łączy grafik z bazą klientów. Każda rezerwacja jest połączona z profilem klienta – historia wizyt, numery telefonów i pojazdy dostępne jednym kliknięciem. Zmiany widoczne w czasie rzeczywistym dla całego zespołu.
             </p>
 
             {/* Placeholder for screenshot/video */}
@@ -83,7 +83,7 @@ const KalendarzRezerwacji = () => {
                   Widok dzienny
                 </h3>
                 <p className="text-muted-foreground">
-                  [Placeholder: Szczegółowy widok jednego dnia - podział na godziny, wszystkie stanowiska obok siebie, łatwe przenoszenie rezerwacji.]
+                  Szczegółowy podział na godziny z wszystkimi stanowiskami obok siebie. Widzisz obłożenie całego dnia na jednym ekranie i szybko łapiesz wolne sloty.
                 </p>
               </div>
 
@@ -96,7 +96,7 @@ const KalendarzRezerwacji = () => {
                   Widok tygodniowy
                 </h3>
                 <p className="text-muted-foreground">
-                  [Placeholder: Przegląd całego tygodnia - planowanie z wyprzedzeniem, identyfikacja wolnych terminów, optymalizacja grafiku.]
+                  Przegląd całego tygodnia pozwala planować z wyprzedzeniem. Szybko identyfikujesz wolne terminy i optymalizujesz grafik, by nie było „dziur" między rezerwacjami.
                 </p>
               </div>
 
@@ -109,7 +109,7 @@ const KalendarzRezerwacji = () => {
                   Widok stanowisk
                 </h3>
                 <p className="text-muted-foreground">
-                  [Placeholder: Podział na stanowiska pracy - każde stanowisko jako osobna kolumna, kolorowe oznaczenia usług, jasna organizacja.]
+                  Każde stanowisko jako osobna kolumna z kolorowymi oznaczeniami usług. Pracownicy widzą zmiany w czasie rzeczywistym – koniec z bieganiem do biura po informacje.
                 </p>
               </div>
             </div>
@@ -134,7 +134,7 @@ const KalendarzRezerwacji = () => {
                   Wygodna edycja
                 </h2>
                 <p className="text-muted-foreground text-lg leading-relaxed">
-                  [Placeholder: Opis funkcji edycji - drag & drop przenoszenie rezerwacji, szybka zmiana godziny, zmiana stanowiska, edycja szczegółów jednym kliknięciem, historia zmian.]
+                  Przenoś rezerwacje między stanowiskami i godzinami jednym ruchem. Klikasz w rezerwację – edytujesz szczegóły, dzwonisz do klienta prosto z aplikacji albo zmieniasz status. Czas usługi automatycznie dostosowany do rozmiaru auta, więc koniec z nakładającymi się terminami.
                 </p>
               </div>
             </div>
@@ -150,7 +150,7 @@ const KalendarzRezerwacji = () => {
                   Rezerwacje wielodniowe
                 </h2>
                 <p className="text-muted-foreground text-lg leading-relaxed">
-                  [Placeholder: Opis rezerwacji wielodniowych - idealne dla detailingu (PPF, ceramic coating), automatyczne blokowanie stanowiska na kilka dni, wizualizacja postępu pracy, informowanie klienta o statusie.]
+                  Idealne dla studiów detailingu – usługi takie jak położenie folii PPF czy powłoki ceramicznej to praca od 2 do 5 dni. Kalendarz pozwala szybko dodać rezerwację wielodniową, automatycznie blokuje stanowisko i pokazuje postęp prac w przejrzystym widoku.
                 </p>
               </div>
               <div className="flex-1 order-1 lg:order-2">
@@ -185,7 +185,7 @@ const KalendarzRezerwacji = () => {
                       Blokowanie godzin lub całych dni
                     </h3>
                     <p className="text-muted-foreground">
-                      [Placeholder: Opis blokowania - przerwy techniczne, dni wolne, święta, konserwacje sprzętu, szkolenia, automatyczne blokowanie rezerwacji online.]
+                      Jednym kliknięciem blokujesz godziny na przerwę techniczną, konserwację sprzętu czy szkolenie zespołu. Zablokowane terminy automatycznie znikają z kalendarza rezerwacji online.
                     </p>
                   </div>
                 </div>
@@ -202,7 +202,7 @@ const KalendarzRezerwacji = () => {
                       Urlopy pracowników
                     </h3>
                     <p className="text-muted-foreground">
-                      [Placeholder: Opis zarządzania urlopami - planowanie nieobecności, automatyczne przekierowanie rezerwacji, powiadomienia dla managera, widok dostępności zespołu.]
+                      Planuj nieobecności zespołu bezpośrednio w kalendarzu. System uwzględnia dostępność załogi przy planowaniu grafiku, byś zawsze miał właściwe osoby w odpowiednim czasie.
                     </p>
                   </div>
                 </div>
@@ -229,7 +229,7 @@ const KalendarzRezerwacji = () => {
                   </h3>
                 </div>
                 <p className="text-muted-foreground text-lg leading-relaxed">
-                  [Placeholder: Opis widgetu rezerwacji online - osadzenie na stronie WWW, wybór usługi i terminu, automatyczne dodawanie do kalendarza, bez telefonów i wiadomości.]
+                  Zewnętrzny kalendarz osadzony na Twojej stronie WWW pozwala klientom bookować terminy bez zakładania konta – Ty tylko je potwierdzasz. Każda rezerwacja online to o jeden telefon mniej. Klienci rezerwują wtedy, gdy o tym myślą – często wieczorami lub w weekendy.
                 </p>
               </div>
               <div className="flex-1">
@@ -263,7 +263,7 @@ const KalendarzRezerwacji = () => {
                   </h3>
                 </div>
                 <p className="text-muted-foreground text-lg leading-relaxed">
-                  [Placeholder: Opis automatycznych SMS - potwierdzenie rezerwacji, przypomnienia 24h i 1h przed wizytą, możliwość odpowiedzi przez klienta, statystyki dostarczenia.]
+                  SMS-y o nadchodzących wizytach redukują liczbę klientów, którzy nie przyjeżdżają. Potwierdzenie rezerwacji, przypomnienie 24h przed wizytą – wszystko automatycznie. Klient może zmienić lub odwołać wizytę dwoma kliknięciami.
                 </p>
               </div>
             </div>
