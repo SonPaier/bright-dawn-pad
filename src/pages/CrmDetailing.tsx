@@ -324,26 +324,14 @@ const CrmDetailing = () => {
             </p>
 
             <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-              <a href="https://demo.n2wash.com/offers/cbqwwa2l" target="_blank" rel="noopener noreferrer" className="bg-muted rounded-2xl aspect-[3/4] flex items-center justify-center border border-border hover:border-primary hover:shadow-md transition-all cursor-pointer">
-                <div className="text-center p-6">
-                  <FileText className="w-12 h-12 text-muted-foreground/50 mx-auto mb-3" />
-                  <p className="text-muted-foreground font-medium text-sm">Oferta PPF</p>
-                  <p className="text-xs text-muted-foreground/70">Przykład oferty na folię ochronną</p>
-                </div>
+              <a href="https://demo.n2wash.com/offers/cbqwwa2l" target="_blank" rel="noopener noreferrer" className="bg-muted rounded-2xl aspect-[4/1] flex items-center justify-center border border-border hover:border-primary hover:shadow-md transition-all cursor-pointer">
+                <p className="text-muted-foreground font-medium text-sm">Przykładowa oferta nr 1 na usługi car detailingu</p>
               </a>
-              <a href="https://demo.n2wash.com/offers/fui6o14o" target="_blank" rel="noopener noreferrer" className="bg-muted rounded-2xl aspect-[3/4] flex items-center justify-center border border-border hover:border-primary hover:shadow-md transition-all cursor-pointer">
-                <div className="text-center p-6">
-                  <FileText className="w-12 h-12 text-muted-foreground/50 mx-auto mb-3" />
-                  <p className="text-muted-foreground font-medium text-sm">Oferta Ceramic</p>
-                  <p className="text-xs text-muted-foreground/70">Przykład oferty na powłokę ceramiczną</p>
-                </div>
+              <a href="https://demo.n2wash.com/offers/fui6o14o" target="_blank" rel="noopener noreferrer" className="bg-muted rounded-2xl aspect-[4/1] flex items-center justify-center border border-border hover:border-primary hover:shadow-md transition-all cursor-pointer">
+                <p className="text-muted-foreground font-medium text-sm">Przykładowa oferta nr 2 na usługi car detailingu</p>
               </a>
-              <a href="https://demo.n2wash.com/offers/opl7z9zt" target="_blank" rel="noopener noreferrer" className="bg-muted rounded-2xl aspect-[3/4] flex items-center justify-center border border-border hover:border-primary hover:shadow-md transition-all cursor-pointer">
-                <div className="text-center p-6">
-                  <FileText className="w-12 h-12 text-muted-foreground/50 mx-auto mb-3" />
-                  <p className="text-muted-foreground font-medium text-sm">Oferta Korekta</p>
-                  <p className="text-xs text-muted-foreground/70">Przykład oferty na korektę lakieru</p>
-                </div>
+              <a href="https://demo.n2wash.com/offers/opl7z9zt" target="_blank" rel="noopener noreferrer" className="bg-muted rounded-2xl aspect-[4/1] flex items-center justify-center border border-border hover:border-primary hover:shadow-md transition-all cursor-pointer">
+                <p className="text-muted-foreground font-medium text-sm">Przykładowa oferta nr 3 na usługi car detailingu</p>
               </a>
             </div>
           </div>
