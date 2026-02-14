@@ -173,7 +173,7 @@ const CrmMyjnia = () => {
                     Automatyczne SMS przypomnienia
                   </h3>
                 </div>
-                <p className="text-muted-foreground text-lg leading-relaxed">System sam wyśle SMS-a do klienta dzień wcześniej i godzinę przed myciem. Koniec z „zapominalskimi” i pustymi stanowiskami. Ty pracujesz, a telefon pilnuje Twoich pieniędzy.</p>
+                <p className="text-muted-foreground text-lg leading-relaxed">System sam wyśle SMS-a danymi wizyty i nazwą Twojej myjni do klienta dzień wcześniej i godziny przed myciem. Koniec z „zapominalskimi” i pustymi stanowiskami. Ty pracujesz, a telefon pilnuje Twoich pieniędzy. </p>
               </div>
               <div className="flex-1 order-1 lg:order-2">
                 <div className="bg-muted rounded-2xl overflow-hidden border border-border flex items-center justify-center p-4">
