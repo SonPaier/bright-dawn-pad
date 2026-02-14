@@ -50,11 +50,11 @@ const CrmDetailing = () => {
         {/* What's Different Section */}
         <section className="py-16 md:py-20 border-b border-border">
           <div className="container mx-auto px-4">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground text-center mb-6">
-              Czym różni się CRM dla detailingu od zwykłego CRM?
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground text-center mb-6">Czym różni się CRM dla studia detailingu od zwykłego CRM?
+
             </h2>
-            <p className="text-muted-foreground text-center max-w-3xl mx-auto text-lg">
-              [Placeholder: Opis różnic między standardowym CRM a dedykowanym dla detailingu - wielodniowe zlecenia, złożone wyceny, dokumentacja fotograficzna, cykl życia powłoki.]
+            <p className="text-muted-foreground text-center max-w-3xl mx-auto text-lg">CRM dla studia detailingu przede wszystkim jest dostosowany do specyfiki branży. Obsługa wielu pojazdów jednego klienta, generowanie wielo-wariantowych ofert na usługi car detailing czy prosty widok CRM na telefonie. Ale różnic jest znacznie więcej!
+
             </p>
           </div>
         </section>
@@ -74,11 +74,11 @@ const CrmDetailing = () => {
                     <Clock className="w-6 h-6 text-amber-600" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-foreground mb-3">
-                      Wielodniowe zlecenia (PPF, ceramic coating)
+                    <h3 className="text-xl font-semibold text-foreground mb-3">Wielodniowe zlecenia
+
                     </h3>
-                    <p className="text-muted-foreground">
-                      [Placeholder: Opis problemu z rezerwacjami na kilka dni - blokowanie stanowiska, planowanie etapów pracy, informowanie klienta o postępach.]
+                    <p className="text-muted-foreground">Usługi car-detailing jak położenie powłoki ceramicznej czy folii PPF to najczęściej praca od 2 do 5 dni. Dobry kalendarz dla studia detailingu, pozwała szybko dodawacć iwielodniowe rezerwacje.
+
                     </p>
                   </div>
                 </div>
