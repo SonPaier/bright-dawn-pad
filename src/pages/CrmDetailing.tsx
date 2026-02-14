@@ -152,12 +152,12 @@ const CrmDetailing = () => {
                   <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                     <Palette className="w-5 h-5 text-primary" />
                   </div>
-                  <h3 className="text-xl md:text-2xl font-semibold text-foreground">
-                    Generator ofert z wariantami (basic/standard/premium)
+                  <h3 className="text-xl md:text-2xl font-semibold text-foreground">Generator ofert z wariantami
+
                   </h3>
                 </div>
-                <p className="text-muted-foreground text-lg leading-relaxed">
-                  [Placeholder: Opis generatora ofert - szablony dla PPF, ceramic coating, korekty lakieru, warianty cenowe, opcje dodatkowe, automatyczne wyliczanie cen, eksport do PDF.]
+                <p className="text-muted-foreground text-lg leading-relaxed">Znasz ten ból gdy Klient prosi o ofertę na PPF Full Body + PPF Full Front + Ceramika na resztę karoserii? a najlepiej w wersji tańszej i droższej? Z generatorem ofert N2Wash, przygotowanie takiej oferty, to 3 minuty. Dodatkowo, oferta ma profesjonalny wygląd, podkreśla atuty Twojego studia i jest natychmiastowo wysłana do Klienta, prosto z aplikacji.
+
                 </p>
               </div>
               <div className="flex-1 order-1 lg:order-2">
@@ -191,8 +191,8 @@ const CrmDetailing = () => {
                     Protokół przyjęcia z diagramem uszkodzeń
                   </h3>
                 </div>
-                <p className="text-muted-foreground text-lg leading-relaxed">
-                  [Placeholder: Opis protokołu przyjęcia - interaktywny diagram pojazdu, zaznaczanie uszkodzeń, zdjęcia przed/po, podpis cyfrowy klienta, automatyczne generowanie PDF.]
+                <p className="text-muted-foreground text-lg leading-relaxed">Aplikacja N2Wash pozwala Ci szybko tworzyć protokoły przyjęcia i odbioru samochodu. Koniec z papierem. Protokół jest powiązany z rezerwacją w kalendarzu i automatycznie wysłany do Klienta po wykonaniu. Wszystko zrobisz za pomocą paru kliknięć w telefonie.
+
                 </p>
               </div>
             </div>
@@ -208,8 +208,8 @@ const CrmDetailing = () => {
                     Automatyczne przypomnienia o serwisach
                   </h3>
                 </div>
-                <p className="text-muted-foreground text-lg leading-relaxed">
-                  [Placeholder: Opis systemu przypomnień - automatyczne SMS przed końcem gwarancji, przypomnienie o przeglądzie ceramiki, personalizacja terminów, statystyki konwersji.]
+                <p className="text-muted-foreground text-lg leading-relaxed">Odświeżanie powłok ceramicznych czy serwis folii PPF to szybki, stały i łatwy dochód. System N2Wash śledzi Twoje realizacje, sam planuje przypomnienia wg Twojego harmonogramu i w odpowiednich cyklach, wysyła do Klienta zaproszenie na usługę.
+
                 </p>
               </div>
               <div className="flex-1 order-1 lg:order-2">
@@ -229,12 +229,12 @@ const CrmDetailing = () => {
                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                   <TrendingUp className="w-5 h-5 text-primary" />
                 </div>
-                <h3 className="text-xl md:text-2xl font-semibold text-foreground">
-                  Wsparcie sprzedaży (upsell usług dodatkowych)
+                <h3 className="text-xl md:text-2xl font-semibold text-foreground">Wsparcie sprzedaży
+
                 </h3>
               </div>
-              <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl">
-                [Placeholder: Opis funkcji upsellingu - sugestie dodatkowych usług przy ofercie, pakiety promocyjne, historia zakupów klienta, automatyczne propozycje na podstawie pojazdu.]
+              <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl">Dzięki historii rezerwacji Klienta, znasz jego nawyki. System
+
               </p>
             </div>
           </div>
