@@ -270,35 +270,35 @@ const CrmDetailing = () => {
                 <div className="grid md:grid-cols-2 gap-4 mb-8">
                   <div className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
-                    <span className="text-foreground">Wszystko z planu Myjnia</span>
+                    <span className="text-foreground">Generator ofert</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
-                    <span className="text-foreground">Generator ofert detailingowych</span>
+                    <span className="text-foreground">prosty kalendarz działający dobrze na telefonie</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
-                    <span className="text-foreground">Protokoły przyjęcia ze zdjęciami</span>
+                    <span className="text-foreground">Protokoły przyjęcia samochodów ze zdjęciami</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
-                    <span className="text-foreground">Diagram uszkodzeń pojazdu</span>
+                    <span className="text-foreground">przypomnienia SMS o wizytach dla Klientów</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
-                    <span className="text-foreground">Przypomnienia o przeglądach</span>
+                    <span className="text-foreground">Przypomnienia SMS o odświeżaniu powłok</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
-                    <span className="text-foreground">Wsparcie upsellingu</span>
+                    <span className="text-foreground">Wsparcie sprzedaży</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
-                    <span className="text-foreground">Podpis cyfrowy klienta</span>
+                    <span className="text-foreground">Raportowanie czasu przez pracowników</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
-                    <span className="text-foreground">Eksport ofert do PDF</span>
+                    <span className="text-foreground">Formularz na Twoją stronę do zbierania zapytań na folie PPF i powłoki ceramiczne czy elastomerowe</span>
                   </div>
                 </div>
 
@@ -319,8 +319,8 @@ const CrmDetailing = () => {
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground text-center mb-6">
               Przykłady ofert stworzonych w N2Wash
             </h2>
-            <p className="text-muted-foreground text-center max-w-3xl mx-auto text-lg mb-12">
-              [Placeholder: Wprowadzenie do galerii przykładowych ofert - różne typy usług, warianty cenowe, profesjonalny wygląd.]
+            <p className="text-muted-foreground text-center max-w-3xl mx-auto text-lg mb-12">Zobacz, jak wyglądają oferty stworzone w naszej aplikacji. Dodatkowo, wiesz czy i kiedy Klient obejrzał ofertę.
+
             </p>
 
             <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
