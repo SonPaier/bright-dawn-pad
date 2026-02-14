@@ -1,9 +1,12 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Calendar, Users, MessageSquare, BarChart3, Monitor, Smartphone, Clock, Car } from "lucide-react";
+import { Calendar, Users, MessageSquare, BarChart3, Monitor, Clock, Car } from "lucide-react";
 import Header from "@/components/landing/Header";
 import Footer from "@/components/landing/Footer";
 import { Button } from "@/components/ui/button";
+import kalendarzMobile from "@/assets/crm-kalendarz-mobile.png";
+import widokHala from "@/assets/crm-widok-hala.jpg";
+import smsPrzypomnienie from "@/assets/crm-sms-przypomnienie.jpg";
 const CrmMyjnia = () => {
   useEffect(() => {
     // Update meta description for SEO
@@ -133,12 +136,8 @@ const CrmMyjnia = () => {
                 <p className="text-muted-foreground text-lg leading-relaxed">Widzisz wszystkie stanowiska na jednym ekranie. Od razu wiesz, gdzie jest wolne. Koniec z bazgraniem w zeszycie i nakładaniem się aut.</p>
               </div>
               <div className="flex-1 order-1 lg:order-2">
-                <div className="bg-muted rounded-2xl aspect-[4/3] flex items-center justify-center border border-border">
-                  <div className="text-center p-8">
-                    <Calendar className="w-16 h-16 text-muted-foreground/50 mx-auto mb-4" />
-                    <p className="text-muted-foreground font-medium">kalendarz-stanowiska-myjni.jpg</p>
-                    <p className="text-sm text-muted-foreground/70">Kalendarz z podziałem na stanowiska myjni</p>
-                  </div>
+                <div className="bg-muted rounded-2xl overflow-hidden border border-border flex items-center justify-center p-4">
+                  <img src={kalendarzMobile} alt="Kalendarz rezerwacji myjni na telefonie z podziałem na stanowiska" className="max-h-[500px] w-auto rounded-xl" loading="lazy" />
                 </div>
               </div>
             </div>
@@ -146,12 +145,8 @@ const CrmMyjnia = () => {
             {/* Solution 2 - Image Left */}
             <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 mb-16 lg:mb-20">
               <div className="flex-1">
-                <div className="bg-muted rounded-2xl aspect-[4/3] flex items-center justify-center border border-border">
-                  <div className="text-center p-8">
-                    <Monitor className="w-16 h-16 text-muted-foreground/50 mx-auto mb-4" />
-                    <p className="text-muted-foreground font-medium">widok-ekranu-hala.jpg</p>
-                    <p className="text-sm text-muted-foreground/70">Widok ekranu dla pracowników na hali</p>
-                  </div>
+                <div className="rounded-2xl overflow-hidden border border-border">
+                  <img src={widokHala} alt="Pracownicy myjni korzystający z tabletu na hali" className="w-full h-auto object-cover aspect-[4/3]" loading="lazy" />
                 </div>
               </div>
               <div className="flex-1">
@@ -181,12 +176,8 @@ const CrmMyjnia = () => {
                 <p className="text-muted-foreground text-lg leading-relaxed">System sam wyśle SMS-a do klienta dzień wcześniej i godzinę przed myciem. Koniec z „zapominalskimi” i pustymi stanowiskami. Ty pracujesz, a telefon pilnuje Twoich pieniędzy.</p>
               </div>
               <div className="flex-1 order-1 lg:order-2">
-                <div className="bg-muted rounded-2xl aspect-[4/3] flex items-center justify-center border border-border">
-                  <div className="text-center p-8">
-                    <Smartphone className="w-16 h-16 text-muted-foreground/50 mx-auto mb-4" />
-                    <p className="text-muted-foreground font-medium">wlasciciel-myjni-telefon.jpg</p>
-                    <p className="text-sm text-muted-foreground/70">Właściciel myjni zarządzający przez telefon</p>
-                  </div>
+                <div className="bg-muted rounded-2xl overflow-hidden border border-border flex items-center justify-center p-4">
+                  <img src={smsPrzypomnienie} alt="SMS przypomnienie o wizycie w myjni z systemu N2Wash" className="max-h-[500px] w-auto rounded-xl" loading="lazy" />
                 </div>
               </div>
             </div>
