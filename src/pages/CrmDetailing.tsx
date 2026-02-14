@@ -24,19 +24,19 @@ const CrmDetailing = () => {
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-primary via-primary/90 to-sky-900 text-white py-32 md:py-48">
           <div className="container mx-auto px-4">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold max-w-4xl leading-tight">
-              CRM dla Studia Detailingu – System Rezerwacji i Ofert Detailingowych
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold max-w-4xl leading-tight">CRM dla studia detailingu – System rezerwacji i ofert detailingowych
+
             </h1>
             
-            <p className="mt-6 text-lg md:text-xl text-white/80 max-w-2xl">
-              Oprogramowanie CRM dla studiów detailingu. Generator ofert PPF i ceramic coating, protokoły przyjęcia, przypomnienia o przeglądach.
+            <p className="mt-6 text-lg md:text-xl text-white/80 max-w-2xl">Oprogramowanie CRM dla studiów detailingu. Generator ofert, kalendarz, protokoły przyjęcia, przypomnienia o przeglądach powłok.
+
             </p>
 
             <div className="mt-8">
-              <Button 
+              <Button
                 asChild
-                className="h-12 px-8 text-base font-semibold rounded-xl bg-white text-primary hover:bg-white/90"
-              >
+                className="h-12 px-8 text-base font-semibold rounded-xl bg-white text-primary hover:bg-white/90">
+
                 <Link to="/umow-prezentacje">Umów prezentację</Link>
               </Button>
             </div>
@@ -302,10 +302,10 @@ const CrmDetailing = () => {
                   </div>
                 </div>
 
-                <Button 
+                <Button
                   asChild
-                  className="w-full h-12 text-base font-semibold rounded-xl"
-                >
+                  className="w-full h-12 text-base font-semibold rounded-xl">
+
                   <Link to="/umow-prezentacje">Umów bezpłatną prezentację</Link>
                 </Button>
               </div>
@@ -358,18 +358,18 @@ const CrmDetailing = () => {
             <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8">
               Dołącz do studiów detailingu, które już korzystają z N2Wash. Zacznij bezpłatny okres próbny już dziś.
             </p>
-            <Button 
+            <Button
               asChild
-              className="h-12 px-8 text-base font-semibold rounded-xl bg-white text-primary hover:bg-white/90"
-            >
+              className="h-12 px-8 text-base font-semibold rounded-xl bg-white text-primary hover:bg-white/90">
+
               <Link to="/umow-prezentacje">Umów bezpłatną prezentację</Link>
             </Button>
           </div>
         </section>
       </main>
       <Footer />
-    </div>
-  );
+    </div>);
+
 };
 
 export default CrmDetailing;
