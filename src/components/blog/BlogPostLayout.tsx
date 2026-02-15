@@ -1,16 +1,32 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { Calendar, Clock, User } from 'lucide-react';
 import Header from '@/components/landing/Header';
 import Footer from '@/components/landing/Footer';
 import { BlogPost } from '@/lib/blog';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import type { Components } from 'react-markdown';
 
 interface BlogPostLayoutProps {
   post: BlogPost;
 }
+
+const components: Components = {
+  a: ({ href, children }) => {
+    const isExternal = href?.startsWith('http');
+    if (isExternal) {
+      return (
+        <a href={href} target="_blank" rel="noopener noreferrer">
+          {children}
+        </a>
+      );
+    }
+    return <Link href={href || '#'}>{children}</Link>;
+  },
+};
 
 export default function BlogPostLayout({ post }: BlogPostLayoutProps) {
   return (
@@ -75,7 +91,10 @@ export default function BlogPostLayout({ post }: BlogPostLayoutProps) {
               prose-blockquote:bg-muted/30 prose-blockquote:rounded-r-lg
               prose-img:rounded-2xl prose-img:my-8
               max-w-none">
-              <ReactMarkdown remarkPlugins={[remarkGfm]}>
+              <ReactMarkdown
+                remarkPlugins={[remarkGfm]}
+                components={components}
+              >
                 {post.content}
               </ReactMarkdown>
             </article>
