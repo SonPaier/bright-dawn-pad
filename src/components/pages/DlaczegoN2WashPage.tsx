@@ -21,13 +21,13 @@ const DlaczegoN2WashPage = () => {
       icon: Users,
       title: "Stworzony PRZEZ detailerów DLA detailerów",
       description:
-        "Rozumiemy specyfikę branży automotive. System powstał we współpracy z doświadczonymi właścicielami myjni i studiów detailingu.",
+        "Rozumiemy specyfikę branży car detailngu i myjni ręcznych. System powstał we współpracy z doświadczonymi właścicielami myjni i studiów detailingu.",
     },
     {
       icon: Target,
-      title: "Dedykowany dla Twojej branży",
+      title: "Wszystko działa na telefonie",
       description:
-        "Nie jesteśmy uniwersalnym CRM. Każda funkcja została zaprojektowana z myślą o myjniach ręcznych i studiach detailingu.",
+        "Wszystkie akcje wykonasz wygodnie z telefonu, bez znaczenia czy to stworzenie oferty czy dodanie rezerwacji.",
     },
     {
       icon: Zap,
@@ -70,10 +70,12 @@ const DlaczegoN2WashPage = () => {
     { feature: "Widok dla pracowników na hali", n2wash: true, excel: false },
     { feature: "Raporty i analityka", n2wash: true, excel: "partial" },
     { feature: "Dostęp z telefonu", n2wash: true, excel: "partial" },
-    { feature: "Backup danych", n2wash: true, excel: false },
+    { feature: "Kopia zapasowa danych", n2wash: true, excel: false },
   ];
 
   const crmComparison = [
+    { feature: "Wszystko działa na telefonie", n2wash: true, crm: false },
+    { feature: "Kalendarz działa na żywo pomiędzy wieloma urządzeniami", n2wash: true, crm: false },
     { feature: "Protokół przyjęcia pojazdu", n2wash: true, crm: false },
     { feature: "Diagram uszkodzeń", n2wash: true, crm: false },
     { feature: "Obsługa aut z placu", n2wash: true, crm: false },
@@ -82,7 +84,10 @@ const DlaczegoN2WashPage = () => {
     { feature: "Dedykowany dla automotive", n2wash: true, crm: false },
     { feature: "Polski support telefoniczny", n2wash: true, crm: "partial" },
     { feature: "Szybkie wdrożenie (30 min)", n2wash: true, crm: false },
-    { feature: "Cena dopasowana do branży", n2wash: true, crm: false },
+    { feature: "Przypomnienia SMS na cykliczne usługi jak odświeżanie powłok ceramicznych", n2wash: true, crm: false },
+    { feature: "Wiele samochodów przypisanych do jednego klienta", n2wash: true, crm: false },
+    { feature: "Raportowanie czasu pracy pracowników prosto z tableta", n2wash: true, crm: false },
+    { feature: "Możliwość dodania różnych cen usług w zależności od rozmiaru pojazdu", n2wash: true, crm: false },
   ];
 
   const renderComparisonIcon = (value: boolean | string) => {
@@ -250,7 +255,7 @@ const DlaczegoN2WashPage = () => {
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
                 Nie zostawiamy Cię samego z problemem. Nasz zespół wsparcia mówi po polsku 
-                i rozumie specyfikę Twojej branży.
+                i rozumie specyfikę Twojej branży. Jesteśmy otwarci na Twoje potrzeby. Po prostu dajesz nam znać czego potrzebujesz, a my sprawdzamy jak szybko możemy to dorzucić do aplikacji.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
@@ -316,7 +321,7 @@ const DlaczegoN2WashPage = () => {
                   N2Wash vs Uniwersalne CRM
                 </h2>
                 <p className="text-lg text-muted-foreground">
-                  Dlaczego dedykowany system dla automotive jest lepszy niż uniwersalne rozwiązanie
+                  Dlaczego dedykowany system dla myjni ręcznych i studiów detailingu jest lepszy niż uniwersalne rozwiązanie
                 </p>
               </div>
 
@@ -357,7 +362,7 @@ const DlaczegoN2WashPage = () => {
                 Przekonaj się sam
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
-                Wypróbuj N2Wash za darmo przez 7 dni. Bez karty, bez zobowiązań.
+                Wypróbuj N2Wash za darmo przez 14 dni. Bez karty, bez zobowiązań.
               </p>
               <a
                 href="/#hero"

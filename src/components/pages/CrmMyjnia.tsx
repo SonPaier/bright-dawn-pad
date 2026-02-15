@@ -140,7 +140,7 @@ const CrmMyjnia = () => {
             <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 mb-16 lg:mb-20">
               <div className="flex-1">
                 <div className="rounded-2xl overflow-hidden border border-border">
-                  <Image src={widokHala} alt="Pracownicy myjni korzystający z tabletu na hali" className="w-full h-auto object-cover aspect-[4/3]" sizes="(max-width: 1024px) 100vw, 50vw" />
+                  <Image src={widokHala} alt="Pracownicy myjni korzystający z tabletu na hali" className="w-full h-auto" sizes="(max-width: 1024px) 100vw, 50vw" />
                 </div>
               </div>
               <div className="flex-1">

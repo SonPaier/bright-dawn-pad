@@ -46,7 +46,7 @@ const KalendarzRezerwacji = () => {
               Jak działa kalendarz rezerwacji N2Wash?
             </h2>
             <p className="text-muted-foreground text-center max-w-3xl mx-auto text-lg mb-12">
-              Intuicyjny interfejs, który łączy grafik z bazą klientów. Każda rezerwacja jest połączona z profilem klienta – historia wizyt, numery telefonów i pojazdy dostępne jednym kliknięciem. Zmiany widoczne w czasie rzeczywistym dla całego zespołu.
+              Intuicyjny widok, który łączy grafik z bazą klientów. Wszystko czytelne na Twoim telefonie. Każda rezerwacja jest połączona z profilem klienta – historia wizyt, numery telefonów i pojazdy dostępne jednym kliknięciem. Zmiany widoczne w czasie rzeczywistym dla całego zespołu.
             </p>
 
             {/* Placeholder for screenshot/video */}
@@ -132,7 +132,7 @@ const KalendarzRezerwacji = () => {
                   Wygodna edycja
                 </h2>
                 <p className="text-muted-foreground text-lg leading-relaxed">
-                  Przenoś rezerwacje między stanowiskami i godzinami jednym ruchem. Klikasz w rezerwację – edytujesz szczegóły, dzwonisz do klienta prosto z aplikacji albo zmieniasz status. Czas usługi automatycznie dostosowany do rozmiaru auta, więc koniec z nakładającymi się terminami.
+                  Przenoś rezerwacje między stanowiskami i godzinami jednym ruchem. Klikasz w rezerwację – edytujesz szczegóły, dzwonisz do klienta prosto z aplikacji albo zmieniasz status. Czas usługi dostosowany do rodzaju usługi i rozmiaru auta, co pozwala na szybkie dodawanie rezerwacji.
                 </p>
               </div>
             </div>
@@ -277,16 +277,8 @@ const KalendarzRezerwacji = () => {
             <h2 className="text-2xl md:text-3xl font-bold text-foreground text-center mb-8">
               Powiązane funkcje
             </h2>
-            <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-              <Link 
-                href="/funkcje/rezerwacje-online"
-                className="bg-card rounded-xl p-6 border border-border hover:border-primary/50 transition-colors group"
-              >
-                <Globe className="w-8 h-8 text-primary mb-3" />
-                <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">Rezerwacje online</h3>
-                <p className="text-sm text-muted-foreground mt-1">Widget do osadzenia na Twojej stronie</p>
-              </Link>
-              <Link 
+            <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+              <Link
                 href="/funkcje/sms-przypomnienia"
                 className="bg-card rounded-xl p-6 border border-border hover:border-primary/50 transition-colors group"
               >
@@ -294,7 +286,7 @@ const KalendarzRezerwacji = () => {
                 <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">SMS przypomnienia</h3>
                 <p className="text-sm text-muted-foreground mt-1">Automatyczne powiadomienia dla klientów</p>
               </Link>
-              <Link 
+              <Link
                 href="/funkcje/zarzadzanie-zespolem"
                 className="bg-card rounded-xl p-6 border border-border hover:border-primary/50 transition-colors group"
               >

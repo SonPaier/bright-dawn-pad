@@ -40,7 +40,7 @@ const SmsPrzypomnienia = () => {
               Problem no-show w branży automotive
             </h2>
             <p className="text-muted-foreground text-center max-w-3xl mx-auto text-lg mb-12">
-              Nawet 15-25% rezerwacji w myjniach i studiach detailingu nie dochodzi do skutku. Puste stanowisko to utracone przychody i zmarnowany czas zespołu. Automatyczne przypomnienia SMS rozwiązują ten problem – klient pamięta o wizycie, a Ty nie musisz do niego dzwonić.
+              Nawet 15% rezerwacji w myjniach i studiach detailingu nie dochodzi do skutku. Puste stanowisko to utracone przychody i zmarnowany czas zespołu. Automatyczne przypomnienia SMS rozwiązują ten problem – klient pamięta o wizycie, a Ty nie musisz do niego dzwonić.
             </p>
 
             <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 max-w-5xl mx-auto">
@@ -53,7 +53,7 @@ const SmsPrzypomnienia = () => {
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-2">
                       <span className="text-destructive font-bold">✕</span>
-                      <span>15-25% rezerwacji nie dochodzi do skutku</span>
+                      <span>Nawet 15% rezerwacji nie dochodzi do skutku</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-destructive font-bold">✕</span>
@@ -75,7 +75,7 @@ const SmsPrzypomnienia = () => {
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-2">
                       <span className="text-primary font-bold">✓</span>
-                      <span>Tylko 3-5% no-show dzięki przypomnieniom</span>
+                      <span>Tylko 3-5% no-show dzięki przypomnieniom SMS</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-primary font-bold">✓</span>
@@ -83,7 +83,7 @@ const SmsPrzypomnienia = () => {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-primary font-bold">✓</span>
-                      <span>Więcej czasu na obsługę klientów na hali</span>
+                      <span>Więcej czasu na rozwój biznesu</span>
                     </li>
                   </ul>
                 </div>
@@ -111,7 +111,7 @@ const SmsPrzypomnienia = () => {
                       Potwierdzenie rezerwacji
                     </h3>
                     <p className="text-muted-foreground mb-4">
-                      Wysyłany automatycznie zaraz po utworzeniu rezerwacji. Klient dostaje datę, godzinę, adres i możliwość odwołania wizyty jednym SMS-em.
+                      Wysyłany automatycznie zaraz po utworzeniu rezerwacji. Klient dostaje datę, godzinę, adres i możliwość odwołania lub przełożenia wizyty w linku.
                     </p>
                     <div className="bg-muted rounded-lg p-4 text-sm">
                       <p className="text-muted-foreground italic">
@@ -133,7 +133,7 @@ const SmsPrzypomnienia = () => {
                       Przypomnienie 24h i 1h przed wizytą
                     </h3>
                     <p className="text-muted-foreground mb-4">
-                      System sam wysyła przypomnienie 24h i opcjonalnie 1h przed wizytą. Ty konfigurujesz czas i treść wiadomości – reszta dzieje się automatycznie.
+                      System sam wysyła przypomnienie 24h i opcjonalnie 1h przed wizytą.
                     </p>
                     <div className="bg-muted rounded-lg p-4 text-sm">
                       <p className="text-muted-foreground italic">
@@ -186,23 +186,6 @@ const SmsPrzypomnienia = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-
-            {/* Service Connection */}
-            <div className="max-w-3xl mx-auto">
-              <div className="bg-card rounded-2xl p-8 border border-border">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                    <MessageSquare className="w-5 h-5 text-primary" />
-                  </div>
-                  <h3 id="powiazanie-z-uslugami" className="text-xl font-semibold text-foreground">
-                    Powiązanie z usługami
-                  </h3>
-                </div>
-                <p className="text-muted-foreground">
-                  Każda usługa w Twoim cenniku może mieć własny szablon SMS. Inne przypomnienie dostanie klient umówiony na mycie, a inne na wielodniowy detailing. Treść automatycznie dopasowuje się do kontekstu rezerwacji.
-                </p>
               </div>
             </div>
           </div>
@@ -314,13 +297,13 @@ const SmsPrzypomnienia = () => {
                 <h3 id="zarzadzanie-zespolem" className="font-semibold text-foreground group-hover:text-primary transition-colors">Zarządzanie zespołem</h3>
                 <p className="text-sm text-muted-foreground mt-1">Grafiki i uprawnienia pracowników</p>
               </Link>
-              <Link 
-                href="/funkcje/analityka-raporty"
+              <Link
+                href="/crm/crm-dla-myjni-samochodowych"
                 className="bg-card rounded-xl p-6 border border-border hover:border-primary/50 transition-colors group"
               >
                 <BarChart3 className="w-8 h-8 text-primary mb-3" />
-                <h3 id="analityka-i-raporty" className="font-semibold text-foreground group-hover:text-primary transition-colors">Analityka i raporty</h3>
-                <p className="text-sm text-muted-foreground mt-1">Statystyki SMS i konwersji</p>
+                <h3 id="crm-dla-myjni" className="font-semibold text-foreground group-hover:text-primary transition-colors">CRM dla myjni</h3>
+                <p className="text-sm text-muted-foreground mt-1">Pełne rozwiązanie dla myjni</p>
               </Link>
             </div>
           </div>
