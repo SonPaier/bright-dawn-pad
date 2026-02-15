@@ -180,7 +180,7 @@ const ZarzadzanieZespolem = () => {
                   <Image
                     src={widokHala}
                     alt="Widok tabletu na hali myjni - pracownicy widzą harmonogram zleceń w czasie rzeczywistym"
-                    className="w-full h-auto object-cover aspect-video"
+                    className="w-full h-auto"
                     sizes="(max-width: 1024px) 100vw, 50vw"
                   />
                 </div>
@@ -270,7 +270,7 @@ const ZarzadzanieZespolem = () => {
                   <Image
                     src={raportCzasuPracy}
                     alt="Raport czasu pracy zespołu - szczegółowe zestawienie godzin, nadgodzin i wykonanych usług"
-                    className="w-full h-auto object-cover aspect-[4/3]"
+                    className="w-full h-auto"
                     sizes="(max-width: 1024px) 100vw, 50vw"
                   />
                 </div>

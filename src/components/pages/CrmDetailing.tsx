@@ -159,7 +159,7 @@ const CrmDetailing = () => {
                   <Image
                     src={generatorOfert}
                     alt="Generator ofert dla studia detailingu - tworzenie profesjonalnych ofert z wariantami cenowymi w kilka minut"
-                    className="w-full h-auto object-cover aspect-[4/3]"
+                    className="w-full h-auto"
                     sizes="(max-width: 1024px) 100vw, 50vw"
                   />
                 </div>
@@ -173,7 +173,7 @@ const CrmDetailing = () => {
                   <Image
                     src={protokolPrzyjecia}
                     alt="Protokół przyjęcia samochodu w studio detailingu - dokumentacja stanu pojazdu ze zdjęciami i podpisem cyfrowym"
-                    className="w-full h-auto object-cover aspect-[4/3]"
+                    className="w-full h-auto"
                     sizes="(max-width: 1024px) 100vw, 50vw"
                   />
                 </div>
@@ -213,7 +213,7 @@ const CrmDetailing = () => {
                   <Image
                     src={przypomnieniaSMS}
                     alt="Automatyczne przypomnienia SMS o przeglądach powłok ceramicznych - zwiększ stały dochód ze świadczonych usług"
-                    className="w-full h-auto object-cover aspect-[4/3]"
+                    className="w-full h-auto"
                     sizes="(max-width: 1024px) 100vw, 50vw"
                   />
                 </div>
