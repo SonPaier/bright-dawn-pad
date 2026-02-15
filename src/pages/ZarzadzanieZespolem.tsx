@@ -25,11 +25,11 @@ const ZarzadzanieZespolem = () => {
         <section className="bg-gradient-to-br from-primary via-primary/90 to-sky-900 text-white py-32 md:py-48">
           <div className="container mx-auto px-4">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold max-w-4xl leading-tight">
-              Zarządzanie Zespołem w Myjni i Detailingu – Grafik i Ewidencja Czasu
+              Zarządzaj zespołem bez chaosu i zbędnych arkuszy
             </h1>
             
             <p className="mt-6 text-lg md:text-xl text-white/80 max-w-2xl">
-              Ewidencja czasu pracy, grafik, widok na żywo dla hali. Przypisywanie pracowników do stanowisk i zleceń.
+              Zmień żmudne liczenie godzin w zautomatyzowany proces. Od rejestracji czasu pracy po gotowe listy płac – wszystko w jednym miejscu.
             </p>
 
             <div className="mt-8">
