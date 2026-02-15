@@ -21,6 +21,7 @@ interface CookieConsent {
 const COOKIE_CONSENT_KEY = 'n2wash-cookie-consent';
 
 export function CookieBanner() {
+  const [mounted, setMounted] = useState(false);
   const [showBanner, setShowBanner] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
   const [consent, setConsent] = useState<CookieConsent>({
@@ -31,6 +32,7 @@ export function CookieBanner() {
   });
 
   useEffect(() => {
+    setMounted(true);
     const savedConsent = localStorage.getItem(COOKIE_CONSENT_KEY);
     if (!savedConsent) {
       setShowBanner(true);
@@ -87,7 +89,8 @@ export function CookieBanner() {
     saveConsent(consent);
   };
 
-  if (!showBanner) {
+  // Prevent hydration mismatch by not rendering until mounted
+  if (!mounted || !showBanner) {
     return null;
   }
 
