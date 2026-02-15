@@ -1,10 +1,13 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Users, Clock, Calendar, Layers, Monitor, Tablet, Eye, BarChart3, AlertTriangle, Lock } from "lucide-react";
 import Header from "@/components/landing/Header";
 import Footer from "@/components/landing/Footer";
 import { Button } from "@/components/ui/button";
+import widokHala from "@/assets/crm-studio-detailing-myjnia-reczna.webp";
+import raportCzasuPracy from "@/assets/myjnia-reczna-studio-car-detailing-raport-czasu-pracy.webp";
 
 const ZarzadzanieZespolem = () => {
   return (
@@ -41,7 +44,7 @@ const ZarzadzanieZespolem = () => {
               Wyzwania w zarządzaniu zespołem myjni/detailingu
             </h2>
             <p className="text-muted-foreground text-center max-w-3xl mx-auto text-lg mb-12">
-              [Placeholder: Wprowadzenie do wyzwań - rotacja pracowników, zmienne grafiki, brak przejrzystości godzin pracy, trudności w planowaniu.]
+              Rotacja pracowników, nakładające się grafiki i nieczytelne ewidencje godzin pracy to codzienność w branży detailingu. Bez odpowiedniego systemu tracisz czas na rozwiązywanie konfliktów i liczenie godzin zamiast skupić się na jakości usług.
             </p>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
@@ -51,7 +54,7 @@ const ZarzadzanieZespolem = () => {
                 </div>
                 <h3 id="reczna-ewidencja" className="font-semibold text-foreground mb-2">Ręczna ewidencja</h3>
                 <p className="text-sm text-muted-foreground">
-                  [Placeholder: Papierowe listy, błędy, brak kontroli]
+                  Kartki papieru, ołówek i kalkulator prowadzą do błędów w rozliczeniach i sporów o godziny nadliczbowe
                 </p>
               </div>
               <div className="bg-card rounded-xl p-6 border border-border text-center">
@@ -60,7 +63,7 @@ const ZarzadzanieZespolem = () => {
                 </div>
                 <h3 id="chaos-w-grafiku" className="font-semibold text-foreground mb-2">Chaos w grafiku</h3>
                 <p className="text-sm text-muted-foreground">
-                  [Placeholder: Nakładające się zmiany, brak widoczności]
+                  Dwie osoby jednocześnie na tym samym stanowisku lub nikt w trakcie szczytu – brak synchronizacji paraliżuje halę
                 </p>
               </div>
               <div className="bg-card rounded-xl p-6 border border-border text-center">
@@ -69,7 +72,7 @@ const ZarzadzanieZespolem = () => {
                 </div>
                 <h3 id="kto-robi-co" className="font-semibold text-foreground mb-2">Kto robi co?</h3>
                 <p className="text-sm text-muted-foreground">
-                  [Placeholder: Brak przypisań, niejasna odpowiedzialność]
+                  Niejasne przypisania prowadzą do zleceń wykonanych w pośpiechu lub w ogóle pominiętych
                 </p>
               </div>
               <div className="bg-card rounded-xl p-6 border border-border text-center">
@@ -78,7 +81,7 @@ const ZarzadzanieZespolem = () => {
                 </div>
                 <h3 id="brak-raportow" className="font-semibold text-foreground mb-2">Brak raportów</h3>
                 <p className="text-sm text-muted-foreground">
-                  [Placeholder: Trudność w analizie wydajności]
+                  Bez danych nie wiesz, kto naprawdę generuje przychód, a kto potrzebuje szkolenia lub motywacji
                 </p>
               </div>
             </div>
@@ -104,7 +107,7 @@ const ZarzadzanieZespolem = () => {
                       Ewidencja czasu pracy
                     </h3>
                     <p className="text-muted-foreground">
-                      [Placeholder: Opis ewidencji - rozpoczynanie/kończenie pracy przez tablet/telefon, przerwy, nadgodziny, historia godzin, eksport do Excel dla księgowości.]
+                      Pracownicy rozpoczynają i kończą pracę bezpośrednio z tabletu lub telefonu. System automatycznie liczy godziny, przerwy i nadgodziny. Na koniec miesiąca eksportujesz dane do Excela i przekazujesz księgowości – zero ręcznych zestawień i błędów w rozliczeniach.
                     </p>
                   </div>
                 </div>
@@ -121,7 +124,7 @@ const ZarzadzanieZespolem = () => {
                       Grafik pracowników
                     </h3>
                     <p className="text-muted-foreground">
-                      [Placeholder: Opis grafiku - planowanie zmian z wyprzedzeniem, widok tygodniowy/miesięczny, urlopy i nieobecności, powiadomienia o zmianach.]
+                      Planuj zmiany z tygodniowym lub miesięcznym wyprzedzeniem. Oznaczaj urlopy i nieobecności, a system automatycznie poinformuje zespół o wszelkich zmianach. Pracownicy widzą swój harmonogram online – koniec z SMS-ami i telefonami w sprawie grafiku.
                     </p>
                   </div>
                 </div>
@@ -138,7 +141,7 @@ const ZarzadzanieZespolem = () => {
                       Przypisywanie do stanowisk
                     </h3>
                     <p className="text-muted-foreground">
-                      [Placeholder: Opis przypisywania - każde stanowisko może mieć przypisanego pracownika, widoczność w kalendarzu, automatyczne sugestie na podstawie dostępności.]
+                      Przypisuj konkretnych pracowników do stanowisk w kalendarzu. System pokazuje dostępność zespołu i podpowiada optymalne obsadzenie. Każdy widzi w jednym miejscu, gdzie i kiedy pracuje – zero nieporozumień i opóźnień.
                     </p>
                   </div>
                 </div>
@@ -155,7 +158,7 @@ const ZarzadzanieZespolem = () => {
                       Przypisywanie do konkretnych zleceń
                     </h3>
                     <p className="text-muted-foreground">
-                      [Placeholder: Opis przypisywania do zleceń - dla detailingu wielodniowego, rozliczanie za zlecenie, historia wykonanych prac przez pracownika.]
+                      Idealne dla wielodniowego detailingu – przypisz całe zlecenie konkretnemu pracownikowi. Rozliczaj prowizje za kompletne realizacje, a nie tylko godziny. Miej pełną historię, kto wykonał jakie prace i jak często generuje powtórki.
                     </p>
                   </div>
                 </div>
@@ -173,12 +176,13 @@ const ZarzadzanieZespolem = () => {
 
             <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 mb-12">
               <div className="flex-1">
-                <div className="bg-muted rounded-2xl aspect-video flex items-center justify-center border border-border">
-                  <div className="text-center p-8">
-                    <Monitor className="w-20 h-20 text-muted-foreground/50 mx-auto mb-4" />
-                    <p className="text-muted-foreground font-medium">widok-hala-tablet.jpg</p>
-                    <p className="text-sm text-muted-foreground/70">Widok tabletu/monitora na hali myjni</p>
-                  </div>
+                <div className="rounded-2xl overflow-hidden border border-border">
+                  <Image
+                    src={widokHala}
+                    alt="Widok tabletu na hali myjni - pracownicy widzą harmonogram zleceń w czasie rzeczywistym"
+                    className="w-full h-auto object-cover aspect-video"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                  />
                 </div>
               </div>
               <div className="flex-1 space-y-6">
@@ -192,7 +196,7 @@ const ZarzadzanieZespolem = () => {
                       Tablet/monitor na hali
                     </h3>
                     <p className="text-muted-foreground text-sm">
-                      [Placeholder: Opis instalacji - duży ekran lub tablet, widoczny dla wszystkich pracowników, automatyczne odświeżanie.]
+                      Postaw duży monitor lub tablet w miejscu widocznym dla całego zespołu. Widok odświeża się automatycznie – pracownicy zawsze widzą aktualny stan zleceń bez biegania do biura.
                     </p>
                   </div>
                 </div>
@@ -207,7 +211,7 @@ const ZarzadzanieZespolem = () => {
                       Harmonogram w czasie rzeczywistym
                     </h3>
                     <p className="text-muted-foreground text-sm">
-                      [Placeholder: Pracownicy widzą aktualne i nadchodzące zlecenia, przypisania, czasy, informacje o pojeździe i usłudze.]
+                      Ekran pokazuje aktualne i nadchodzące zlecenia z przypisaniami, godzinami oraz szczegółami pojazdu i usługi. Każdy wie, co ma robić i kiedy – bez zbędnych pytań i przerw w pracy.
                     </p>
                   </div>
                 </div>
@@ -222,7 +226,7 @@ const ZarzadzanieZespolem = () => {
                       Bez dostępu do ustawień i wybranych detali
                     </h3>
                     <p className="text-muted-foreground text-sm">
-                      [Placeholder: Opis uprawnień - pracownicy widzą tylko potrzebne informacje, brak dostępu do cen, danych kontaktowych klientów, ustawień systemu.]
+                      Zespół widzi tylko to, co niezbędne do pracy: harmonogram i przypisania. Ceny, dane kontaktowe klientów i ustawienia systemu pozostają ukryte – chroniąc poufność Twojego biznesu.
                     </p>
                   </div>
                 </div>
@@ -240,7 +244,7 @@ const ZarzadzanieZespolem = () => {
                   Raporty z pracy zespołu
                 </h2>
                 <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                  [Placeholder: Opis raportów - godziny pracy każdego pracownika, ilość wykonanych usług, przychód wygenerowany przez pracownika, porównanie wydajności, eksport danych.]
+                  Generuj szczegółowe raporty godzin pracy, liczby wykonanych usług i przychodu wygenerowanego przez każdego pracownika. Porównuj okresy, analizuj wydajność i eksportuj dane do Excela. Podejmuj decyzje w oparciu o fakty, nie intuicję.
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-center gap-3">
@@ -262,12 +266,13 @@ const ZarzadzanieZespolem = () => {
                 </ul>
               </div>
               <div className="flex-1 order-1 lg:order-2">
-                <div className="bg-muted rounded-2xl aspect-[4/3] flex items-center justify-center border border-border">
-                  <div className="text-center p-8">
-                    <BarChart3 className="w-16 h-16 text-muted-foreground/50 mx-auto mb-4" />
-                    <p className="text-muted-foreground font-medium">raport-zespol.jpg</p>
-                    <p className="text-sm text-muted-foreground/70">Przykładowy raport z pracy zespołu</p>
-                  </div>
+                <div className="rounded-2xl overflow-hidden border border-border">
+                  <Image
+                    src={raportCzasuPracy}
+                    alt="Raport czasu pracy zespołu - szczegółowe zestawienie godzin, nadgodzin i wykonanych usług"
+                    className="w-full h-auto object-cover aspect-[4/3]"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                  />
                 </div>
               </div>
             </div>

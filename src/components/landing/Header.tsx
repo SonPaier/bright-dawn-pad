@@ -56,7 +56,7 @@ const Header = () => {
       ],
     },
     { label: nav.cennik, href: "/cennik-crm-myjnia-detailing" },
-    { label: nav.opinie, href: "/opinie" },
+    // { label: nav.opinie, href: "/opinie" }, // TODO: Dokończyć stronę opinii
     { label: "Historie Klientów", href: "/case-studies" },
     { label: nav.dlaczegoN2wash, href: "/dlaczego-n2wash" },
     { label: nav.kontakt, href: "/kontakt" },

@@ -1,12 +1,12 @@
 import Image, { StaticImageData } from "next/image";
 import { Check } from "lucide-react";
 import { useTranslation } from "@/hooks/useTranslation";
-import benefit1 from "@/assets/benefit-1.jpg";
-import benefit2 from "@/assets/benefit-2.jpg";
-import benefit3 from "@/assets/benefit-3.jpg";
-import benefit4 from "@/assets/benefit-4.jpg";
-import benefit5 from "@/assets/benefit-5.jpg";
-import benefit6 from "@/assets/benefit-6.jpg";
+import benefit1 from "@/assets/kalendarz-rezerwacji-myjnia-reczna-korzysci-1.webp";
+import benefit2 from "@/assets/kalendarz-rezerwacji-myjnia-reczna-korzysci-2.webp";
+import benefit3 from "@/assets/kalendarz-rezerwacji-myjnia-reczna-korzysci-3.webp";
+import benefit4 from "@/assets/kalendarz-rezerwacji-myjnia-reczna-korzysci-4.webp";
+import benefit5 from "@/assets/kalendarz-rezerwacji-myjnia-reczna-korzysci-5.webp";
+import benefit6 from "@/assets/kalendarz-rezerwacji-myjnia-reczna-korzysci-6.webp";
 
 interface FeatureItem {
   title: string;

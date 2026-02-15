@@ -1,9 +1,15 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { Calendar, CalendarDays, Clock, Edit3, Layers, Pause, Users, Globe, MessageSquare } from "lucide-react";
 import Header from "@/components/landing/Header";
 import Footer from "@/components/landing/Footer";
 import { Button } from "@/components/ui/button";
+import kalendarzDesktopImg from "@/assets/studio-detailing-myjnia-reczna-kalendarz.png";
+import edycjaRezerwacjiImg from "@/assets/kalendarz-rezerwacji-myjnia-reczna-korzysci-1.webp";
+import rezerwacjaWielodniowaImg from "@/assets/kalendarz-rezerwacji-myjnia-reczna-korzysci-2.webp";
+import zewnetrznyKalendarzImg from "@/assets/studio-car-detailing-myjnia-reczna-zewnetrzny-kalendarz.webp";
+import smsPotwierdznieImg from "@/assets/studio-detailing-przypomnienia-sms-powloki-ceramiczne.webp";
 
 const KalendarzRezerwacji = () => {
   return (
@@ -44,13 +50,14 @@ const KalendarzRezerwacji = () => {
             </p>
 
             {/* Placeholder for screenshot/video */}
-            <div className="max-w-4xl mx-auto">
-              <div className="bg-muted rounded-2xl aspect-video flex items-center justify-center border border-border">
-                <div className="text-center p-8">
-                  <Calendar className="w-20 h-20 text-muted-foreground/50 mx-auto mb-4" />
-                  <p className="text-muted-foreground font-medium">kalendarz-glowny-widok.jpg</p>
-                  <p className="text-sm text-muted-foreground/70">Główny widok kalendarza z rezerwacjami</p>
-                </div>
+            <div className="max-w-5xl mx-auto">
+              <div className="rounded-2xl overflow-hidden border border-border shadow-lg">
+                <Image
+                  src={kalendarzDesktopImg}
+                  alt="Główny widok kalendarza rezerwacji N2Wash z rezerwacjami na stanowiskach"
+                  className="w-full h-auto"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 90vw, 1024px"
+                />
               </div>
             </div>
           </div>
@@ -111,12 +118,13 @@ const KalendarzRezerwacji = () => {
           <div className="container mx-auto px-4">
             <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
               <div className="flex-1">
-                <div className="bg-muted rounded-2xl aspect-[4/3] flex items-center justify-center border border-border">
-                  <div className="text-center p-8">
-                    <Edit3 className="w-16 h-16 text-muted-foreground/50 mx-auto mb-4" />
-                    <p className="text-muted-foreground font-medium">edycja-rezerwacji.jpg</p>
-                    <p className="text-sm text-muted-foreground/70">Szybka edycja rezerwacji drag & drop</p>
-                  </div>
+                <div className="rounded-2xl overflow-hidden border border-border shadow-lg">
+                  <Image
+                    src={edycjaRezerwacjiImg}
+                    alt="Edycja rezerwacji w kalendarzu N2Wash z powiadomieniem o nowej rezerwacji"
+                    className="w-full h-auto"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
                 </div>
               </div>
               <div className="flex-1">
@@ -144,12 +152,13 @@ const KalendarzRezerwacji = () => {
                 </p>
               </div>
               <div className="flex-1 order-1 lg:order-2">
-                <div className="bg-muted rounded-2xl aspect-[4/3] flex items-center justify-center border border-border">
-                  <div className="text-center p-8">
-                    <Clock className="w-16 h-16 text-muted-foreground/50 mx-auto mb-4" />
-                    <p className="text-muted-foreground font-medium">rezerwacja-wielodniowa.jpg</p>
-                    <p className="text-sm text-muted-foreground/70">Rezerwacja rozciągnięta na kilka dni</p>
-                  </div>
+                <div className="rounded-2xl overflow-hidden border border-border shadow-lg">
+                  <Image
+                    src={rezerwacjaWielodniowaImg}
+                    alt="Klientka rezerwująca wizytę online przez kalendarz N2Wash z wyborem daty i godziny"
+                    className="w-full h-auto"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
                 </div>
               </div>
             </div>
@@ -215,32 +224,34 @@ const KalendarzRezerwacji = () => {
                     <Globe className="w-5 h-5 text-primary" />
                   </div>
                   <h3 className="text-xl md:text-2xl font-semibold text-foreground">
-                    Klienci rezerwują przez widget 24/7
+                    Zewnętrzny kalendarz to rezerwacje przez całą dobę
                   </h3>
                 </div>
                 <p className="text-muted-foreground text-lg leading-relaxed">
-                  Zewnętrzny kalendarz osadzony na Twojej stronie WWW pozwala klientom bookować terminy bez zakładania konta – Ty tylko je potwierdzasz. Każda rezerwacja online to o jeden telefon mniej. Klienci rezerwują wtedy, gdy o tym myślą – często wieczorami lub w weekendy.
+                  Zewnętrzny kalendarz dla Twoich klientów, pozwala im rezerwować terminy bez zakładania konta – Ty tylko je potwierdzasz w kalendarzu. Każda rezerwacja online to o jeden telefon mniej. Klienci rezerwują wtedy, gdy o tym myślą – często wieczorami lub w weekendy. Na Booksy, 70% rezerwacji odbywa się poza godzinami pracy salonów.
                 </p>
               </div>
-              <div className="flex-1">
-                <div className="bg-muted rounded-2xl aspect-[4/3] flex items-center justify-center border border-border">
-                  <div className="text-center p-8">
-                    <Globe className="w-16 h-16 text-muted-foreground/50 mx-auto mb-4" />
-                    <p className="text-muted-foreground font-medium">widget-rezerwacji-online.jpg</p>
-                    <p className="text-sm text-muted-foreground/70">Widget rezerwacji na stronie WWW</p>
-                  </div>
+              <div className="flex-1 flex justify-center">
+                <div className="rounded-2xl overflow-hidden border border-border shadow-lg bg-muted max-w-[280px] sm:max-w-[320px] lg:max-w-none">
+                  <Image
+                    src={zewnetrznyKalendarzImg}
+                    alt="Zewnętrzny kalendarz rezerwacji N2Wash osadzony na stronie studia detailingowego"
+                    className="w-full h-auto"
+                    sizes="(max-width: 640px) 280px, (max-width: 1024px) 320px, 500px"
+                  />
                 </div>
               </div>
             </div>
 
             <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
-              <div className="flex-1 order-2 lg:order-1">
-                <div className="bg-muted rounded-2xl aspect-[4/3] flex items-center justify-center border border-border">
-                  <div className="text-center p-8">
-                    <MessageSquare className="w-16 h-16 text-muted-foreground/50 mx-auto mb-4" />
-                    <p className="text-muted-foreground font-medium">sms-potwierdzenie.jpg</p>
-                    <p className="text-sm text-muted-foreground/70">Przykład SMS potwierdzenia</p>
-                  </div>
+              <div className="flex-1 order-2 lg:order-1 flex justify-center">
+                <div className="rounded-2xl overflow-hidden border border-border shadow-lg bg-muted max-w-[320px] sm:max-w-[380px] lg:max-w-none">
+                  <Image
+                    src={smsPotwierdznieImg}
+                    alt="SMS z przypomnieniem o wizycie w myjni wysłany automatycznie przez N2Wash"
+                    className="w-full h-auto"
+                    sizes="(max-width: 640px) 320px, (max-width: 1024px) 380px, 500px"
+                  />
                 </div>
               </div>
               <div className="flex-1 order-1 lg:order-2">

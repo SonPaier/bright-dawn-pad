@@ -7,9 +7,9 @@ import ImagePlaceholder from "@/components/case-study/ImagePlaceholder";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
-import caseStudy1 from "@/assets/case-study-1.jpg";
-import caseStudy2 from "@/assets/case-study-2.jpg";
-import caseStudy3 from "@/assets/case-study-3.jpg";
+import caseStudy1 from "@/assets/studio-car-detailing-case-study-armcar-gdansk.jpg";
+import caseStudy2 from "@/assets/studio-car-detailing-case-study-armcar-gdansk-2.webp";
+import caseStudy3 from "@/assets/studio-car-detailing-case-study-armcar-gdansk-3.jpg";
 import { MessageSquare, FileText, Users, RefreshCw, ArrowRight } from "lucide-react";
 const CaseStudiesPage = () => {
   return <div className="min-h-screen bg-background flex flex-col">

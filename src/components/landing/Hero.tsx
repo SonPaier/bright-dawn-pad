@@ -8,7 +8,7 @@ import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import Image from "next/image";
 import { z } from "zod";
-import heroBg from "@/assets/hero-bg.jpg";
+import heroBg from "@/assets/car-detailing-myjnia-reczna-hero.webp";
 const contactSchema = z.object({
   contact: z.string().refine(val => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;

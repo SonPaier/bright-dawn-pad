@@ -6,7 +6,7 @@ import Footer from "@/components/landing/Footer";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import kalendarzMobile from "@/assets/crm-kalendarz-mobile.png";
-import widokHala from "@/assets/crm-widok-hala.jpg";
+import widokHala from "@/assets/crm-studio-detailing-myjnia-reczna.webp";
 import smsPrzypomnienie from "@/assets/crm-sms-przypomnienie.jpg";
 const CrmMyjnia = () => {
   return <div className="min-h-screen bg-background flex flex-col">
