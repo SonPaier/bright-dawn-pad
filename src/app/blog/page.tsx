@@ -22,7 +22,7 @@ export default function BlogPage() {
   return (
     <div className="min-h-screen bg-background flex flex-col">
       <Header />
-      <main className="flex-1">
+      <main className="flex-1 pt-24">
         <Breadcrumbs items={[
           { name: 'Strona główna', href: '/' },
           { name: 'Blog', href: '/blog' },
