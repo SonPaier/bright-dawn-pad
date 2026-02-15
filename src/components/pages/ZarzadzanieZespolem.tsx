@@ -285,7 +285,7 @@ const ZarzadzanieZespolem = () => {
             <h2 id="powiazane-funkcje" className="text-2xl md:text-3xl font-bold text-foreground text-center mb-8">
               Powiązane funkcje
             </h2>
-            <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
               <Link
                 href="/funkcje/kalendarz-rezerwacji"
                 className="bg-card rounded-xl p-6 border border-border hover:border-primary/50 transition-colors group"
@@ -294,15 +294,7 @@ const ZarzadzanieZespolem = () => {
                 <h3 id="kalendarz-rezerwacji" className="font-semibold text-foreground group-hover:text-primary transition-colors">Kalendarz rezerwacji</h3>
                 <p className="text-sm text-muted-foreground mt-1">Zarządzanie terminami i stanowiskami</p>
               </Link>
-              <Link 
-                href="/funkcje/analityka-raporty"
-                className="bg-card rounded-xl p-6 border border-border hover:border-primary/50 transition-colors group"
-              >
-                <BarChart3 className="w-8 h-8 text-primary mb-3" />
-                <h3 id="analityka-i-raporty" className="font-semibold text-foreground group-hover:text-primary transition-colors">Analityka i raporty</h3>
-                <p className="text-sm text-muted-foreground mt-1">Szczegółowe statystyki biznesowe</p>
-              </Link>
-              <Link 
+              <Link
                 href="/crm/crm-dla-myjni-samochodowych"
                 className="bg-card rounded-xl p-6 border border-border hover:border-primary/50 transition-colors group"
               >

@@ -23,7 +23,7 @@ const GeneratorOfert = () => {
             </h1>
             
             <p className="mt-6 text-lg md:text-xl text-white/80 max-w-2xl">
-              Kreator ofert z wariantami cenowymi, dodatkami i automatyczną wysyłką. Publiczny link dla klienta zwiększa skuteczność sprzedaży.
+              Kreator ofert z wariantami cenowymi, dodatkami i automatyczną wysyłką e-mail. Publiczny link dla klienta zwiększa skuteczność sprzedaży.
             </p>
 
             <div className="mt-8">
@@ -62,9 +62,9 @@ const GeneratorOfert = () => {
                 <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
                   <CheckCircle className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">+40% konwersji</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-2">+20% skuteczności sprzedaży</h3>
                 <p className="text-muted-foreground">
-                  Profesjonalnie wyglądająca oferta zwiększa szansę na domknięcie sprzedaży w porównaniu do wyceny „na oko".
+                  Profesjonalnie wyglądająca i szybko wysłana oferta zwiększa szansę na domknięcie sprzedaży w porównaniu do wyceny „na oko" i wysłanej po wielu dniach.
                 </p>
               </div>
               <div className="text-center">
@@ -73,7 +73,7 @@ const GeneratorOfert = () => {
                 </div>
                 <h3 className="text-xl font-semibold text-foreground mb-2">Twój branding</h3>
                 <p className="text-muted-foreground">
-                  Oferty z Twoim logo, kolorami firmowymi i danymi kontaktowymi – wyglądają jak od dużej firmy.
+                  Oferty z Twoim logo, kolorami firmowymi i danymi kontaktowymi – wyglądają profesjonalnie.
                 </p>
               </div>
             </div>
@@ -198,10 +198,10 @@ const GeneratorOfert = () => {
 
             {/* Offer Preview Screenshot */}
 
-            <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 max-w-5xl mx-auto">
-            
-              <div className="flex-1 flex justify-center">
-            
+            <div className="flex flex-col lg:flex-row items-start gap-8 lg:gap-12 max-w-5xl mx-auto">
+
+              <div className="flex-1 flex flex-col items-center">
+                <h3 className="text-xl font-semibold text-foreground mb-4 text-center">Co widzi Klient</h3>
                 <div className="rounded-2xl overflow-hidden border border-border bg-muted shadow-lg max-w-[280px] sm:max-w-[320px]">
                   <Image
                     src={ofertaKlientImg}
@@ -211,7 +211,8 @@ const GeneratorOfert = () => {
                   />
                 </div>
               </div>
-              <div className="flex-1 flex justify-center">
+              <div className="flex-1 flex flex-col items-center">
+                <h3 className="text-xl font-semibold text-foreground mb-4 text-center">Lista Twoich ofert</h3>
                 <div className="rounded-2xl overflow-hidden border border-border bg-muted shadow-lg max-w-[280px] sm:max-w-[320px]">
                   <Image
                     src={listaOfertImg}
@@ -234,16 +235,12 @@ const GeneratorOfert = () => {
                   Integracja z widgetem do ofertowania na Twojej stronie
                 </h2>
                 <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                  Osadź widget na swojej stronie WWW, by klienci mogli sami wybrać interesujące ich usługi i otrzymać wstępną wycenę. Formularz zbiera dane pojazdu i automatycznie tworzy zapytanie w Twoim CRM – oszczędzasz czas na rozmowy telefoniczne.
+                  Osadź widget na swojej stronie WWW, by klienci mogli sami wybrać interesujące ich usługi i otrzymać wstępną wycenę. Formularz zbiera dane pojazdu i automatycznie tworzy zapytanie w Twoim CRM.
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
                     <span className="text-foreground">Klient sam wybiera usługi i opcje</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
-                    <span className="text-foreground">Automatyczna wstępna wycena</span>
                   </li>
                   <li className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
@@ -286,13 +283,13 @@ const GeneratorOfert = () => {
                 <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">Protokół przyjęcia</h3>
                 <p className="text-sm text-muted-foreground mt-1">Dokumentacja stanu pojazdu ze zdjęciami</p>
               </Link>
-              <Link 
-                href="/funkcje/crm-klientow"
+              <Link
+                href="/crm/crm-dla-studia-detailingu"
                 className="bg-card rounded-xl p-6 border border-border hover:border-primary/50 transition-colors group"
               >
                 <Layers className="w-8 h-8 text-primary mb-3" />
-                <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">CRM klientów</h3>
-                <p className="text-sm text-muted-foreground mt-1">Baza klientów i historia usług</p>
+                <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">CRM dla detailingu</h3>
+                <p className="text-sm text-muted-foreground mt-1">Pełne rozwiązanie dla studia</p>
               </Link>
               <Link 
                 href="/crm/crm-dla-studia-detailingu"

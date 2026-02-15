@@ -40,7 +40,7 @@ const SmsPrzypomnienia = () => {
               Problem no-show w branży automotive
             </h2>
             <p className="text-muted-foreground text-center max-w-3xl mx-auto text-lg mb-12">
-              Nawet 15-25% rezerwacji w myjniach i studiach detailingu nie dochodzi do skutku. Puste stanowisko to utracone przychody i zmarnowany czas zespołu. Automatyczne przypomnienia SMS rozwiązują ten problem – klient pamięta o wizycie, a Ty nie musisz do niego dzwonić.
+              Nawet 15% rezerwacji w myjniach i studiach detailingu nie dochodzi do skutku. Puste stanowisko to utracone przychody i zmarnowany czas zespołu. Automatyczne przypomnienia SMS rozwiązują ten problem – klient pamięta o wizycie, a Ty nie musisz do niego dzwonić.
             </p>
 
             <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 max-w-5xl mx-auto">
@@ -314,13 +314,13 @@ const SmsPrzypomnienia = () => {
                 <h3 id="zarzadzanie-zespolem" className="font-semibold text-foreground group-hover:text-primary transition-colors">Zarządzanie zespołem</h3>
                 <p className="text-sm text-muted-foreground mt-1">Grafiki i uprawnienia pracowników</p>
               </Link>
-              <Link 
-                href="/funkcje/analityka-raporty"
+              <Link
+                href="/crm/crm-dla-myjni-samochodowych"
                 className="bg-card rounded-xl p-6 border border-border hover:border-primary/50 transition-colors group"
               >
                 <BarChart3 className="w-8 h-8 text-primary mb-3" />
-                <h3 id="analityka-i-raporty" className="font-semibold text-foreground group-hover:text-primary transition-colors">Analityka i raporty</h3>
-                <p className="text-sm text-muted-foreground mt-1">Statystyki SMS i konwersji</p>
+                <h3 id="crm-dla-myjni" className="font-semibold text-foreground group-hover:text-primary transition-colors">CRM dla myjni</h3>
+                <p className="text-sm text-muted-foreground mt-1">Pełne rozwiązanie dla myjni</p>
               </Link>
             </div>
           </div>
