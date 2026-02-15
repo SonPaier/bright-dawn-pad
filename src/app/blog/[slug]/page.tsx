@@ -21,18 +21,40 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     };
   }
 
+  const baseUrl = 'https://n2wash.com';
+  const postUrl = `${baseUrl}/blog/${post.slug}`;
+  const absoluteImageUrl = `${baseUrl}${post.image}`;
+
   return {
     title: post.title,
     description: post.description,
     alternates: {
-      canonical: `https://n2wash.com/blog/${post.slug}`,
+      canonical: postUrl,
     },
     openGraph: {
       title: post.title,
       description: post.description,
+      url: postUrl,
+      siteName: 'N2Wash.com',
+      locale: 'pl_PL',
       type: 'article',
       publishedTime: post.date,
-      images: [post.image],
+      authors: [post.author],
+      section: post.category,
+      images: [
+        {
+          url: absoluteImageUrl,
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.description,
+      images: [absoluteImageUrl],
     },
   };
 }
