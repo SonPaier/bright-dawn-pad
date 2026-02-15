@@ -141,13 +141,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             gtag('config', 'G-7R7MH3MMJK');
           `}
         </Script>
-
-        {/* Ahrefs Analytics */}
-        <Script
-          src="https://analytics.ahrefs.com/analytics.js"
-          data-key="qrU00g/k80PDP+Zi+Wspig"
-          strategy="afterInteractive"
-        />
       </body>
     </html>
   );
