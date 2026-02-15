@@ -1,4 +1,5 @@
 import type { MetadataRoute } from 'next';
+import { getAllPosts } from '@/lib/blog';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://n2wash.com';
@@ -23,18 +24,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/umow-prezentacje',
     '/demo',
     '/blog',
-    '/blog/crm-vs-zeszyt-w-myjni',
-    '/blog/jak-nie-zgubic-rezerwacji-w-myjni',
-    '/blog/jak-zarzadzac-klientami-w-detailingu',
-    '/blog/jak-zwiekszyc-zyski-w-myjni',
     '/polityka-prywatnosci',
     '/regulamin',
   ];
 
-  return staticRoutes.map((route) => ({
+  // Get all blog posts dynamically
+  const blogPosts = getAllPosts();
+  const blogRoutes = blogPosts.map(post => `/blog/${post.slug}`);
+
+  const allRoutes = [...staticRoutes, ...blogRoutes];
+
+  return allRoutes.map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
-    changeFrequency: route === '' ? 'weekly' : route.startsWith('/blog') ? 'monthly' : 'monthly',
+    changeFrequency: route === '' ? 'weekly' : route.startsWith('/blog/') ? 'weekly' : 'monthly',
     priority: route === '' ? 1 : route.startsWith('/crm/') || route.startsWith('/funkcje/') ? 0.8 : 0.6,
   }));
 }
