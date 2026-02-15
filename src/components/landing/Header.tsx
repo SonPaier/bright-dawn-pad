@@ -59,6 +59,7 @@ const Header = () => {
     // { label: nav.opinie, href: "/opinie" }, // TODO: Dokończyć stronę opinii
     { label: "Historie Klientów", href: "/case-studies" },
     { label: nav.dlaczegoN2wash, href: "/dlaczego-n2wash" },
+    { label: nav.blog, href: "/blog" },
     { label: nav.kontakt, href: "/kontakt" },
   ];
 

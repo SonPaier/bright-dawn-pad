@@ -1,6 +1,10 @@
 import type { Metadata } from 'next';
-import PlaceholderPage from '@/components/pages/PlaceholderPage';
 import Breadcrumbs from '@/components/seo/Breadcrumbs';
+import Header from '@/components/landing/Header';
+import Footer from '@/components/landing/Footer';
+import BlogHero from '@/components/blog/BlogHero';
+import BlogGrid from '@/components/blog/BlogGrid';
+import { getAllPosts, getFeaturedPost } from '@/lib/blog';
 
 export const metadata: Metadata = {
   title: 'Blog – Porady dla Właścicieli Myjni i Studiów Detailingu',
@@ -10,14 +14,27 @@ export const metadata: Metadata = {
   },
 };
 
-export default function Page() {
+export default function BlogPage() {
+  const featuredPost = getFeaturedPost();
+  const allPosts = getAllPosts();
+  const regularPosts = allPosts.filter(post => !post.featured);
+
   return (
-    <>
-      <Breadcrumbs items={[
-        { name: 'Strona główna', href: '/' },
-        { name: 'Blog', href: '/blog' },
-      ]} />
-      <PlaceholderPage />
-    </>
+    <div className="min-h-screen bg-background flex flex-col">
+      <Header />
+      <main className="flex-1">
+        <Breadcrumbs items={[
+          { name: 'Strona główna', href: '/' },
+          { name: 'Blog', href: '/blog' },
+        ]} />
+
+        {/* Hero Post */}
+        {featuredPost && <BlogHero post={featuredPost} />}
+
+        {/* Grid of Posts */}
+        <BlogGrid posts={regularPosts} />
+      </main>
+      <Footer />
+    </div>
   );
 }
