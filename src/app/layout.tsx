@@ -4,6 +4,7 @@ import Script from 'next/script';
 import { Toaster } from '@/components/ui/toaster';
 import { Toaster as Sonner } from '@/components/ui/sonner';
 import { TooltipProvider } from '@/components/ui/tooltip';
+import { CookieBanner } from '@/components/CookieBanner';
 import './globals.css';
 
 const outfit = Outfit({
@@ -126,9 +127,23 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
           <Toaster />
           <Sonner />
+          <CookieBanner />
         </TooltipProvider>
 
-        {/* Google Analytics */}
+        {/* Google Analytics with Consent Mode */}
+        <Script id="google-consent-init" strategy="beforeInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+
+            // Default consent to denied
+            gtag('consent', 'default', {
+              'analytics_storage': 'denied',
+              'ad_storage': 'denied',
+              'functionality_storage': 'denied'
+            });
+          `}
+        </Script>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-7R7MH3MMJK"
           strategy="afterInteractive"
