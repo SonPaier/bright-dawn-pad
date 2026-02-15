@@ -1,9 +1,14 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { FileText, Layers, Link2, Mail, Eye, Palette, Globe, CheckCircle, Clock } from "lucide-react";
 import Header from "@/components/landing/Header";
 import Footer from "@/components/landing/Footer";
 import { Button } from "@/components/ui/button";
+import szablonyOfertImg from "@/assets/studio-detailing-szablony-ofert.webp";
+import generatorOfertImg from "@/assets/studio-detailing-generator-ofert-korzysci.webp";
+import ofertaKlientImg from "@/assets/studio-detailing-oferta-klient.webp";
+import listaOfertImg from "@/assets/studio-detailingu-lista-ofert.webp";
 
 const GeneratorOfert = () => {
   return (
@@ -83,13 +88,14 @@ const GeneratorOfert = () => {
             </h2>
 
             <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 mb-16">
-              <div className="flex-1">
-                <div className="bg-muted rounded-2xl aspect-[4/3] flex items-center justify-center border border-border">
-                  <div className="text-center p-8">
-                    <FileText className="w-16 h-16 text-muted-foreground/50 mx-auto mb-4" />
-                    <p className="text-muted-foreground font-medium">kreator-oferty-krok1.jpg</p>
-                    <p className="text-sm text-muted-foreground/70">Wybór szablonu oferty</p>
-                  </div>
+              <div className="w-full lg:w-[30%] flex justify-center">
+                <div className="rounded-2xl overflow-hidden border border-border bg-muted shadow-lg max-w-[200px] sm:max-w-[220px] lg:max-w-[240px]">
+                  <Image
+                    src={szablonyOfertImg}
+                    alt="Wybór szablonów usług detailingowych w generatorze ofert N2Wash"
+                    className="w-full h-auto"
+                    sizes="(max-width: 768px) 200px, 240px"
+                  />
                 </div>
               </div>
               <div className="flex-1">
@@ -123,17 +129,6 @@ const GeneratorOfert = () => {
                       </p>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Offer Preview */}
-            <div className="max-w-4xl mx-auto">
-              <div className="bg-muted rounded-2xl aspect-video flex items-center justify-center border border-border">
-                <div className="text-center p-8">
-                  <Layers className="w-20 h-20 text-muted-foreground/50 mx-auto mb-4" />
-                  <p className="text-muted-foreground font-medium">generator-oferty-pelny-widok.jpg</p>
-                  <p className="text-sm text-muted-foreground/70">Pełny widok generatora ofert z wariantami</p>
                 </div>
               </div>
             </div>
@@ -202,23 +197,28 @@ const GeneratorOfert = () => {
             </div>
 
             {/* Offer Preview Screenshot */}
+
             <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 max-w-5xl mx-auto">
-              <div className="flex-1">
-                <div className="bg-muted rounded-2xl aspect-[3/4] flex items-center justify-center border border-border">
-                  <div className="text-center p-8">
-                    <FileText className="w-16 h-16 text-muted-foreground/50 mx-auto mb-4" />
-                    <p className="text-muted-foreground font-medium">oferta-widok-klienta.jpg</p>
-                    <p className="text-sm text-muted-foreground/70">Jak klient widzi ofertę na telefonie</p>
-                  </div>
+            
+              <div className="flex-1 flex justify-center">
+            
+                <div className="rounded-2xl overflow-hidden border border-border bg-muted shadow-lg max-w-[280px] sm:max-w-[320px]">
+                  <Image
+                    src={ofertaKlientImg}
+                    alt="Widok oferty detailingowej na telefonie klienta z wariantami PPF i cenami"
+                    className="w-full h-auto"
+                    sizes="(max-width: 640px) 280px, 320px"
+                  />
                 </div>
               </div>
-              <div className="flex-1">
-                <div className="bg-muted rounded-2xl aspect-[4/3] flex items-center justify-center border border-border">
-                  <div className="text-center p-8">
-                    <Eye className="w-16 h-16 text-muted-foreground/50 mx-auto mb-4" />
-                    <p className="text-muted-foreground font-medium">status-oferty-obejrzana.jpg</p>
-                    <p className="text-sm text-muted-foreground/70">Panel ze statusem oferty</p>
-                  </div>
+              <div className="flex-1 flex justify-center">
+                <div className="rounded-2xl overflow-hidden border border-border bg-muted shadow-lg max-w-[280px] sm:max-w-[320px]">
+                  <Image
+                    src={listaOfertImg}
+                    alt="Lista ofert detailingowych ze statusami obejrzana, zaakceptowana w panelu N2Wash"
+                    className="w-full h-auto"
+                    sizes="(max-width: 640px) 280px, 320px"
+                  />
                 </div>
               </div>
             </div>
@@ -256,12 +256,15 @@ const GeneratorOfert = () => {
                 </ul>
               </div>
               <div className="flex-1 order-1 lg:order-2">
-                <div className="bg-muted rounded-2xl aspect-[4/3] flex items-center justify-center border border-border">
-                  <div className="text-center p-8">
-                    <Globe className="w-16 h-16 text-muted-foreground/50 mx-auto mb-4" />
-                    <p className="text-muted-foreground font-medium">widget-ofertowania-strona.jpg</p>
-                    <p className="text-sm text-muted-foreground/70">Widget ofertowania osadzony na stronie</p>
-                  </div>
+                <div className="rounded-2xl overflow-hidden border border-border shadow-lg bg-white">
+                  <iframe
+                    src="https://demo.n2wash.com/embed"
+                    width="100%"
+                    height={700}
+                    frameBorder="0"
+                    style={{ border: "none", borderRadius: "8px" }}
+                    title="Widget do ofertowania usług detailingowych N2Wash"
+                  />
                 </div>
               </div>
             </div>

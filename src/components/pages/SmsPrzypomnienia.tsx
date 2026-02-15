@@ -280,26 +280,11 @@ const SmsPrzypomnienia = () => {
 
                 <div className="border-t border-border pt-8">
                   <h4 className="text-lg font-semibold text-foreground mb-4">
-                    Co dalej? Dokup pakiety SMS
+                    Po przekroczeniu limitu?
                   </h4>
-                  <p className="text-muted-foreground mb-6">
-                    Potrzebujesz więcej? Dokup elastyczne pakiety SMS w atrakcyjnych cenach hurtowych. Możesz też włączyć automatyczne doładowanie – system sam uzupełni pulę, gdy się wyczerpie.
+                  <p className="text-muted-foreground">
+                    Po wykorzystaniu 100 SMS-ów w danym miesiącu, każdy kolejny SMS kosztuje <span className="font-semibold text-foreground">12 groszy</span>. Bez ukrytych opłat, bez zobowiązań – płacisz tylko za to, co faktycznie wysyłasz.
                   </p>
-                  
-                  <div className="grid sm:grid-cols-3 gap-4">
-                    <div className="bg-muted rounded-xl p-4 text-center">
-                      <p className="text-2xl font-bold text-foreground">100 SMS</p>
-                      <p className="text-muted-foreground text-sm">od XX zł</p>
-                    </div>
-                    <div className="bg-muted rounded-xl p-4 text-center">
-                      <p className="text-2xl font-bold text-foreground">500 SMS</p>
-                      <p className="text-muted-foreground text-sm">od XX zł</p>
-                    </div>
-                    <div className="bg-muted rounded-xl p-4 text-center">
-                      <p className="text-2xl font-bold text-foreground">1000 SMS</p>
-                      <p className="text-muted-foreground text-sm">od XX zł</p>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>

@@ -1,9 +1,13 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { FileText, Camera, Bell, TrendingUp, Palette, Shield, Clock, CheckCircle } from "lucide-react";
 import Header from "@/components/landing/Header";
 import Footer from "@/components/landing/Footer";
 import { Button } from "@/components/ui/button";
+import generatorOfert from "@/assets/studio-detailing-szablony-ofert.webp";
+import protokolPrzyjecia from "@/assets/studio-detailing-protokol-przyjecia-samochodu.webp";
+import przypomnieniaSMS from "@/assets/studio-detailing-przypomnienia-sms-powloki-ceramiczne.webp";
 
 const CrmDetailing = () => {
   return (
@@ -151,12 +155,13 @@ const CrmDetailing = () => {
                 </p>
               </div>
               <div className="flex-1 order-1 lg:order-2">
-                <div className="bg-muted rounded-2xl aspect-[4/3] flex items-center justify-center border border-border">
-                  <div className="text-center p-8">
-                    <FileText className="w-16 h-16 text-muted-foreground/50 mx-auto mb-4" />
-                    <p className="text-muted-foreground font-medium">generator-ofert-detailing.jpg</p>
-                    <p className="text-sm text-muted-foreground/70">Screenshot generatora ofert z wariantami</p>
-                  </div>
+                <div className="rounded-2xl overflow-hidden border border-border">
+                  <Image
+                    src={generatorOfert}
+                    alt="Generator ofert dla studia detailingu - tworzenie profesjonalnych ofert z wariantami cenowymi w kilka minut"
+                    className="w-full h-auto object-cover aspect-[4/3]"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                  />
                 </div>
               </div>
             </div>
@@ -164,12 +169,13 @@ const CrmDetailing = () => {
             {/* Feature 2 - Image Left */}
             <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 mb-16 lg:mb-20">
               <div className="flex-1">
-                <div className="bg-muted rounded-2xl aspect-[4/3] flex items-center justify-center border border-border">
-                  <div className="text-center p-8">
-                    <Shield className="w-16 h-16 text-muted-foreground/50 mx-auto mb-4" />
-                    <p className="text-muted-foreground font-medium">protokol-diagram-uszkodzen.jpg</p>
-                    <p className="text-sm text-muted-foreground/70">Protokół przyjęcia z diagramem uszkodzeń</p>
-                  </div>
+                <div className="rounded-2xl overflow-hidden border border-border">
+                  <Image
+                    src={protokolPrzyjecia}
+                    alt="Protokół przyjęcia samochodu w studio detailingu - dokumentacja stanu pojazdu ze zdjęciami i podpisem cyfrowym"
+                    className="w-full h-auto object-cover aspect-[4/3]"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                  />
                 </div>
               </div>
               <div className="flex-1">
@@ -203,12 +209,13 @@ const CrmDetailing = () => {
                 </p>
               </div>
               <div className="flex-1 order-1 lg:order-2">
-                <div className="bg-muted rounded-2xl aspect-[4/3] flex items-center justify-center border border-border">
-                  <div className="text-center p-8">
-                    <Bell className="w-16 h-16 text-muted-foreground/50 mx-auto mb-4" />
-                    <p className="text-muted-foreground font-medium">przypomnienie-ceramic-coating.jpg</p>
-                    <p className="text-sm text-muted-foreground/70">Przykład SMS przypomnienia o przeglądzie</p>
-                  </div>
+                <div className="rounded-2xl overflow-hidden border border-border">
+                  <Image
+                    src={przypomnieniaSMS}
+                    alt="Automatyczne przypomnienia SMS o przeglądach powłok ceramicznych - zwiększ stały dochód ze świadczonych usług"
+                    className="w-full h-auto object-cover aspect-[4/3]"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                  />
                 </div>
               </div>
             </div>

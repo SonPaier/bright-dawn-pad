@@ -1,10 +1,12 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { FileText, Camera, PenTool, Link2, Shield, Award, FolderOpen, CheckCircle } from "lucide-react";
 import Header from "@/components/landing/Header";
 import Footer from "@/components/landing/Footer";
 import { Button } from "@/components/ui/button";
+import protokolImg from "@/assets/studio-detailing-protokol-przyjecia-samochodu.webp";
 
 const ProtokolPrzyjecia = () => {
   return (
@@ -41,7 +43,7 @@ const ProtokolPrzyjecia = () => {
               Dlaczego warto mieć protokół przyjęcia i wydania pojazdu?
             </h2>
             <p className="text-muted-foreground text-center max-w-3xl mx-auto text-lg mb-12">
-              [Placeholder: Wprowadzenie - ochrona przed reklamacjami, dokumentacja istniejących uszkodzeń, profesjonalizm, budowanie zaufania klienta, podstawa prawna w sporach.]
+              Profesjonalny protokół przyjęcia to Twoja ochrona przed nieuzasadnionymi reklamacjami. Dokumentujesz każde uszkodzenie ze zdjęciami i podpisem klienta – w razie sporu masz niepodważalny dowód stanu pojazdu przed pracą. To buduje zaufanie i profesjonalny wizerunek studia.
             </p>
 
             <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -51,7 +53,7 @@ const ProtokolPrzyjecia = () => {
                 </div>
                 <h3 className="text-lg font-semibold text-foreground mb-2">Ochrona przed reklamacjami</h3>
                 <p className="text-sm text-muted-foreground">
-                  [Placeholder: Dokumentacja stanu przed pracą chroni przed nieuzasadnionymi roszczeniami]
+                  Dokumentujesz stan pojazdu przed rozpoczęciem prac. W razie sporu masz zdjęcia i podpis klienta potwierdzający istniejące wcześniej uszkodzenia.
                 </p>
               </div>
               <div className="bg-card rounded-2xl p-6 border border-border text-center">
@@ -60,7 +62,7 @@ const ProtokolPrzyjecia = () => {
                 </div>
                 <h3 className="text-lg font-semibold text-foreground mb-2">Dowód fotograficzny</h3>
                 <p className="text-sm text-muted-foreground">
-                  [Placeholder: Zdjęcia z datą i godziną - niepodważalny dowód stanu pojazdu]
+                  Każde zdjęcie ma automatyczną datę i godzinę wykonania. To niepodważalny dowód w przypadku roszczeń o nowe uszkodzenia po odebraniu auta.
                 </p>
               </div>
               <div className="bg-card rounded-2xl p-6 border border-border text-center">
@@ -69,7 +71,7 @@ const ProtokolPrzyjecia = () => {
                 </div>
                 <h3 className="text-lg font-semibold text-foreground mb-2">Podpis klienta</h3>
                 <p className="text-sm text-muted-foreground">
-                  [Placeholder: Cyfrowy podpis potwierdza akceptację stanu pojazdu przez klienta]
+                  Klient potwierdza stan pojazdu cyfrowym podpisem na tablecie lub telefonie. Prawnie wiążące – jak tradycyjny podpis na papierze.
                 </p>
               </div>
             </div>
@@ -85,12 +87,13 @@ const ProtokolPrzyjecia = () => {
 
             <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 max-w-5xl mx-auto">
               <div className="flex-1">
-                <div className="bg-muted rounded-2xl aspect-[3/4] flex items-center justify-center border border-border">
-                  <div className="text-center p-8">
-                    <FileText className="w-20 h-20 text-muted-foreground/50 mx-auto mb-4" />
-                    <p className="text-muted-foreground font-medium">protokol-widok-pelny.jpg</p>
-                    <p className="text-sm text-muted-foreground/70">Pełny widok protokołu przyjęcia</p>
-                  </div>
+                <div className="rounded-2xl overflow-hidden border border-border shadow-lg">
+                  <Image
+                    src={protokolImg}
+                    alt="Cyfrowy protokół przyjęcia pojazdu N2Wash z diagramem uszkodzeń i zdjęciami"
+                    className="w-full h-auto"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
                 </div>
               </div>
               <div className="flex-1 space-y-6">
@@ -101,7 +104,7 @@ const ProtokolPrzyjecia = () => {
                   <div>
                     <h3 className="font-semibold text-foreground">Interaktywny diagram pojazdu</h3>
                     <p className="text-muted-foreground text-sm">
-                      [Placeholder: Zaznaczanie uszkodzeń na schemacie auta - rysy, wgniecenia, odpryski]
+                      Klikasz na schemacie auta i zaznaczasz uszkodzenia – rysy, wgniecenia, odpryski lakieru. Diagram automatycznie zapisuje lokalizację każdego defektu.
                     </p>
                   </div>
                 </div>
@@ -112,7 +115,7 @@ const ProtokolPrzyjecia = () => {
                   <div>
                     <h3 className="font-semibold text-foreground">Galeria zdjęć</h3>
                     <p className="text-muted-foreground text-sm">
-                      [Placeholder: Zdjęcia z aparatu telefonu, automatyczna data i godzina]
+                      Robisz zdjęcia bezpośrednio z aparatu telefonu lub tabletu. Każde zdjęcie automatycznie dostaje datę i godzinę – dowód, kiedy dokładnie zostało wykonane.
                     </p>
                   </div>
                 </div>
@@ -123,7 +126,7 @@ const ProtokolPrzyjecia = () => {
                   <div>
                     <h3 className="font-semibold text-foreground">Dane pojazdu i klienta</h3>
                     <p className="text-muted-foreground text-sm">
-                      [Placeholder: Automatycznie uzupełniane z CRM lub ręcznie wprowadzane]
+                      System automatycznie pobiera dane z CRM – marka, model, numer rejestracyjny, dane klienta. Możesz też uzupełnić je ręcznie, jeśli to nowy klient.
                     </p>
                   </div>
                 </div>
@@ -134,7 +137,7 @@ const ProtokolPrzyjecia = () => {
                   <div>
                     <h3 className="font-semibold text-foreground">Notatki i uwagi</h3>
                     <p className="text-muted-foreground text-sm">
-                      [Placeholder: Dodatkowe informacje o stanie, życzenia klienta, historia pojazdu]
+                      Zapisujesz życzenia klienta, specjalne instrukcje czy historię pojazdu. Wszystko w jednym miejscu – pracownicy widzą notatki przy każdej wizycie.
                     </p>
                   </div>
                 </div>
@@ -145,7 +148,7 @@ const ProtokolPrzyjecia = () => {
                   <div>
                     <h3 className="font-semibold text-foreground">Podpis cyfrowy</h3>
                     <p className="text-muted-foreground text-sm">
-                      [Placeholder: Klient podpisuje palcem na ekranie tabletu lub telefonu]
+                      Klient potwierdza stan pojazdu podpisując się palcem na ekranie. Podpis zapisywany razem z protokołem – tak samo ważny jak tradycyjny podpis na papierze.
                     </p>
                   </div>
                 </div>
@@ -157,31 +160,28 @@ const ProtokolPrzyjecia = () => {
         {/* Creating Protocol Section */}
         <section className="py-16 md:py-20 border-b border-border">
           <div className="container mx-auto px-4">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground text-center mb-12">
-              Tworzenie protokołu
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground text-center mb-6">
+              Cały proces w 3-5 minut
             </h2>
 
-            <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-12">
-              <div className="bg-muted rounded-2xl aspect-video flex items-center justify-center border border-border">
-                <div className="text-center p-8">
-                  <Camera className="w-16 h-16 text-muted-foreground/50 mx-auto mb-4" />
-                  <p className="text-muted-foreground font-medium">tworzenie-protokolu-tablet.jpg</p>
-                  <p className="text-sm text-muted-foreground/70">Tworzenie protokołu na tablecie</p>
-                </div>
-              </div>
-              <div className="bg-muted rounded-2xl aspect-video flex items-center justify-center border border-border">
-                <div className="text-center p-8">
-                  <FileText className="w-16 h-16 text-muted-foreground/50 mx-auto mb-4" />
-                  <p className="text-muted-foreground font-medium">diagram-uszkodzen.jpg</p>
-                  <p className="text-sm text-muted-foreground/70">Zaznaczanie uszkodzeń na diagramie</p>
-                </div>
-              </div>
-            </div>
-
             <div className="max-w-3xl mx-auto">
-              <p className="text-muted-foreground text-lg text-center">
-                [Placeholder: Opis procesu tworzenia protokołu - od przyjęcia pojazdu przez robienie zdjęć, zaznaczanie uszkodzeń, po podpis klienta. Cały proces trwa 3-5 minut i jest w pełni cyfrowy.]
+              <p className="text-muted-foreground text-lg text-center mb-8">
+                Przyjmujesz pojazd, robisz kilka zdjęć telefonem, zaznaczasz uszkodzenia na diagramie i klient podpisuje na tablecie. Gotowe – protokół automatycznie zapisany w systemie i wysłany na maila klienta.
               </p>
+
+              <div className="bg-primary/5 border border-primary/20 rounded-xl p-6 text-center">
+                <p className="text-foreground font-medium mb-2">
+                  Zobacz przykładowy protokół widziany przez klienta:
+                </p>
+                <a
+                  href="https://demo.n2wash.com/protocols/xrvblqar1lkh"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline font-medium"
+                >
+                  Protokoł przyjęcia pojazdu
+                </a>
+              </div>
             </div>
           </div>
         </section>
@@ -190,17 +190,17 @@ const ProtokolPrzyjecia = () => {
         <section className="py-16 md:py-20 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 max-w-5xl mx-auto">
-              <div className="flex-1 order-2 lg:order-1">
+              <div className="flex-1">
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-6">
-                  Publiczny link dla klienta
+                  Klient dostaje protokół na maila
                 </h2>
                 <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                  [Placeholder: Opis publicznego linku - klient otrzymuje link do protokołu, może go przejrzeć w dowolnym momencie, wszystkie zdjęcia i uszkodzenia widoczne, może pobrać PDF, historia wszystkich protokołów.]
+                  Po podpisaniu protokołu, klient automatycznie otrzymuje link do protokołu na swojego maila. Może przeglądać wszystkie zdjęcia, sprawdzić zaznaczone uszkodzenia i pobrać PDF – w dowolnym momencie, z telefonu lub komputera.
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
-                    <span className="text-foreground">Klient widzi protokół w przeglądarce</span>
+                    <span className="text-foreground">Automatyczny mail z linkiem zaraz po podpisaniu</span>
                   </li>
                   <li className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
@@ -208,22 +208,9 @@ const ProtokolPrzyjecia = () => {
                   </li>
                   <li className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
-                    <span className="text-foreground">Możliwość pobrania PDF</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
-                    <span className="text-foreground">Historia protokołów tego pojazdu</span>
+                    <span className="text-foreground">Protokół zostaje dodany do listy protokołów</span>
                   </li>
                 </ul>
-              </div>
-              <div className="flex-1 order-1 lg:order-2">
-                <div className="bg-muted rounded-2xl aspect-[3/4] flex items-center justify-center border border-border">
-                  <div className="text-center p-8">
-                    <Link2 className="w-16 h-16 text-muted-foreground/50 mx-auto mb-4" />
-                    <p className="text-muted-foreground font-medium">protokol-widok-klienta.jpg</p>
-                    <p className="text-sm text-muted-foreground/70">Jak klient widzi protokół na telefonie</p>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -246,7 +233,7 @@ const ProtokolPrzyjecia = () => {
                   Brak sporów o stan pojazdu
                 </h3>
                 <p className="text-muted-foreground">
-                  [Placeholder: Opis korzyści - zdjęcia i diagram są dowodem stanu przed pracą, klient potwierdził podpisem, brak podstaw do reklamacji o istniejące wcześniej uszkodzenia.]
+                  Zdjęcia i diagram są niepodważalnym dowodem stanu przed pracą. Klient podpisał protokół – potwierdził istniejące uszkodzenia. Koniec z kłótniami o rysy, które były już wcześniej.
                 </p>
               </div>
 
@@ -259,7 +246,7 @@ const ProtokolPrzyjecia = () => {
                   Profesjonalny wizerunek
                 </h3>
                 <p className="text-muted-foreground">
-                  [Placeholder: Opis korzyści - cyfrowy protokół robi wrażenie na klientach, wyróżnia od konkurencji, buduje zaufanie, pokazuje profesjonalne podejście.]
+                  Cyfrowy protokół ze zdjęciami i podpisem na tablecie robi wrażenie. Wyróżniasz się od konkurencji nadal używającej papierowych kartek. Klient widzi, że jest w dobrych rękach.
                 </p>
               </div>
 
@@ -272,7 +259,7 @@ const ProtokolPrzyjecia = () => {
                   Wszystko w jednym systemie
                 </h3>
                 <p className="text-muted-foreground">
-                  [Placeholder: Opis korzyści - koniec z szukaniem kartek w szafie, wszystkie protokoły w chmurze, szybkie wyszukiwanie po numerze rejestracyjnym, powiązanie z rezerwacją i ofertą.]
+                  Koniec z szukaniem papierowych kartek w szafie. Wszystkie protokoły w chmurze, wyszukiwanie po numerze rejestracyjnym, powiązanie z rezerwacją i ofertą. Cała historia pojazdu w jednym miejscu.
                 </p>
               </div>
             </div>
