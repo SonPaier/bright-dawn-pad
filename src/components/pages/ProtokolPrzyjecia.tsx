@@ -195,7 +195,7 @@ const ProtokolPrzyjecia = () => {
                   Klient dostaje protokół na maila
                 </h2>
                 <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                  Po podpisaniu protokołu, klient automatycznie otrzymuje link do protokołu na swojego maila. Może przeglądać wszystkie zdjęcia, sprawdzić zaznaczone uszkodzenia i pobrać PDF – w dowolnym momencie, z telefonu lub komputera.
+                  Po podpisaniu protokołu, klient automatycznie otrzymuje link do protokołu na swojego maila. Może przeglądać wszystkie zdjęcia, sprawdzić zaznaczone uszkodzenia – w dowolnym momencie, z telefonu lub komputera.
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-center gap-3">

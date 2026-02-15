@@ -41,10 +41,10 @@ const ZarzadzanieZespolem = () => {
         <section className="py-16 md:py-20 border-b border-border">
           <div className="container mx-auto px-4">
             <h2 id="wyzwania-w-zarzadzaniu-zespolem-myjni-detailingu" className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground text-center mb-6">
-              Wyzwania w zarządzaniu zespołem myjni/detailingu
+              Wyzwania w zarządzaniu zespołem myjni ręcznej i studia car detailing
             </h2>
             <p className="text-muted-foreground text-center max-w-3xl mx-auto text-lg mb-12">
-              Rotacja pracowników, nakładające się grafiki i nieczytelne ewidencje godzin pracy to codzienność w branży detailingu. Bez odpowiedniego systemu tracisz czas na rozwiązywanie konfliktów i liczenie godzin zamiast skupić się na jakości usług.
+              Dokładna ewidencja czasu pracy to klucz do optymalizacji kosztów.
             </p>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
@@ -107,7 +107,7 @@ const ZarzadzanieZespolem = () => {
                       Ewidencja czasu pracy
                     </h3>
                     <p className="text-muted-foreground">
-                      Pracownicy rozpoczynają i kończą pracę bezpośrednio z tabletu lub telefonu. System automatycznie liczy godziny, przerwy i nadgodziny. Na koniec miesiąca eksportujesz dane do Excela i przekazujesz księgowości – zero ręcznych zestawień i błędów w rozliczeniach.
+                      Pracownicy rozpoczynają i kończą pracę bezpośrednio kliknięciem z tabletu lub telefonu. System automatycznie liczy godziny, przerwy i nadgodziny. Możesz generować raport tygodniowy lub miesięczny.
                     </p>
                   </div>
                 </div>
@@ -141,7 +141,7 @@ const ZarzadzanieZespolem = () => {
                       Przypisywanie do stanowisk
                     </h3>
                     <p className="text-muted-foreground">
-                      Przypisuj konkretnych pracowników do stanowisk w kalendarzu. System pokazuje dostępność zespołu i podpowiada optymalne obsadzenie. Każdy widzi w jednym miejscu, gdzie i kiedy pracuje – zero nieporozumień i opóźnień.
+                      Przypisuj konkretnych pracowników do stanowisk w kalendarzu. Każdy widzi w jednym miejscu, gdzie i kiedy pracuje – zero nieporozumień.
                     </p>
                   </div>
                 </div>
@@ -158,7 +158,7 @@ const ZarzadzanieZespolem = () => {
                       Przypisywanie do konkretnych zleceń
                     </h3>
                     <p className="text-muted-foreground">
-                      Idealne dla wielodniowego detailingu – przypisz całe zlecenie konkretnemu pracownikowi. Rozliczaj prowizje za kompletne realizacje, a nie tylko godziny. Miej pełną historię, kto wykonał jakie prace i jak często generuje powtórki.
+                      Idealne dla wielodniowego detailingu – przypisz całe zlecenie konkretnemu pracownikowi. Rozliczaj prowizje za kompletne realizacje, a nie tylko godziny. Miej pełną historię, kto wykonał jakie prace.
                     </p>
                   </div>
                 </div>
@@ -196,7 +196,7 @@ const ZarzadzanieZespolem = () => {
                       Tablet/monitor na hali
                     </h3>
                     <p className="text-muted-foreground text-sm">
-                      Postaw duży monitor lub tablet w miejscu widocznym dla całego zespołu. Widok odświeża się automatycznie – pracownicy zawsze widzą aktualny stan zleceń bez biegania do biura.
+                      Postaw tablet w miejscu widocznym dla całego zespołu. Widok odświeża się automatycznie gdy dodajesz nowe rezerwacje lub zmiany – pracownicy zawsze widzą aktualny stan prac do wykonania. Mogą te sami dodać usługi do istniejącej rezerwacji.
                     </p>
                   </div>
                 </div>
@@ -226,7 +226,7 @@ const ZarzadzanieZespolem = () => {
                       Bez dostępu do ustawień i wybranych detali
                     </h3>
                     <p className="text-muted-foreground text-sm">
-                      Zespół widzi tylko to, co niezbędne do pracy: harmonogram i przypisania. Ceny, dane kontaktowe klientów i ustawienia systemu pozostają ukryte – chroniąc poufność Twojego biznesu.
+                      Zespół widzi tylko to, co niezbędne do pracy: harmonogram i przypisania. Ceny, dane kontaktowe klientów i ustawienia systemu mogą pozostać ukryte – chroniąc poufność Twojego biznesu. Ty decydujesz, co widzi pracownik.
                     </p>
                   </div>
                 </div>
@@ -235,7 +235,7 @@ const ZarzadzanieZespolem = () => {
           </div>
         </section>
 
-        {/* Reports Section */}
+        {/* Reports Section
         <section className="py-16 md:py-20 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
@@ -277,7 +277,7 @@ const ZarzadzanieZespolem = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Related Features */}
         <section className="py-16 md:py-20 border-b border-border">
