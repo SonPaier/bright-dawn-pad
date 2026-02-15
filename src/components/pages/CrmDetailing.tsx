@@ -140,8 +140,8 @@ const CrmDetailing = () => {
             </h2>
 
             {/* Feature 1 - Image Right */}
-            <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 mb-16 lg:mb-20">
-              <div className="flex-1 order-2 lg:order-1">
+            <div className="flex flex-col lg:flex-row items-start gap-8 lg:gap-12 mb-16 lg:mb-20">
+              <div className="w-full lg:w-4/5 order-2 lg:order-1">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                     <Palette className="w-5 h-5 text-primary" />
@@ -154,31 +154,31 @@ const CrmDetailing = () => {
 
                 </p>
               </div>
-              <div className="flex-1 order-1 lg:order-2">
+              <div className="w-full lg:w-1/5 order-1 lg:order-2">
                 <div className="rounded-2xl overflow-hidden border border-border">
                   <Image
                     src={generatorOfert}
                     alt="Generator ofert dla studia detailingu - tworzenie profesjonalnych ofert z wariantami cenowymi w kilka minut"
                     className="w-full h-auto"
-                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    sizes="(max-width: 1024px) 100vw, 20vw"
                   />
                 </div>
               </div>
             </div>
 
             {/* Feature 2 - Image Left */}
-            <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 mb-16 lg:mb-20">
-              <div className="flex-1">
+            <div className="flex flex-col lg:flex-row items-start gap-8 lg:gap-12 mb-16 lg:mb-20">
+              <div className="w-full lg:w-1/5 order-1">
                 <div className="rounded-2xl overflow-hidden border border-border">
                   <Image
                     src={protokolPrzyjecia}
                     alt="Protokół przyjęcia samochodu w studio detailingu - dokumentacja stanu pojazdu ze zdjęciami i podpisem cyfrowym"
                     className="w-full h-auto"
-                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    sizes="(max-width: 1024px) 100vw, 20vw"
                   />
                 </div>
               </div>
-              <div className="flex-1">
+              <div className="w-full lg:w-4/5 order-2">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                     <Camera className="w-5 h-5 text-primary" />
@@ -194,8 +194,8 @@ const CrmDetailing = () => {
             </div>
 
             {/* Feature 3 - Image Right */}
-            <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 mb-16 lg:mb-20">
-              <div className="flex-1 order-2 lg:order-1">
+            <div className="flex flex-col lg:flex-row items-start gap-8 lg:gap-12 mb-16 lg:mb-20">
+              <div className="w-full lg:w-4/5 order-2 lg:order-1">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                     <Bell className="w-5 h-5 text-primary" />
@@ -208,13 +208,13 @@ const CrmDetailing = () => {
 
                 </p>
               </div>
-              <div className="flex-1 order-1 lg:order-2">
+              <div className="w-full lg:w-1/5 order-1 lg:order-2">
                 <div className="rounded-2xl overflow-hidden border border-border">
                   <Image
                     src={przypomnieniaSMS}
                     alt="Automatyczne przypomnienia SMS o przeglądach powłok ceramicznych - zwiększ stały dochód ze świadczonych usług"
                     className="w-full h-auto"
-                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    sizes="(max-width: 1024px) 100vw, 20vw"
                   />
                 </div>
               </div>

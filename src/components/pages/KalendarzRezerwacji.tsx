@@ -46,7 +46,7 @@ const KalendarzRezerwacji = () => {
               Jak działa kalendarz rezerwacji N2Wash?
             </h2>
             <p className="text-muted-foreground text-center max-w-3xl mx-auto text-lg mb-12">
-              Intuicyjny interfejs, który łączy grafik z bazą klientów. Każda rezerwacja jest połączona z profilem klienta – historia wizyt, numery telefonów i pojazdy dostępne jednym kliknięciem. Zmiany widoczne w czasie rzeczywistym dla całego zespołu.
+              Intuicyjny widok, który łączy grafik z bazą klientów. Wszystko czytelne na Twoim telefonie. Każda rezerwacja jest połączona z profilem klienta – historia wizyt, numery telefonów i pojazdy dostępne jednym kliknięciem. Zmiany widoczne w czasie rzeczywistym dla całego zespołu.
             </p>
 
             {/* Placeholder for screenshot/video */}
