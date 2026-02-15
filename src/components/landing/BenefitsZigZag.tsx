@@ -1,3 +1,4 @@
+import Image, { StaticImageData } from "next/image";
 import { Check } from "lucide-react";
 import { useTranslation } from "@/hooks/useTranslation";
 import benefit1 from "@/assets/benefit-1.jpg";
@@ -35,7 +36,7 @@ const BenefitsZigZag = () => {
         <div className="space-y-16 md:space-y-24 max-w-6xl mx-auto">
           {features.map((feature, index) => {
             const isReversed = index % 2 === 1;
-            const images: string[] = [benefit1, benefit2, benefit3, benefit4, benefit5, benefit6];
+            const images: StaticImageData[] = [benefit1, benefit2, benefit3, benefit4, benefit5, benefit6];
             const currentImage = images[index];
             
             return (
@@ -46,10 +47,11 @@ const BenefitsZigZag = () => {
                 {/* Image */}
                 <div className="w-full lg:w-1/2">
                   <div className="aspect-[4/3] rounded-2xl overflow-hidden">
-                    <img 
-                      src={currentImage} 
+                    <Image
+                      src={currentImage}
                       alt={feature.title}
                       className="w-full h-full object-cover"
+                      sizes="(max-width: 1024px) 100vw, 50vw"
                     />
                   </div>
                 </div>

@@ -1,5 +1,7 @@
+"use client";
+
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -78,7 +80,7 @@ const HeaderNav = ({ items, isScrolled, onItemClick, isMobile = false }: HeaderN
                     {item.children.map((child) => (
                       <Link
                         key={child.href}
-                        to={child.href}
+                        href={child.href}
                         onClick={onItemClick}
                         className="px-4 py-2 text-sm text-muted-foreground hover:text-primary hover:bg-accent/30 rounded-lg transition-colors"
                       >
@@ -98,7 +100,7 @@ const HeaderNav = ({ items, isScrolled, onItemClick, isMobile = false }: HeaderN
               </a>
             ) : (
               <Link
-                to={item.href}
+                href={item.href}
                 onClick={onItemClick}
                 className="block px-4 py-3 text-sm font-medium text-foreground/80 hover:text-primary hover:bg-accent/50 rounded-lg transition-colors"
               >
@@ -145,7 +147,7 @@ const HeaderNav = ({ items, isScrolled, onItemClick, isMobile = false }: HeaderN
                   {item.children.map((child) => (
                     <Link
                       key={child.href}
-                      to={child.href}
+                      href={child.href}
                       onClick={onItemClick}
                       className="block px-4 py-2 text-sm text-foreground/80 hover:text-primary hover:bg-accent/50 transition-colors"
                     >
@@ -170,7 +172,7 @@ const HeaderNav = ({ items, isScrolled, onItemClick, isMobile = false }: HeaderN
             </a>
           ) : (
             <Link
-              to={item.href}
+              href={item.href}
               onClick={onItemClick}
               className={cn(
                 "px-4 py-2 text-sm font-medium rounded-lg transition-colors",

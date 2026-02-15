@@ -1,9 +1,12 @@
+"use client";
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useTranslation } from "@/hooks/useTranslation";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
+import Image from "next/image";
 import { z } from "zod";
 import heroBg from "@/assets/hero-bg.jpg";
 const contactSchema = z.object({
@@ -68,7 +71,7 @@ const Hero = () => {
   return <section id="hero" className="relative min-h-[100vh] flex items-center justify-center overflow-hidden">
       {/* Background image with 16:10 aspect ratio preserved */}
       <div className="absolute inset-0 w-full h-full">
-        <img src={heroBg} alt="" className="w-full h-full object-cover object-center" />
+        <Image src={heroBg} alt="" className="w-full h-full object-cover object-center" fill priority sizes="100vw" />
       </div>
       {/* Dark blue overlay with multiply blend to enhance photo colors */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-primary/70 to-sky-900/80 mix-blend-multiply" />

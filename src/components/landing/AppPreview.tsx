@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useTranslation } from "@/hooks/useTranslation";
 import appDesktop from "@/assets/app-desktop.png";
 import appMobile from "@/assets/app-mobile.png";
@@ -27,10 +28,11 @@ const AppPreview = () => {
               
               {/* Screen content */}
               <div className="aspect-[16/10] bg-white overflow-hidden">
-                <img 
-                  src={appDesktop} 
-                  alt="N2Wash Desktop App" 
+                <Image
+                  src={appDesktop}
+                  alt="N2Wash Desktop App"
                   className="w-full h-full object-cover object-top"
+                  sizes="(max-width: 1024px) 100vw, 896px"
                 />
               </div>
             </div>
@@ -55,10 +57,11 @@ const AppPreview = () => {
                 
                 {/* Screen */}
                 <div className="relative rounded-[2.3rem] overflow-hidden bg-white">
-                  <img 
-                    src={appMobile} 
-                    alt="N2Wash Mobile App" 
+                  <Image
+                    src={appMobile}
+                    alt="N2Wash Mobile App"
                     className="w-full aspect-[9/19.5] object-cover object-top"
+                    sizes="(max-width: 768px) 208px, 256px"
                   />
                 </div>
               </div>
