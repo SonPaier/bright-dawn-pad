@@ -1,3 +1,4 @@
+import Image, { StaticImageData } from "next/image";
 import { Star } from "lucide-react";
 import logoArmcar from "@/assets/logo-armcar.png";
 
@@ -6,13 +7,13 @@ interface TestimonialCardProps {
   company: string;
   companyUrl?: string;
   location?: string;
-  logo?: string;
+  logo?: string;  // key into logoMap
   text: string;
   rating: number;
   fullWidth?: boolean;
 }
 
-const logoMap: Record<string, string> = {
+const logoMap: Record<string, StaticImageData> = {
   armcar: logoArmcar,
 };
 
@@ -50,9 +51,9 @@ const TestimonialCard = ({
       {/* Author */}
       <footer className="flex items-center gap-4">
         {logoSrc ? (
-          <img 
-            src={logoSrc} 
-            alt={`${company} logo`} 
+          <Image
+            src={logoSrc}
+            alt={`${company} logo`}
             className="h-16 w-auto object-contain"
           />
         ) : (

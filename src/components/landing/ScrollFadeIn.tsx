@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { ReactNode } from "react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";

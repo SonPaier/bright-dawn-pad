@@ -1,16 +1,20 @@
+"use client";
+
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import { Link, useLocation } from "react-router-dom";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "@/hooks/useTranslation";
+import Image from "next/image";
 import HeaderNav from "./HeaderNav";
 import logoN2Wash from "@/assets/n2washcom-logo.svg";
 
 const Header = () => {
   const { t } = useTranslation();
   const nav = t("nav");
-  const location = useLocation();
-  const isHomePage = location.pathname === "/";
+  const pathname = usePathname();
+  const isHomePage = pathname === "/";
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -25,7 +29,7 @@ const Header = () => {
   // Close mobile menu when route changes
   useEffect(() => {
     setIsMobileMenuOpen(false);
-  }, [location.pathname]);
+  }, [pathname]);
 
   // Determine if header should have solid background
   const hasSolidBackground = !isHomePage || isScrolled;
@@ -74,15 +78,16 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link
-            to="/"
+            href="/"
             className="transition-all hover:opacity-80"
           >
-            <img
+            <Image
               src={logoN2Wash}
               alt="N2Wash.com"
               className={`h-6 md:h-7 w-auto transition-all duration-300 ${
                 hasSolidBackground && isHomePage ? "" : "brightness-0 invert"
               }`}
+              priority
             />
           </Link>
 
@@ -91,7 +96,7 @@ const Header = () => {
 
           {/* CTA Button - Desktop */}
           <Link
-            to="/umow-prezentacje"
+            href="/umow-prezentacje"
             className={`hidden md:inline-flex items-center justify-center px-5 py-2 text-sm font-medium rounded-lg transition-colors ${
               hasSolidBackground && isHomePage
                 ? "bg-primary text-primary-foreground hover:bg-primary/90"
@@ -127,7 +132,7 @@ const Header = () => {
             />
             <div className="px-4 pb-4">
               <Link
-                to="/umow-prezentacje"
+                href="/umow-prezentacje"
                 onClick={closeMobileMenu}
                 className="block w-full text-center px-5 py-3 text-sm font-medium rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
               >

@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import { Stepper } from "@/components/ui/stepper";
 import { Label } from "@/components/ui/label";

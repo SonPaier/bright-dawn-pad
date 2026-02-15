@@ -1,5 +1,7 @@
+"use client";
+
 import { Mail, Phone, Globe } from "lucide-react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { useTranslation } from "@/hooks/useTranslation";
 
 const Footer = () => {
@@ -71,7 +73,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <Link
-                  to="/polityka-prywatnosci"
+                  href="/polityka-prywatnosci"
                   className="text-background/70 hover:text-background transition-colors text-sm"
                 >
                   {footer.privacy}
@@ -79,7 +81,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/regulamin"
+                  href="/regulamin"
                   className="text-background/70 hover:text-background transition-colors text-sm"
                 >
                   {footer.terms}
