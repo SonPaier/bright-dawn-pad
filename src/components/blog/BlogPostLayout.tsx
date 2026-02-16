@@ -12,16 +12,17 @@ interface BlogPostLayoutProps {
 }
 
 const components = {
-  a: ({ href, children, ...props }: any) => {
+  a: (props: unknown) => {
+    const { href, children } = props as { href?: string; children?: React.ReactNode };
     const isExternal = href?.startsWith('http');
     if (isExternal) {
       return (
-        <a href={href} target="_blank" rel="noopener noreferrer" {...props}>
+        <a href={href} target="_blank" rel="noopener noreferrer">
           {children}
         </a>
       );
     }
-    return <Link href={href || '#'} {...props}>{children}</Link>;
+    return <Link href={href || '#'}>{children}</Link>;
   },
 };
 
