@@ -1,5 +1,3 @@
-'use client';
-
 import Image from 'next/image';
 import Link from 'next/link';
 import { Calendar, Clock, User } from 'lucide-react';
@@ -8,27 +6,27 @@ import Footer from '@/components/landing/Footer';
 import { BlogPost } from '@/lib/blog';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import type { Components } from 'react-markdown';
 
 interface BlogPostLayoutProps {
   post: BlogPost;
 }
 
-const components: Components = {
-  a: ({ href, children }) => {
+const components = {
+  a: ({ href, children, ...props }: any) => {
     const isExternal = href?.startsWith('http');
     if (isExternal) {
       return (
-        <a href={href} target="_blank" rel="noopener noreferrer">
+        <a href={href} target="_blank" rel="noopener noreferrer" {...props}>
           {children}
         </a>
       );
     }
-    return <Link href={href || '#'}>{children}</Link>;
+    return <Link href={href || '#'} {...props}>{children}</Link>;
   },
 };
 
 export default function BlogPostLayout({ post }: BlogPostLayoutProps) {
+
   return (
     <div className="min-h-screen bg-background flex flex-col">
       <Header />
@@ -90,6 +88,10 @@ export default function BlogPostLayout({ post }: BlogPostLayoutProps) {
               prose-blockquote:pl-6 prose-blockquote:py-2 prose-blockquote:my-6
               prose-blockquote:bg-muted/30 prose-blockquote:rounded-r-lg
               prose-img:rounded-2xl prose-img:my-8
+              prose-table:text-sm prose-table:block prose-table:overflow-x-auto
+              prose-thead:bg-muted/50
+              prose-th:px-4 prose-th:py-3 prose-th:text-left prose-th:font-semibold
+              prose-td:px-4 prose-td:py-3 prose-td:border-t prose-td:border-border
               max-w-none">
               <ReactMarkdown
                 remarkPlugins={[remarkGfm]}
