@@ -4,7 +4,7 @@ import Breadcrumbs from '@/components/seo/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'CRM dla Myjni Samochodowej – Oprogramowanie dla Małych i Średnich Myjni',
-  description: 'System CRM dedykowany dla myjni ręcznych. Rezerwacje, kalendarz, baza klientów, SMS. Idealne dla myjni 1-5 stanowisk. Zacznij za 129 zł/msc.',
+  description: 'System CRM dedykowany dla myjni ręcznych. Rezerwacje, kalendarz, baza klientów, SMS. Zacznij za 129 zł/msc.',
   alternates: {
     canonical: 'https://n2wash.com/crm/crm-dla-myjni-samochodowych',
   },

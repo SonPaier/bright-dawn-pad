@@ -93,7 +93,7 @@ const Pricing = ({ onScrollToContact }: PricingProps) => {
           {/* Myjnia Package */}
           <PricingCard
             title="Myjnia"
-            firstStationPrice={129}
+            firstStationPrice={89}
             additionalStationPrice={49}
             features={myjniaFeatures}
             isYearly={isYearly}
@@ -103,7 +103,7 @@ const Pricing = ({ onScrollToContact }: PricingProps) => {
           {/* Detailing Package */}
           <PricingCard
             title="Detailing"
-            firstStationPrice={199}
+            firstStationPrice={139}
             additionalStationPrice={49}
             features={detailingFeatures}
             includesPackage="Myjnia"

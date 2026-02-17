@@ -25,9 +25,9 @@ const CennikPage = () => {
     },
     {
       icon: Calendar,
-      title: "14 dni za darmo bez karty",
+      title: "30 dni za darmo bez karty",
       description:
-        "Wypróbuj wszystkie funkcje przez 14 dni. Bez podawania karty, bez zobowiązań. Przekonaj się sam.",
+        "Wypróbuj wszystkie funkcje przez 30 dni. Bez podawania karty, bez zobowiązań. Przekonaj się sam.",
     },
   ];
 
@@ -92,8 +92,8 @@ const CennikPage = () => {
                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/20 mb-6">
                   <Check className="w-8 h-8 text-primary" />
                 </div>
-                <h3 id="wyprobuj-za-darmo-przez-14-dni" className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-                  Wypróbuj za darmo przez 14 dni
+                <h3 id="wyprobuj-za-darmo-przez-30-dni" className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+                  Wypróbuj za darmo przez30 dni
                 </h3>
                 <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto">
                   Bez podawania karty kredytowej. Bez zobowiązań. Pełen dostęp do

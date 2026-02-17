@@ -307,7 +307,7 @@ const KalendarzRezerwacji = () => {
               Wypróbuj kalendarz N2Wash
             </h2>
             <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8">
-              Zobacz jak łatwo zarządzać rezerwacjami w Twojej myjni lub studiu detailingu. 14 dni za darmo, bez zobowiązań.
+              Zobacz jak łatwo zarządzać rezerwacjami w Twojej myjni lub studiu detailingu.30 dni za darmo, bez zobowiązań.
             </p>
             <Button 
               asChild

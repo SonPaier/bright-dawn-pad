@@ -35,7 +35,7 @@ const CrmDetailing = () => {
             </div>
 
             <p className="mt-4 text-sm text-white/60">
-              Od 199 zł/msc • Bez zobowiązań • 14 dni za darmo
+              Od 139 zł/msc • Bez zobowiązań • 30 dni za darmo
             </p>
           </div>
         </section>
@@ -248,8 +248,8 @@ const CrmDetailing = () => {
               <div className="bg-card rounded-2xl p-8 md:p-12 border-2 border-primary shadow-lg">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-8">
                   <div>
-                    <h3 id="199-zl-za-pierwsze-stanowisko" className="text-2xl md:text-3xl font-bold text-foreground mb-2">
-                      199 zł za pierwsze stanowisko
+                    <h3 id="139-zl-za-pierwsze-stanowisko" className="text-2xl md:text-3xl font-bold text-foreground mb-2">
+                      139 zł za pierwsze stanowisko
                     </h3>
                     <p className="text-muted-foreground">
                       + 49 zł za każde kolejne stanowisko/miesiąc
