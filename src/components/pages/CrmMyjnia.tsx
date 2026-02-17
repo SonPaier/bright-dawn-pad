@@ -26,7 +26,7 @@ const CrmMyjnia = () => {
             </div>
 
             <p className="mt-4 text-sm text-white/60">
-              Od 129 zł/msc • Bez zobowiązań • 14 dni za darmo
+              Od 89 zł/msc • Bez zobowiązań • 30 dni za darmo
             </p>
           </div>
         </section>

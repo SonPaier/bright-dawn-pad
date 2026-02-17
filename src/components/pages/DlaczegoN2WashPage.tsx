@@ -362,7 +362,7 @@ const DlaczegoN2WashPage = () => {
                 Przekonaj się sam
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
-                Wypróbuj N2Wash za darmo przez 14 dni. Bez karty, bez zobowiązań.
+                Wypróbuj N2Wash za darmo przez 30 dni. Bez karty, bez zobowiązań.
               </p>
               <a
                 href="/#hero"
