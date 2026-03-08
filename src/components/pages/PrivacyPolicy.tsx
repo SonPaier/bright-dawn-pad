@@ -1,9 +1,9 @@
 "use client";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
-import Image from "next/image";
 import Footer from "@/components/landing/Footer";
-import logo from "@/assets/n2washcom-logo.svg";
+// import Image from "next/image";
+// import logo from "@/assets/n2washcom-logo.svg";
 
 const PrivacyPolicy = () => {
   return (
@@ -13,11 +13,15 @@ const PrivacyPolicy = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16 md:h-20">
             <Link href="/" className="transition-all hover:opacity-80">
-              <Image
+              {/* TODO: Podmienić na nowe logo SVG */}
+              {/* <Image
                 src={logo}
-                alt="N2Wash.com"
+                alt="Carfect.pl"
                 className="h-6 md:h-7 w-auto"
-              />
+              /> */}
+              <span className="text-xl md:text-2xl font-bold tracking-tight text-foreground">
+                CARFECT
+              </span>
             </Link>
             <Link 
               href="/" 
@@ -39,7 +43,7 @@ const PrivacyPolicy = () => {
           
           <div className="prose prose-lg max-w-none text-foreground/80">
             <p className="text-lg text-foreground font-medium mb-8 text-center">
-              Serwisu N2Wash.com
+              Serwisu Carfect.pl
             </p>
 
             <section className="mb-10">
@@ -48,7 +52,7 @@ const PrivacyPolicy = () => {
                 Administrator Danych
               </h2>
               <p className="leading-relaxed pl-11">
-                Administratorem danych osobowych w zakresie funkcjonowania platformy n2wash.com oraz rozliczeń z Partnerami jest: <strong>Tomasz Nastały Sinpai</strong>, ul. Prezydenta Lecha Kaczyńskiego 31 lok. 19, 81-810 Gdańsk, NIP 5851474597 (dalej: „Operator").
+                Administratorem danych osobowych w zakresie funkcjonowania platformy carfect.pl oraz rozliczeń z Partnerami jest: <strong>Tomasz Nastały Sinpai</strong>, ul. Prezydenta Lecha Kaczyńskiego 31 lok. 19, 81-810 Gdańsk, NIP 5851474597 (dalej: „Operator").
               </p>
             </section>
 
@@ -69,7 +73,7 @@ const PrivacyPolicy = () => {
                   <div className="p-4 bg-muted/30 rounded-lg border border-border/50">
                     <h3 className="font-semibold text-foreground mb-2">Obsługa techniczna i historia</h3>
                     <p className="text-sm leading-relaxed">
-                      Przechowywanie danych w bazie n2wash.com w celu umożliwienia Klientowi zarządzania rezerwacjami oraz wysyłki powiadomień SMS o statusie rezerwacji (Art. 6 ust. 1 lit. b RODO).
+                      Przechowywanie danych w bazie carfect.pl w celu umożliwienia Klientowi zarządzania rezerwacjami oraz wysyłki powiadomień SMS o statusie rezerwacji (Art. 6 ust. 1 lit. b RODO).
                     </p>
                   </div>
                   <div className="p-4 bg-muted/30 rounded-lg border border-border/50">

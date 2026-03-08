@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'CRM dla Studia Detailingu – System Rezerwacji i Ofert Detailingowych',
   description: 'System CRM dedykowany dla studiów detailingu. Generator ofert, protokoły przyjęcia, kalendarz rezerwacji i baza klientów w jednym miejscu.',
   alternates: {
-    canonical: 'https://n2wash.com/crm/crm-dla-studia-detailingu',
+    canonical: 'https://carfect.pl/crm/crm-dla-studia-detailingu',
   },
 };
 

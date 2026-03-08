@@ -18,7 +18,7 @@ interface CookieConsent {
   functional: boolean;
 }
 
-const COOKIE_CONSENT_KEY = 'n2wash-cookie-consent';
+const COOKIE_CONSENT_KEY = 'carfect-cookie-consent';
 
 export function CookieBanner() {
   const [mounted, setMounted] = useState(false);

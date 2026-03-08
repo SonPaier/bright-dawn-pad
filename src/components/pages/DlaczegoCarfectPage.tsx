@@ -15,7 +15,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 
-const DlaczegoN2WashPage = () => {
+const DlaczegoCarfectPage = () => {
   const differentiators = [
     {
       icon: Users,
@@ -52,7 +52,7 @@ const DlaczegoN2WashPage = () => {
     {
       title: "Funkcje, których naprawdę potrzebujesz",
       description:
-        "Każda funkcja w N2Wash powstała na podstawie realnych potrzeb właścicieli myjni i studiów detailingu. Nic zbędnego.",
+        "Każda funkcja w Carfect powstała na podstawie realnych potrzeb właścicieli myjni i studiów detailingu. Nic zbędnego.",
     },
     {
       title: "Bez zbędnych modułów",
@@ -62,32 +62,32 @@ const DlaczegoN2WashPage = () => {
   ];
 
   const excelComparison = [
-    { feature: "Rezerwacje online 24/7", n2wash: true, excel: false },
-    { feature: "Automatyczne przypomnienia SMS", n2wash: true, excel: false },
-    { feature: "Historia klientów i pojazdów", n2wash: true, excel: "partial" },
-    { feature: "Generator profesjonalnych ofert", n2wash: true, excel: false },
-    { feature: "Protokół przyjęcia ze zdjęciami", n2wash: true, excel: false },
-    { feature: "Widok dla pracowników na hali", n2wash: true, excel: false },
-    { feature: "Raporty i analityka", n2wash: true, excel: "partial" },
-    { feature: "Dostęp z telefonu", n2wash: true, excel: "partial" },
-    { feature: "Kopia zapasowa danych", n2wash: true, excel: false },
+    { feature: "Rezerwacje online 24/7", carfect: true, excel: false },
+    { feature: "Automatyczne przypomnienia SMS", carfect: true, excel: false },
+    { feature: "Historia klientów i pojazdów", carfect: true, excel: "partial" },
+    { feature: "Generator profesjonalnych ofert", carfect: true, excel: false },
+    { feature: "Protokół przyjęcia ze zdjęciami", carfect: true, excel: false },
+    { feature: "Widok dla pracowników na hali", carfect: true, excel: false },
+    { feature: "Raporty i analityka", carfect: true, excel: "partial" },
+    { feature: "Dostęp z telefonu", carfect: true, excel: "partial" },
+    { feature: "Kopia zapasowa danych", carfect: true, excel: false },
   ];
 
   const crmComparison = [
-    { feature: "Wszystko działa na telefonie", n2wash: true, crm: false },
-    { feature: "Kalendarz działa na żywo pomiędzy wieloma urządzeniami", n2wash: true, crm: false },
-    { feature: "Protokół przyjęcia pojazdu", n2wash: true, crm: false },
-    { feature: "Diagram uszkodzeń", n2wash: true, crm: false },
-    { feature: "Obsługa aut z placu", n2wash: true, crm: false },
-    { feature: "Widok na żywo dla hali", n2wash: true, crm: false },
-    { feature: "Generator ofert detailingowych", n2wash: true, crm: false },
-    { feature: "Dedykowany dla automotive", n2wash: true, crm: false },
-    { feature: "Polski support telefoniczny", n2wash: true, crm: "partial" },
-    { feature: "Szybkie wdrożenie (30 min)", n2wash: true, crm: false },
-    { feature: "Przypomnienia SMS na cykliczne usługi jak odświeżanie powłok ceramicznych", n2wash: true, crm: false },
-    { feature: "Wiele samochodów przypisanych do jednego klienta", n2wash: true, crm: false },
-    { feature: "Raportowanie czasu pracy pracowników prosto z tableta", n2wash: true, crm: false },
-    { feature: "Możliwość dodania różnych cen usług w zależności od rozmiaru pojazdu", n2wash: true, crm: false },
+    { feature: "Wszystko działa na telefonie", carfect: true, crm: false },
+    { feature: "Kalendarz działa na żywo pomiędzy wieloma urządzeniami", carfect: true, crm: false },
+    { feature: "Protokół przyjęcia pojazdu", carfect: true, crm: false },
+    { feature: "Diagram uszkodzeń", carfect: true, crm: false },
+    { feature: "Obsługa aut z placu", carfect: true, crm: false },
+    { feature: "Widok na żywo dla hali", carfect: true, crm: false },
+    { feature: "Generator ofert detailingowych", carfect: true, crm: false },
+    { feature: "Dedykowany dla automotive", carfect: true, crm: false },
+    { feature: "Polski support telefoniczny", carfect: true, crm: "partial" },
+    { feature: "Szybkie wdrożenie (30 min)", carfect: true, crm: false },
+    { feature: "Przypomnienia SMS na cykliczne usługi jak odświeżanie powłok ceramicznych", carfect: true, crm: false },
+    { feature: "Wiele samochodów przypisanych do jednego klienta", carfect: true, crm: false },
+    { feature: "Raportowanie czasu pracy pracowników prosto z tableta", carfect: true, crm: false },
+    { feature: "Możliwość dodania różnych cen usług w zależności od rozmiaru pojazdu", carfect: true, crm: false },
   ];
 
   const renderComparisonIcon = (value: boolean | string) => {
@@ -121,8 +121,8 @@ const DlaczegoN2WashPage = () => {
         <section className="pt-32 pb-16 md:pt-48 md:pb-24 bg-gradient-to-b from-primary/5 to-background">
           <div className="container px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 id="dlaczego-n2wash-system-stworzony-z-doswiadczonymi-detailerami" className="text-3xl md:text-5xl font-bold text-foreground mb-6">
-                Dlaczego N2Wash? – System Stworzony z Doświadczonymi Detailerami
+              <h1 id="dlaczego-carfect-system-stworzony-z-doswiadczonymi-detailerami" className="text-3xl md:text-5xl font-bold text-foreground mb-6">
+                Dlaczego Carfect? – System Stworzony z Doświadczonymi Detailerami
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground">
                 Poznaj powody, dla których właściciele myjni i studiów detailingu wybierają właśnie nas
@@ -136,8 +136,8 @@ const DlaczegoN2WashPage = () => {
         <section className="py-20 md:py-28 bg-section-alt">
           <div className="container px-4">
             <div className="text-center mb-12 md:mb-16">
-              <h2 id="co-wyroznia-n2wash-na-tle-konkurencji" className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Co wyróżnia N2Wash na tle konkurencji?
+              <h2 id="co-wyroznia-carfect-na-tle-konkurencji" className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                Co wyróżnia Carfect na tle konkurencji?
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                 Nie jesteśmy kolejnym uniwersalnym CRM. Jesteśmy systemem stworzonym specjalnie dla Twojej branży.
@@ -272,23 +272,23 @@ const DlaczegoN2WashPage = () => {
           </div>
         </section>
 
-        {/* Comparison: N2Wash vs Excel */}
+        {/* Comparison: Carfect vs Excel */}
         <section className="py-20 md:py-28 bg-section-alt">
           <div className="container px-4">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-12">
-                <h2 id="n2wash-vs-excel-zeszyt" className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                  N2Wash vs Excel / Zeszyt
+                <h2 id="carfect-vs-excel-zeszyt" className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                  Carfect vs Excel / Zeszyt
                 </h2>
                 <p className="text-lg text-muted-foreground">
-                  Zobacz, co zyskujesz przechodząc z ręcznego zarządzania na N2Wash
+                  Zobacz, co zyskujesz przechodząc z ręcznego zarządzania na Carfect
                 </p>
               </div>
 
               <div className="bg-card rounded-2xl border border-border overflow-hidden">
                 <div className="grid grid-cols-3 gap-4 p-4 bg-muted/50 font-semibold text-sm">
                   <div className="text-foreground">Funkcja</div>
-                  <div className="text-center text-primary">N2Wash</div>
+                  <div className="text-center text-primary">Carfect</div>
                   <div className="text-center text-muted-foreground">Excel / Zeszyt</div>
                 </div>
                 {excelComparison.map((row, index) => (
@@ -300,7 +300,7 @@ const DlaczegoN2WashPage = () => {
                   >
                     <div className="text-sm text-foreground">{row.feature}</div>
                     <div className="flex justify-center">
-                      {renderComparisonIcon(row.n2wash)}
+                      {renderComparisonIcon(row.carfect)}
                     </div>
                     <div className="flex justify-center">
                       {renderComparisonIcon(row.excel)}
@@ -312,13 +312,13 @@ const DlaczegoN2WashPage = () => {
           </div>
         </section>
 
-        {/* Comparison: N2Wash vs Universal CRM */}
+        {/* Comparison: Carfect vs Universal CRM */}
         <section className="py-20 md:py-28 bg-background">
           <div className="container px-4">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-12">
-                <h2 id="n2wash-vs-uniwersalne-crm" className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                  N2Wash vs Uniwersalne CRM
+                <h2 id="carfect-vs-uniwersalne-crm" className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                  Carfect vs Uniwersalne CRM
                 </h2>
                 <p className="text-lg text-muted-foreground">
                   Dlaczego dedykowany system dla myjni ręcznych i studiów detailingu jest lepszy niż uniwersalne rozwiązanie
@@ -328,7 +328,7 @@ const DlaczegoN2WashPage = () => {
               <div className="bg-card rounded-2xl border border-border overflow-hidden">
                 <div className="grid grid-cols-3 gap-4 p-4 bg-muted/50 font-semibold text-sm">
                   <div className="text-foreground">Funkcja</div>
-                  <div className="text-center text-primary">N2Wash</div>
+                  <div className="text-center text-primary">Carfect</div>
                   <div className="text-center text-muted-foreground">Uniwersalne CRM</div>
                 </div>
                 {crmComparison.map((row, index) => (
@@ -340,7 +340,7 @@ const DlaczegoN2WashPage = () => {
                   >
                     <div className="text-sm text-foreground">{row.feature}</div>
                     <div className="flex justify-center">
-                      {renderComparisonIcon(row.n2wash)}
+                      {renderComparisonIcon(row.carfect)}
                     </div>
                     <div className="flex justify-center">
                       {renderComparisonIcon(row.crm)}
@@ -362,7 +362,7 @@ const DlaczegoN2WashPage = () => {
                 Przekonaj się sam
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
-                Wypróbuj N2Wash za darmo przez 30 dni. Bez karty, bez zobowiązań.
+                Wypróbuj Carfect za darmo przez 30 dni. Bez karty, bez zobowiązań.
               </p>
               <a
                 href="/#hero"
@@ -381,4 +381,4 @@ const DlaczegoN2WashPage = () => {
   );
 };
 
-export default DlaczegoN2WashPage;
+export default DlaczegoCarfectPage;

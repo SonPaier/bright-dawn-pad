@@ -32,6 +32,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
       },
     ],
-    sitemap: 'https://n2wash.com/sitemap.xml',
+    sitemap: 'https://carfect.pl/sitemap.xml',
   };
 }

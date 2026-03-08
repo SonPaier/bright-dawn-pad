@@ -4,9 +4,9 @@ import Breadcrumbs from '@/components/seo/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Polityka Prywatności',
-  description: 'Polityka prywatności serwisu N2Wash.com. Informacje o przetwarzaniu danych osobowych, plikach cookies i prawach użytkowników.',
+  description: 'Polityka prywatności serwisu Carfect.pl. Informacje o przetwarzaniu danych osobowych, plikach cookies i prawach użytkowników.',
   alternates: {
-    canonical: 'https://n2wash.com/polityka-prywatnosci',
+    canonical: 'https://carfect.pl/polityka-prywatnosci',
   },
 };
 

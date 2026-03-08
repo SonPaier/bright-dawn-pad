@@ -19,28 +19,28 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://n2wash.com'),
+  metadataBase: new URL('https://carfect.pl'),
   title: {
-    default: 'N2Wash.com - CRM i System Rezerwacji dla Myjni i Detailingu',
-    template: '%s | N2Wash.com',
+    default: 'Carfect.pl - CRM i System Rezerwacji dla Myjni i Detailingu',
+    template: '%s | Carfect.pl',
   },
   description: 'Skup się na detailingu, chaos zostaw nam. Poznaj CRM i system rezerwacji stworzony przy udziale doświadczonych detailerów i właścicieli myjni samochodowych.',
   keywords: ['myjnia samochodowa', 'detailing', 'CRM', 'system rezerwacji', 'kalendarz online', 'zarządzanie myjnią', 'auto detailing', 'rezerwacje online'],
-  authors: [{ name: 'N2Wash.com' }],
+  authors: [{ name: 'Carfect.pl' }],
   openGraph: {
-    title: 'N2Wash.com - CRM i System Rezerwacji dla Myjni i Detailingu',
+    title: 'Carfect.pl - CRM i System Rezerwacji dla Myjni i Detailingu',
     description: 'Skup się na detailingu, chaos zostaw nam. System CRM i rezerwacji stworzony przez detailerów, dla detailerów.',
     type: 'website',
-    url: 'https://n2wash.com',
+    url: 'https://carfect.pl',
     locale: 'pl_PL',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'N2Wash.com - CRM dla Myjni i Detailingu',
+    title: 'Carfect.pl - CRM dla Myjni i Detailingu',
     description: 'System rezerwacji i CRM dla myjni samochodowych i studiów detailingu.',
   },
   alternates: {
-    canonical: 'https://n2wash.com',
+    canonical: 'https://carfect.pl',
   },
   icons: {
     icon: [
@@ -55,26 +55,26 @@ export const metadata: Metadata = {
 const jsonLdGraph = [
   {
     '@type': 'WebSite',
-    '@id': 'https://n2wash.com/#website',
-    url: 'https://n2wash.com',
-    name: 'N2Wash.com',
+    '@id': 'https://carfect.pl/#website',
+    url: 'https://carfect.pl',
+    name: 'Carfect.pl',
     description: 'CRM i system rezerwacji dla myjni samochodowych i studiów detailingu',
     inLanguage: 'pl-PL',
     potentialAction: {
       '@type': 'SearchAction',
       target: {
         '@type': 'EntryPoint',
-        urlTemplate: 'https://n2wash.com/?s={search_term_string}',
+        urlTemplate: 'https://carfect.pl/?s={search_term_string}',
       },
       'query-input': 'required name=search_term_string',
     },
   },
   {
     '@type': 'Organization',
-    '@id': 'https://n2wash.com/#organization',
-    name: 'N2Wash.com',
-    url: 'https://n2wash.com',
-    email: 'hello@n2wash.com',
+    '@id': 'https://carfect.pl/#organization',
+    name: 'Carfect.pl',
+    url: 'https://carfect.pl',
+    email: 'hello@carfect.pl',
     description: 'Twórcy systemu CRM i rezerwacji online dla myjni samochodowych i studiów detailingu w Polsce.',
     foundingDate: '2024',
     areaServed: {
@@ -85,8 +85,8 @@ const jsonLdGraph = [
   },
   {
     '@type': 'SoftwareApplication',
-    '@id': 'https://n2wash.com/#software',
-    name: 'N2Wash.com',
+    '@id': 'https://carfect.pl/#software',
+    name: 'Carfect.pl',
     applicationCategory: 'BusinessApplication',
     operatingSystem: 'Web',
     description: 'CRM i system rezerwacji dla myjni samochodowych i studiów detailingu',
@@ -103,7 +103,7 @@ const jsonLdGraph = [
       reviewCount: '50',
     },
     provider: {
-      '@id': 'https://n2wash.com/#organization',
+      '@id': 'https://carfect.pl/#organization',
     },
   },
 ];

@@ -43,7 +43,7 @@ const KalendarzRezerwacji = () => {
         <section className="py-16 md:py-20 border-b border-border">
           <div className="container mx-auto px-4">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground text-center mb-6">
-              Jak działa kalendarz rezerwacji N2Wash?
+              Jak działa kalendarz rezerwacji Carfect?
             </h2>
             <p className="text-muted-foreground text-center max-w-3xl mx-auto text-lg mb-12">
               Intuicyjny widok, który łączy grafik z bazą klientów. Wszystko czytelne na Twoim telefonie. Każda rezerwacja jest połączona z profilem klienta – historia wizyt, numery telefonów i pojazdy dostępne jednym kliknięciem. Zmiany widoczne w czasie rzeczywistym dla całego zespołu.
@@ -54,7 +54,7 @@ const KalendarzRezerwacji = () => {
               <div className="rounded-2xl overflow-hidden border border-border shadow-lg">
                 <Image
                   src={kalendarzDesktopImg}
-                  alt="Główny widok kalendarza rezerwacji N2Wash z rezerwacjami na stanowiskach"
+                  alt="Główny widok kalendarza rezerwacji Carfect z rezerwacjami na stanowiskach"
                   className="w-full h-auto"
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 90vw, 1024px"
                 />
@@ -121,7 +121,7 @@ const KalendarzRezerwacji = () => {
                 <div className="rounded-2xl overflow-hidden border border-border shadow-lg">
                   <Image
                     src={edycjaRezerwacjiImg}
-                    alt="Edycja rezerwacji w kalendarzu N2Wash z powiadomieniem o nowej rezerwacji"
+                    alt="Edycja rezerwacji w kalendarzu Carfect z powiadomieniem o nowej rezerwacji"
                     className="w-full h-auto"
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
@@ -155,7 +155,7 @@ const KalendarzRezerwacji = () => {
                 <div className="rounded-2xl overflow-hidden border border-border shadow-lg">
                   <Image
                     src={rezerwacjaWielodniowaImg}
-                    alt="Klientka rezerwująca wizytę online przez kalendarz N2Wash z wyborem daty i godziny"
+                    alt="Klientka rezerwująca wizytę online przez kalendarz Carfect z wyborem daty i godziny"
                     className="w-full h-auto"
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
@@ -235,7 +235,7 @@ const KalendarzRezerwacji = () => {
                 <div className="rounded-2xl overflow-hidden border border-border shadow-lg bg-muted max-w-[280px] sm:max-w-[320px] lg:max-w-none">
                   <Image
                     src={zewnetrznyKalendarzImg}
-                    alt="Zewnętrzny kalendarz rezerwacji N2Wash osadzony na stronie studia detailingowego"
+                    alt="Zewnętrzny kalendarz rezerwacji Carfect osadzony na stronie studia detailingowego"
                     className="w-full h-auto"
                     sizes="(max-width: 640px) 280px, (max-width: 1024px) 320px, 500px"
                   />
@@ -248,7 +248,7 @@ const KalendarzRezerwacji = () => {
                 <div className="rounded-2xl overflow-hidden border border-border shadow-lg bg-muted max-w-[320px] sm:max-w-[380px] lg:max-w-none">
                   <Image
                     src={smsPotwierdznieImg}
-                    alt="SMS z przypomnieniem o wizycie w myjni wysłany automatycznie przez N2Wash"
+                    alt="SMS z przypomnieniem o wizycie w myjni wysłany automatycznie przez Carfect"
                     className="w-full h-auto"
                     sizes="(max-width: 640px) 320px, (max-width: 1024px) 380px, 500px"
                   />
@@ -304,7 +304,7 @@ const KalendarzRezerwacji = () => {
         <section className="py-16 md:py-20 bg-gradient-to-br from-primary via-primary/90 to-sky-900 text-white">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6">
-              Wypróbuj kalendarz N2Wash
+              Wypróbuj kalendarz Carfect
             </h2>
             <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8">
               Zobacz jak łatwo zarządzać rezerwacjami w Twojej myjni lub studiu detailingu.30 dni za darmo, bez zobowiązań.

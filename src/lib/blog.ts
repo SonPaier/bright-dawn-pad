@@ -40,7 +40,7 @@ export function getAllPosts(): BlogPost[] {
         description: data.description || '',
         category: data.category || 'Bez kategorii',
         date: data.date || new Date().toISOString(),
-        author: data.author || 'N2Wash Team',
+        author: data.author || 'Carfect Team',
         image: data.image || '/images/blog/placeholder.jpg',
         featured: data.featured || false,
         content,

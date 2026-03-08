@@ -99,7 +99,7 @@ const KontaktPage = () => {
                 Wolisz zobaczyć system w akcji?
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
-                Umów bezpłatną prezentację i przekonaj się, jak N2Wash może usprawnić Twój biznes.
+                Umów bezpłatną prezentację i przekonaj się, jak Carfect może usprawnić Twój biznes.
               </p>
               <a
                 href="/#hero"

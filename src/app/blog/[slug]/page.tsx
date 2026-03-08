@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     };
   }
 
-  const baseUrl = 'https://n2wash.com';
+  const baseUrl = 'https://carfect.pl';
   const postUrl = `${baseUrl}/blog/${post.slug}`;
   const absoluteImageUrl = `${baseUrl}${post.image}`;
 
@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       title: post.title,
       description: post.description,
       url: postUrl,
-      siteName: 'N2Wash.com',
+      siteName: 'Carfect.pl',
       locale: 'pl_PL',
       type: 'article',
       publishedTime: post.date,

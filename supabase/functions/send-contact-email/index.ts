@@ -70,20 +70,20 @@ const handler = async (req: Request): Promise<Response> => {
     const contactTypeDisplay = isEmail ? "Email" : "Telefon";
     await client.send({
       from: Deno.env.get("SMTP_FROM")!,
-      to: "hello@n2wash.com",
-      subject: `Nowe zapytanie o prezentację - N2Wash.com`,
+      to: "hello@carfect.pl",
+      subject: `Nowe zapytanie o prezentację - Carfect.pl`,
       html: `
         <h2>Nowe zapytanie o prezentację</h2>
         <p><strong>${contactTypeDisplay}:</strong> ${contact}</p>
         <p><strong>Data:</strong> ${new Date().toLocaleString("pl-PL", { timeZone: "Europe/Warsaw" })}</p>
         <hr>
-        <p style="color: #666; font-size: 12px;">Wiadomość wysłana automatycznie z formularza na stronie n2wash.com</p>
+        <p style="color: #666; font-size: 12px;">Wiadomość wysłana automatycznie z formularza na stronie carfect.pl</p>
       `,
     });
 
     await client.close();
 
-    console.log("Email sent successfully to hello@n2wash.com");
+    console.log("Email sent successfully to hello@carfect.pl");
 
     return new Response(
       JSON.stringify({ success: true, message: "Contact saved and email sent" }),

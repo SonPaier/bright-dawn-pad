@@ -4,9 +4,9 @@ import Breadcrumbs from '@/components/seo/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Funkcje CRM dla Myjni i Detailingu – Wszystkie Narzędzia w Jednym Systemie',
-  description: 'Przegląd funkcji N2Wash: kalendarz rezerwacji, SMS przypomnienia, generator ofert, analityka, zarządzanie zespołem i więcej. Sprawdź co zyskujesz.',
+  description: 'Przegląd funkcji Carfect: kalendarz rezerwacji, SMS przypomnienia, generator ofert, analityka, zarządzanie zespołem i więcej. Sprawdź co zyskujesz.',
   alternates: {
-    canonical: 'https://n2wash.com/funkcje',
+    canonical: 'https://carfect.pl/funkcje',
   },
 };
 

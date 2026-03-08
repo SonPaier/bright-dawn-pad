@@ -4,9 +4,9 @@ import Breadcrumbs from '@/components/seo/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Generator Ofert Detailingowych – Twórz Profesjonalne Wyceny w 5 Minut',
-  description: 'Twórz profesjonalne oferty detailingowe w kilka minut. Gotowe szablony, automatyczne wyceny i wysyłka do klienta prosto z systemu N2Wash.',
+  description: 'Twórz profesjonalne oferty detailingowe w kilka minut. Gotowe szablony, automatyczne wyceny i wysyłka do klienta prosto z systemu Carfect.',
   alternates: {
-    canonical: 'https://n2wash.com/funkcje/generator-ofert',
+    canonical: 'https://carfect.pl/funkcje/generator-ofert',
   },
 };
 

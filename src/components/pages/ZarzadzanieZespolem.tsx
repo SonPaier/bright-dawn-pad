@@ -91,8 +91,8 @@ const ZarzadzanieZespolem = () => {
         {/* Features Section */}
         <section className="py-16 md:py-20 bg-muted/30">
           <div className="container mx-auto px-4">
-            <h2 id="funkcje-zarzadzania-zespolem-w-n2wash" className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground text-center mb-12">
-              Funkcje zarządzania zespołem w N2Wash
+            <h2 id="funkcje-zarzadzania-zespolem-w-carfect" className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground text-center mb-12">
+              Funkcje zarządzania zespołem w Carfect
             </h2>
 
             <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">

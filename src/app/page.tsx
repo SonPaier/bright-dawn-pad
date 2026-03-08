@@ -3,7 +3,7 @@ import Index from '@/components/pages/Index';
 
 export const metadata: Metadata = {
   alternates: {
-    canonical: 'https://n2wash.com',
+    canonical: 'https://carfect.pl',
   },
 };
 

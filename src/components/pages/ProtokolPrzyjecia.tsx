@@ -82,7 +82,7 @@ const ProtokolPrzyjecia = () => {
         <section className="py-16 md:py-20 bg-muted/30">
           <div className="container mx-auto px-4">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground text-center mb-12">
-              Jak wygląda protokół w N2Wash?
+              Jak wygląda protokół w Carfect?
             </h2>
 
             <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 max-w-5xl mx-auto">
@@ -90,7 +90,7 @@ const ProtokolPrzyjecia = () => {
                 <div className="rounded-2xl overflow-hidden border border-border shadow-lg">
                   <Image
                     src={protokolImg}
-                    alt="Cyfrowy protokół przyjęcia pojazdu N2Wash z diagramem uszkodzeń i zdjęciami"
+                    alt="Cyfrowy protokół przyjęcia pojazdu Carfect z diagramem uszkodzeń i zdjęciami"
                     className="w-full h-auto"
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
@@ -174,7 +174,7 @@ const ProtokolPrzyjecia = () => {
                   Zobacz przykładowy protokół widziany przez klienta:
                 </p>
                 <a
-                  href="https://demo.n2wash.com/protocols/xrvblqar1lkh"
+                  href="https://demo.carfect.pl/protocols/xrvblqar1lkh"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-primary hover:underline font-medium"

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'Automatyczne SMS Przypomnienia dla Myjni i Detailingu',
   description: 'Automatyczne przypomnienia SMS o wizytach dla klientów myjni i studia detailingu. Zmniejsz liczbę nieodwołanych wizyt i zwiększ frekwencję.',
   alternates: {
-    canonical: 'https://n2wash.com/funkcje/sms-przypomnienia',
+    canonical: 'https://carfect.pl/funkcje/sms-przypomnienia',
   },
 };
 

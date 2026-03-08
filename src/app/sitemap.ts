@@ -2,7 +2,7 @@ import type { MetadataRoute } from 'next';
 import { getAllPosts } from '@/lib/blog';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://n2wash.com';
+  const baseUrl = 'https://carfect.pl';
 
   const staticRoutes = [
     '',
@@ -19,7 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/cennik-crm-myjnia-detailing',
     '/opinie',
     '/case-studies',
-    '/dlaczego-n2wash',
+    '/dlaczego-carfect',
     '/kontakt',
     '/umow-prezentacje',
     '/demo',

@@ -4,9 +4,9 @@ import Breadcrumbs from '@/components/seo/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'CRM dla Myjni i Detailingu – Zarządzaj Firmą w Jednym Miejscu',
-  description: 'Poznaj system CRM N2Wash stworzony specjalnie dla myjni samochodowych i studiów detailingu. Rezerwacje, klienci, oferty i raporty w jednym narzędziu.',
+  description: 'Poznaj system CRM Carfect stworzony specjalnie dla myjni samochodowych i studiów detailingu. Rezerwacje, klienci, oferty i raporty w jednym narzędziu.',
   alternates: {
-    canonical: 'https://n2wash.com/crm',
+    canonical: 'https://carfect.pl/crm',
   },
 };
 

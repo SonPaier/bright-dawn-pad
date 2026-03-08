@@ -24,7 +24,7 @@ const CaseStudiesPage = () => {
               <h1 id="jak-studio-arm-car-detailing-odzyskalo-10-godzin-tygodniowo" className="text-2xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight text-center">
                 Jak studio Arm Car Detailing odzyskało{" "}
                 <span className="text-primary">10 godzin tygodniowo</span>{" "}
-                i zwiększyło obroty dzięki N2Wash
+                i zwiększyło obroty dzięki Carfect
               </h1>
             </div>
           </div>
@@ -58,7 +58,7 @@ Armen, właściciel studia, zna swój fach jak mało kto. Jednak sukces w branż
               <Image src={caseStudy1} alt="Aplikacja folii ochronnej PPF na Mercedesa w studiu Arm Car Detailing" className="w-full rounded-2xl mb-6" />
               
               <p className="text-foreground/80 leading-relaxed mb-4">
-                Przed wdrożeniem N2Wash, sercem firmy był papierowy kalendarz i arkusz w Excelu. 
+                Przed wdrożeniem Carfect, sercem firmy był papierowy kalendarz i arkusz w Excelu. 
                 Każda rezerwacja wymagała fizycznej obecności właściciela przy zeszycie lub dziesiątek 
                 telefonów po godzinach pracy.
               </p>
@@ -91,7 +91,7 @@ Armen, właściciel studia, zna swój fach jak mało kto. Jednak sukces w branż
                 Rozwiązanie: Cyfrowa rewolucja w trzy dni
               </h2>
               
-              <Image src={caseStudy2} alt="Kalendarz N2Wash na tablecie i telefonie w studiu detailingowym" className="w-full rounded-2xl mb-6" />
+              <Image src={caseStudy2} alt="Kalendarz Carfect na tablecie i telefonie w studiu detailingowym" className="w-full rounded-2xl mb-6" />
               
               <p className="text-foreground/80 leading-relaxed mb-4">
                 Jak każdy właściciel biznesu, Armen miał wątpliwości przed podjęciem decyzji o zmianie systemu na w pełni cyfrowy.
@@ -99,7 +99,7 @@ Armen, właściciel studia, zna swój fach jak mało kto. Jednak sukces w branż
 Czy aplikacja nie będzie skomplikowana w codziennym użyciu? Czy będzie działać sprawnie na telefonie? Czy pracownicy – przyzwyczajeni do zeszytu – przestawią się na nową technologię? Czy system będzie naprawdę dostosowany do specyfiki myjni i detailingu?
               </p>
               <p className="text-foreground/80 leading-relaxed mb-4">
-                Zespół N2Wash <strong className="text-foreground">w zaledwie trzy dni</strong> przeniósł 
+                Zespół Carfect <strong className="text-foreground">w zaledwie trzy dni</strong> przeniósł 
                 bazę klientów i cennik do aplikacji. Armen otrzymał gotowe narzędzie, które już od pierwszego dnia wyeliminowało błędy i ograniczyło puste przebiegi.
               </p>
               <p className="text-foreground/80 leading-relaxed">
@@ -136,7 +136,7 @@ Czy aplikacja nie będzie skomplikowana w codziennym użyciu? Czy będzie dział
 
             </h2>
               
-              <p className="text-foreground/80 leading-relaxed mb-4">N2Wash zmienił sposób działania studia. Funkcja ewidencji czasu pracy pozwoliła Armenowi zrozumieć, ile realnie trwają poszczególne usługi, co umożliwiło precyzyjną korektę cennika i wyższą rentowność.
+              <p className="text-foreground/80 leading-relaxed mb-4">Carfect zmienił sposób działania studia. Funkcja ewidencji czasu pracy pozwoliła Armenowi zrozumieć, ile realnie trwają poszczególne usługi, co umożliwiło precyzyjną korektę cennika i wyższą rentowność.
 
 
               <strong className="text-foreground"> precyzyjną korektę cennika i wyższą rentowność</strong>.
@@ -156,12 +156,12 @@ Czy aplikacja nie będzie skomplikowana w codziennym użyciu? Czy będzie dział
                 </p>
               </blockquote>
 
-              <Image src={caseStudy3} alt="Protokół przyjęcia pojazdu i kalendarz rezerwacji N2Wash na tabletach" className="w-full rounded-2xl mb-6" />
+              <Image src={caseStudy3} alt="Protokół przyjęcia pojazdu i kalendarz rezerwacji Carfect na tabletach" className="w-full rounded-2xl mb-6" />
               
               <p className="text-foreground/80 leading-relaxed mb-6">
                 <strong className="text-foreground">Pracownicy zyskali autonomię</strong> – sami raportują postępy na tabletach, dodają dokumentację zdjęciową i wysyłają powiadomienia o odbiorze auta. Dzięki temu Armen może zarządzać studiem zdalnie, mając wgląd w każdą rezerwację i czas pracy zespołu bezpośrednio ze swojego telefonu, bez konieczności ciągłego dzwonienia do pracowników.
 
-Co więcej, Armen nie musi już prowadzić oddzielnych arkuszy czasu pracy, dzwonić do pracowników aby sprawdzić dostępność, ani zgadywać ile kto przepracował w miesiącu. Wszystko dostępne jest z poziomu aplikacji N2Wash.
+Co więcej, Armen nie musi już prowadzić oddzielnych arkuszy czasu pracy, dzwonić do pracowników aby sprawdzić dostępność, ani zgadywać ile kto przepracował w miesiącu. Wszystko dostępne jest z poziomu aplikacji Carfect.
               </p>
 
               <p className="text-foreground/80 leading-relaxed mb-6">
@@ -169,7 +169,7 @@ Co więcej, Armen nie musi już prowadzić oddzielnych arkuszy czasu pracy, dzwo
               </p>
 
               <p className="text-foreground/80 leading-relaxed mb-6">
-                Dodatkowo N2Wash zapewnia porządek: na liście ofert można łatwo sprawdzić, czy klient już się zapoznał z propozycją i na jakim etapie sprzedaży jesteśmy.
+                Dodatkowo Carfect zapewnia porządek: na liście ofert można łatwo sprawdzić, czy klient już się zapoznał z propozycją i na jakim etapie sprzedaży jesteśmy.
               </p>
 
               <blockquote className="border-l-4 border-primary pl-6 py-2 my-6 bg-background/50 rounded-r-lg">
@@ -252,7 +252,7 @@ Co więcej, Armen nie musi już prowadzić oddzielnych arkuszy czasu pracy, dzwo
                 Twój biznes też może działać bez Twojej ciągłej obecności
               </h2>
               <p className="text-foreground/70 mb-8">
-                Jeśli masz dość zeszytów i uciekających rezerwacji – umów się na bezpłatną prezentację N2Wash.
+                Jeśli masz dość zeszytów i uciekających rezerwacji – umów się na bezpłatną prezentację Carfect.
               </p>
               <Button asChild size="lg" className="text-base px-6 py-5 h-auto rounded-full">
                 <Link href="/kontakt">

@@ -4,9 +4,9 @@ import Breadcrumbs from '@/components/seo/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'ARM-CAR Detailing Case Study – Jak Odzyskać 10h Tygodniowo',
-  description: 'Case study ARM-CAR Detailing z Gdańska. Zobacz jak N2Wash pomógł zwiększyć obroty o 10% i zaoszczędzić 10 godzin tygodniowo.',
+  description: 'Case study ARM-CAR Detailing z Gdańska. Zobacz jak Carfect pomógł zwiększyć obroty o 10% i zaoszczędzić 10 godzin tygodniowo.',
   alternates: {
-    canonical: 'https://n2wash.com/case-studies',
+    canonical: 'https://carfect.pl/case-studies',
   },
 };
 

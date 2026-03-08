@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   title: 'Blog – Porady dla Właścicieli Myjni i Studiów Detailingu',
   description: 'Artykuły i porady jak prowadzić myjnię samochodową lub studio detailingu. Zarządzanie klientami, rezerwacje, marketing i rozwój biznesu.',
   alternates: {
-    canonical: 'https://n2wash.com/blog',
+    canonical: 'https://carfect.pl/blog',
   },
   openGraph: {
     title: 'Blog – Porady dla Właścicieli Myjni i Studiów Detailingu',
     description: 'Artykuły i porady jak prowadzić myjnię samochodową lub studio detailingu. Zarządzanie klientami, rezerwacje, marketing i rozwój biznesu.',
-    url: 'https://n2wash.com/blog',
-    siteName: 'N2Wash.com',
+    url: 'https://carfect.pl/blog',
+    siteName: 'Carfect.pl',
     locale: 'pl_PL',
   },
   twitter: {

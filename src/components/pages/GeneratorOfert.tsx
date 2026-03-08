@@ -84,7 +84,7 @@ const GeneratorOfert = () => {
         <section className="py-16 md:py-20 bg-muted/30">
           <div className="container mx-auto px-4">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground text-center mb-12">
-              Jak stworzyć ofertę w N2Wash?
+              Jak stworzyć ofertę w Carfect?
             </h2>
 
             <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 mb-16">
@@ -92,7 +92,7 @@ const GeneratorOfert = () => {
                 <div className="rounded-2xl overflow-hidden border border-border bg-muted shadow-lg max-w-[200px] sm:max-w-[220px] lg:max-w-[240px]">
                   <Image
                     src={szablonyOfertImg}
-                    alt="Wybór szablonów usług detailingowych w generatorze ofert N2Wash"
+                    alt="Wybór szablonów usług detailingowych w generatorze ofert Carfect"
                     className="w-full h-auto"
                     sizes="(max-width: 768px) 200px, 240px"
                   />
@@ -216,7 +216,7 @@ const GeneratorOfert = () => {
                 <div className="rounded-2xl overflow-hidden border border-border bg-muted shadow-lg max-w-[280px] sm:max-w-[320px]">
                   <Image
                     src={listaOfertImg}
-                    alt="Lista ofert detailingowych ze statusami obejrzana, zaakceptowana w panelu N2Wash"
+                    alt="Lista ofert detailingowych ze statusami obejrzana, zaakceptowana w panelu Carfect"
                     className="w-full h-auto"
                     sizes="(max-width: 640px) 280px, 320px"
                   />
@@ -255,12 +255,12 @@ const GeneratorOfert = () => {
               <div className="flex-1 order-1 lg:order-2">
                 <div className="rounded-2xl overflow-hidden border border-border shadow-lg bg-white">
                   <iframe
-                    src="https://demo.n2wash.com/embed"
+                    src="https://demo.carfect.pl/embed"
                     width="100%"
                     height={700}
                     frameBorder="0"
                     style={{ border: "none", borderRadius: "8px" }}
-                    title="Widget do ofertowania usług detailingowych N2Wash"
+                    title="Widget do ofertowania usług detailingowych Carfect"
                   />
                 </div>
               </div>
@@ -312,7 +312,7 @@ const GeneratorOfert = () => {
               Stwórz pierwszą ofertę w 5 minut
             </h2>
             <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8">
-              Wypróbuj generator ofert N2Wash i przekonaj się, jak łatwo tworzyć profesjonalne wyceny dla klientów.
+              Wypróbuj generator ofert Carfect i przekonaj się, jak łatwo tworzyć profesjonalne wyceny dla klientów.
             </p>
             <Button 
               asChild

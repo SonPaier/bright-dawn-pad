@@ -1,9 +1,9 @@
 "use client";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
-import Image from "next/image";
 import Footer from "@/components/landing/Footer";
-import logo from "@/assets/n2washcom-logo.svg";
+// import Image from "next/image";
+// import logo from "@/assets/n2washcom-logo.svg";
 
 const TermsOfService = () => {
   return (
@@ -13,11 +13,15 @@ const TermsOfService = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16 md:h-20">
             <Link href="/" className="transition-all hover:opacity-80">
-              <Image
+              {/* TODO: Podmienić na nowe logo SVG */}
+              {/* <Image
                 src={logo}
-                alt="N2Wash.com"
+                alt="Carfect.pl"
                 className="h-6 md:h-7 w-auto"
-              />
+              /> */}
+              <span className="text-xl md:text-2xl font-bold tracking-tight text-foreground">
+                CARFECT
+              </span>
             </Link>
             <Link 
               href="/" 
@@ -39,7 +43,7 @@ const TermsOfService = () => {
           
           <div className="prose prose-lg max-w-none text-foreground/80">
             <p className="text-lg text-foreground font-medium mb-8 text-center">
-              Świadczenia Usług Drogą Elektroniczną n2wash.com
+              Świadczenia Usług Drogą Elektroniczną carfect.pl
             </p>
 
             <section className="mb-10">
@@ -49,10 +53,10 @@ const TermsOfService = () => {
               </h2>
               <div className="pl-11 space-y-4">
                 <p className="leading-relaxed">
-                  Właścicielem i operatorem Serwisu dostępnego pod adresem n2wash.com oraz powiązanych subdomen jest <strong>Tomasz Nastały Sinpai</strong>, ul. Prezydenta Lecha Kaczyńskiego 31 lok. 19, 81-810 Gdańsk, NIP 5851474597 (dalej: „Operator").
+                  Właścicielem i operatorem Serwisu dostępnego pod adresem carfect.pl oraz powiązanych subdomen jest <strong>Tomasz Nastały Sinpai</strong>, ul. Prezydenta Lecha Kaczyńskiego 31 lok. 19, 81-810 Gdańsk, NIP 5851474597 (dalej: „Operator").
                 </p>
                 <p className="leading-relaxed">
-                  Niniejszy Regulamin określa zasady korzystania z platformy n2wash.com przez Klientów oraz Partnerów.
+                  Niniejszy Regulamin określa zasady korzystania z platformy carfect.pl przez Klientów oraz Partnerów.
                 </p>
                 <p className="leading-relaxed">
                   Serwis służy do dokonywania rezerwacji usług mycia i pielęgnacji pojazdów u Partnerów oraz zarządzania tymi rezerwacjami.
@@ -69,7 +73,7 @@ const TermsOfService = () => {
                 <div className="p-4 bg-muted/30 rounded-lg border border-border/50">
                   <h3 className="font-semibold text-foreground mb-2">Partner</h3>
                   <p className="text-sm leading-relaxed">
-                    Podmiot prowadzący działalność gospodarczą, który na podstawie umowy z Operatorem korzysta z Serwisu w celu oferowania swoich usług i zarządzania rezerwacjami we własnej domenie (subdomenie n2wash.com).
+                    Podmiot prowadzący działalność gospodarczą, który na podstawie umowy z Operatorem korzysta z Serwisu w celu oferowania swoich usług i zarządzania rezerwacjami we własnej domenie (subdomenie carfect.pl).
                   </p>
                 </div>
                 <div className="p-4 bg-muted/30 rounded-lg border border-border/50">
@@ -81,7 +85,7 @@ const TermsOfService = () => {
                 <div className="p-4 bg-muted/30 rounded-lg border border-border/50">
                   <h3 className="font-semibold text-foreground mb-2">Serwis</h3>
                   <p className="text-sm leading-relaxed">
-                    System rezerwacyjny online działający w domenie n2wash.com oraz subdomenach Partnerów.
+                    System rezerwacyjny online działający w domenie carfect.pl oraz subdomenach Partnerów.
                   </p>
                 </div>
               </div>

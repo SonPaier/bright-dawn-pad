@@ -4,9 +4,9 @@ import Breadcrumbs from '@/components/seo/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Regulamin Serwisu',
-  description: 'Regulamin korzystania z serwisu i usług N2Wash.com. Warunki użytkowania systemu CRM dla myjni samochodowych i studiów detailingu.',
+  description: 'Regulamin korzystania z serwisu i usług Carfect.pl. Warunki użytkowania systemu CRM dla myjni samochodowych i studiów detailingu.',
   alternates: {
-    canonical: 'https://n2wash.com/regulamin',
+    canonical: 'https://carfect.pl/regulamin',
   },
 };
 

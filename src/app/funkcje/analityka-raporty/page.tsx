@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'Analityka i Raporty dla Myjni i Detailingu – Dane Do Lepszych Decyzji',
   description: 'Raporty sprzedażowe, statystyki klientów i analityka dla myjni samochodowych i studiów detailingu. Podejmuj lepsze decyzje na podstawie danych.',
   alternates: {
-    canonical: 'https://n2wash.com/funkcje/analityka-raporty',
+    canonical: 'https://carfect.pl/funkcje/analityka-raporty',
   },
 };
 

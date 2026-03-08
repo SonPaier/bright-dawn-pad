@@ -4,10 +4,10 @@
 // import Breadcrumbs from '@/components/seo/Breadcrumbs';
 
 // export const metadata: Metadata = {
-//   title: 'Opinie Klientów N2Wash – Co Mówią Właściciele Myjni i Studiów Detailingu',
-//   description: 'Przeczytaj opinie właścicieli myjni samochodowych i studiów detailingu o systemie N2Wash. Sprawdź jak CRM pomógł im rozwinąć biznes.',
+//   title: 'Opinie Klientów Carfect – Co Mówią Właściciele Myjni i Studiów Detailingu',
+//   description: 'Przeczytaj opinie właścicieli myjni samochodowych i studiów detailingu o systemie Carfect. Sprawdź jak CRM pomógł im rozwinąć biznes.',
 //   alternates: {
-//     canonical: 'https://n2wash.com/opinie',
+//     canonical: 'https://carfect.pl/opinie',
 //   },
 // };
 

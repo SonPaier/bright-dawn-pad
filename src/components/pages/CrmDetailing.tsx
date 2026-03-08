@@ -135,8 +135,8 @@ const CrmDetailing = () => {
         {/* Features Section with Images */}
         <section className="py-16 md:py-20 border-b border-border">
           <div className="container mx-auto px-4">
-            <h2 id="funkcje-dedykowane-dla-detailingu-w-n2wash" className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground text-center mb-12">
-              Funkcje dedykowane dla detailingu w N2Wash
+            <h2 id="funkcje-dedykowane-dla-detailingu-w-carfect" className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground text-center mb-12">
+              Funkcje dedykowane dla detailingu w Carfect
             </h2>
 
             {/* Feature 1 - Image Right */}
@@ -150,7 +150,7 @@ const CrmDetailing = () => {
 
                   </h3>
                 </div>
-                <p className="text-muted-foreground text-lg leading-relaxed">Znasz ten ból gdy Klient prosi o ofertę na PPF Full Body + PPF Full Front + Ceramika na resztę karoserii? a najlepiej w wersji tańszej i droższej? Z generatorem ofert N2Wash, przygotowanie takiej oferty, to 3 minuty. Dodatkowo, oferta ma profesjonalny wygląd, podkreśla atuty Twojego studia i jest natychmiastowo wysłana do Klienta, prosto z aplikacji.
+                <p className="text-muted-foreground text-lg leading-relaxed">Znasz ten ból gdy Klient prosi o ofertę na PPF Full Body + PPF Full Front + Ceramika na resztę karoserii? a najlepiej w wersji tańszej i droższej? Z generatorem ofert Carfect, przygotowanie takiej oferty, to 3 minuty. Dodatkowo, oferta ma profesjonalny wygląd, podkreśla atuty Twojego studia i jest natychmiastowo wysłana do Klienta, prosto z aplikacji.
 
                 </p>
               </div>
@@ -187,7 +187,7 @@ const CrmDetailing = () => {
                     Protokół przyjęcia z diagramem uszkodzeń
                   </h3>
                 </div>
-                <p className="text-muted-foreground text-lg leading-relaxed">Aplikacja N2Wash pozwala Ci szybko tworzyć protokoły przyjęcia i odbioru samochodu. Koniec z papierem. Protokół jest powiązany z rezerwacją w kalendarzu i automatycznie wysłany do Klienta po wykonaniu. Wszystko zrobisz za pomocą paru kliknięć w telefonie.
+                <p className="text-muted-foreground text-lg leading-relaxed">Aplikacja Carfect pozwala Ci szybko tworzyć protokoły przyjęcia i odbioru samochodu. Koniec z papierem. Protokół jest powiązany z rezerwacją w kalendarzu i automatycznie wysłany do Klienta po wykonaniu. Wszystko zrobisz za pomocą paru kliknięć w telefonie.
 
                 </p>
               </div>
@@ -204,7 +204,7 @@ const CrmDetailing = () => {
                     Automatyczne przypomnienia o serwisach
                   </h3>
                 </div>
-                <p className="text-muted-foreground text-lg leading-relaxed">Odświeżanie powłok ceramicznych czy serwis folii PPF to szybki, stały i łatwy dochód. System N2Wash śledzi Twoje realizacje, sam planuje przypomnienia wg Twojego harmonogramu i w odpowiednich cyklach, wysyła do Klienta zaproszenie na usługę.
+                <p className="text-muted-foreground text-lg leading-relaxed">Odświeżanie powłok ceramicznych czy serwis folii PPF to szybki, stały i łatwy dochód. System Carfect śledzi Twoje realizacje, sam planuje przypomnienia wg Twojego harmonogramu i w odpowiednich cyklach, wysyła do Klienta zaproszenie na usługę.
 
                 </p>
               </div>
@@ -313,21 +313,21 @@ const CrmDetailing = () => {
         {/* Examples Section */}
         <section className="py-16 md:py-20 border-b border-border">
           <div className="container mx-auto px-4">
-            <h2 id="przyklady-ofert-stworzonych-w-n2wash" className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground text-center mb-6">
-              Przykłady ofert stworzonych w N2Wash
+            <h2 id="przyklady-ofert-stworzonych-w-carfect" className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground text-center mb-6">
+              Przykłady ofert stworzonych w Carfect
             </h2>
             <p className="text-muted-foreground text-center max-w-3xl mx-auto text-lg mb-12">Zobacz, jak wyglądają oferty stworzone w naszej aplikacji. Dodatkowo, wiesz czy i kiedy Klient obejrzał ofertę.
 
             </p>
 
             <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-              <a href="https://demo.n2wash.com/offers/cbqwwa2l" target="_blank" rel="noopener noreferrer" className="bg-muted rounded-2xl aspect-[4/1] flex items-center justify-center border border-border hover:border-primary hover:shadow-md transition-all cursor-pointer">
+              <a href="https://demo.carfect.pl/offers/cbqwwa2l" target="_blank" rel="noopener noreferrer" className="bg-muted rounded-2xl aspect-[4/1] flex items-center justify-center border border-border hover:border-primary hover:shadow-md transition-all cursor-pointer">
                 <p className="text-muted-foreground font-medium text-sm">Przykładowa oferta nr 1 na usługi car detailingu</p>
               </a>
-              <a href="https://demo.n2wash.com/offers/fui6o14o" target="_blank" rel="noopener noreferrer" className="bg-muted rounded-2xl aspect-[4/1] flex items-center justify-center border border-border hover:border-primary hover:shadow-md transition-all cursor-pointer">
+              <a href="https://demo.carfect.pl/offers/fui6o14o" target="_blank" rel="noopener noreferrer" className="bg-muted rounded-2xl aspect-[4/1] flex items-center justify-center border border-border hover:border-primary hover:shadow-md transition-all cursor-pointer">
                 <p className="text-muted-foreground font-medium text-sm">Przykładowa oferta nr 2 na usługi car detailingu</p>
               </a>
-              <a href="https://demo.n2wash.com/offers/opl7z9zt" target="_blank" rel="noopener noreferrer" className="bg-muted rounded-2xl aspect-[4/1] flex items-center justify-center border border-border hover:border-primary hover:shadow-md transition-all cursor-pointer">
+              <a href="https://demo.carfect.pl/offers/opl7z9zt" target="_blank" rel="noopener noreferrer" className="bg-muted rounded-2xl aspect-[4/1] flex items-center justify-center border border-border hover:border-primary hover:shadow-md transition-all cursor-pointer">
                 <p className="text-muted-foreground font-medium text-sm">Przykładowa oferta nr 3 na usługi car detailingu</p>
               </a>
             </div>
@@ -343,7 +343,7 @@ const CrmDetailing = () => {
               Gotowy, by profesjonalizować swoje studio?
             </h2>
             <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8">
-              Dołącz do studiów detailingu, które już korzystają z N2Wash. Zacznij bezpłatny okres próbny już dziś.
+              Dołącz do studiów detailingu, które już korzystają z Carfect. Zacznij bezpłatny okres próbny już dziś.
             </p>
             <Button
               asChild

@@ -30,7 +30,7 @@ const AppPreview = () => {
               <div className="aspect-[16/10] bg-white overflow-hidden">
                 <Image
                   src={appDesktop}
-                  alt="N2Wash Desktop App"
+                  alt="Carfect Desktop App"
                   className="w-full h-full object-cover object-top"
                   sizes="(max-width: 1024px) 100vw, 896px"
                 />
@@ -59,7 +59,7 @@ const AppPreview = () => {
                 <div className="relative rounded-[2.3rem] overflow-hidden bg-white">
                   <Image
                     src={appMobile}
-                    alt="N2Wash Mobile App"
+                    alt="Carfect Mobile App"
                     className="w-full aspect-[9/19.5] object-cover object-top"
                     sizes="(max-width: 768px) 208px, 256px"
                   />

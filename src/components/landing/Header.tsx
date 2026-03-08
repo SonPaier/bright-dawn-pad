@@ -6,9 +6,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "@/hooks/useTranslation";
-import Image from "next/image";
 import HeaderNav from "./HeaderNav";
-import logoN2Wash from "@/assets/n2washcom-logo.svg";
+// import Image from "next/image";
+// import logoCarfect from "@/assets/n2washcom-logo.svg";
 
 const Header = () => {
   const { t } = useTranslation();
@@ -58,7 +58,7 @@ const Header = () => {
     { label: nav.cennik, href: "/cennik-crm-myjnia-detailing" },
     // { label: nav.opinie, href: "/opinie" }, // TODO: Dokończyć stronę opinii
     { label: "Historie Klientów", href: "/case-studies" },
-    { label: nav.dlaczegoN2wash, href: "/dlaczego-n2wash" },
+    { label: nav.dlaczegoN2wash, href: "/dlaczego-carfect" },
     { label: nav.blog, href: "/blog" },
     { label: nav.kontakt, href: "/kontakt" },
   ];
@@ -82,14 +82,20 @@ const Header = () => {
             href="/"
             className="transition-all hover:opacity-80"
           >
-            <Image
-              src={logoN2Wash}
-              alt="N2Wash.com"
+            {/* TODO: Podmienić na nowe logo SVG */}
+            {/* <Image
+              src={logoCarfect}
+              alt="Carfect.pl"
               className={`h-6 md:h-7 w-auto transition-all duration-300 ${
                 hasSolidBackground && isHomePage ? "" : "brightness-0 invert"
               }`}
               priority
-            />
+            /> */}
+            <span className={`text-xl md:text-2xl font-bold tracking-tight transition-all duration-300 ${
+              hasSolidBackground && isHomePage ? "text-foreground" : "text-white"
+            }`}>
+              CARFECT
+            </span>
           </Link>
 
           {/* Desktop Navigation */}

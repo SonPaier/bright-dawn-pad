@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'Zarządzanie Zespołem w Myjni i Detailingu – Grafik i Ewidencja Czasu',
   description: 'Zarządzaj pracownikami myjni i studia detailingu. Grafik pracy, ewidencja czasu, przypisywanie zadań i kontrola wydajności zespołu.',
   alternates: {
-    canonical: 'https://n2wash.com/funkcje/zarzadzanie-zespolem',
+    canonical: 'https://carfect.pl/funkcje/zarzadzanie-zespolem',
   },
 };
 

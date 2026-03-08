@@ -13,7 +13,7 @@ const OpiniePage = () => {
       company: "ARM-CAR Detailing & Wrapping",
       logo: logoArmcar,
       quote:
-        "Odkąd korzystam z N2Wash, mój kalendarz rezerwacji jest uporządkowany, klienci otrzymują automatyczne przypomnienia, a ja oszczędzam mnóstwo czasu. Generator ofert pomógł mi domykać więcej zleceń – klienci są pod wrażeniem profesjonalnych wycen.",
+        "Odkąd korzystam z Carfect, mój kalendarz rezerwacji jest uporządkowany, klienci otrzymują automatyczne przypomnienia, a ja oszczędzam mnóstwo czasu. Generator ofert pomógł mi domykać więcej zleceń – klienci są pod wrażeniem profesjonalnych wycen.",
       rating: 5,
     },
     {
@@ -86,10 +86,10 @@ const OpiniePage = () => {
           <div className="container px-4">
             <div className="max-w-3xl mx-auto text-center">
               <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
-                Opinie Klientów N2Wash – Co Mówią Właściciele Myjni i Studiów Detailingu
+                Opinie Klientów Carfect – Co Mówią Właściciele Myjni i Studiów Detailingu
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground">
-                Prawdziwe historie sukcesu od właścicieli, którzy zaufali N2Wash
+                Prawdziwe historie sukcesu od właścicieli, którzy zaufali Carfect
               </p>
             </div>
           </div>
@@ -104,7 +104,7 @@ const OpiniePage = () => {
                 Zaufali nam właściciele z całej Polski
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Poznaj opinie właścicieli myjni i studiów detailingu, którzy codziennie korzystają z N2Wash
+                Poznaj opinie właścicieli myjni i studiów detailingu, którzy codziennie korzystają z Carfect
               </p>
             </div>
 
@@ -198,7 +198,7 @@ const OpiniePage = () => {
                 Wyniki liczbowe
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Średnie wyniki raportowane przez naszych klientów po wdrożeniu N2Wash
+                Średnie wyniki raportowane przez naszych klientów po wdrożeniu Carfect
               </p>
             </div>
 
@@ -233,7 +233,7 @@ const OpiniePage = () => {
                 href="/#hero"
                 className="inline-flex h-14 px-8 items-center justify-center text-base font-semibold rounded-xl bg-gradient-to-r from-primary to-sky-500 text-primary-foreground hover:from-primary/90 hover:to-sky-500/90 shadow-lg shadow-primary/25 transition-all duration-300 hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-0.5"
               >
-                Wypróbuj N2Wash za darmo
+                Wypróbuj Carfect za darmo
               </a>
             </div>
           </div>

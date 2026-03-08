@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'Protokół Przyjęcia Pojazdu dla Studia Detailingu – Cyfrowy Protokół ze Zdjęciami',
   description: 'Cyfrowy protokół przyjęcia pojazdu ze zdjęciami dla studia detailingu. Dokumentuj stan auta przed i po usłudze. Chroń się przed reklamacjami.',
   alternates: {
-    canonical: 'https://n2wash.com/funkcje/protokol-przyjecia-pojazdu',
+    canonical: 'https://carfect.pl/funkcje/protokol-przyjecia-pojazdu',
   },
 };
 

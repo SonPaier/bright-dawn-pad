@@ -4,9 +4,9 @@ import Breadcrumbs from '@/components/seo/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Cennik – Przejrzyste Plany dla Myjni i Detailingu',
-  description: 'Sprawdź cennik N2Wash CRM. Przejrzyste plany dopasowane do wielkości myjni i studia detailingu. Bez ukrytych kosztów, z bezpłatnym okresem próbnym.',
+  description: 'Sprawdź cennik Carfect CRM. Przejrzyste plany dopasowane do wielkości myjni i studia detailingu. Bez ukrytych kosztów, z bezpłatnym okresem próbnym.',
   alternates: {
-    canonical: 'https://n2wash.com/cennik-crm-myjnia-detailing',
+    canonical: 'https://carfect.pl/cennik-crm-myjnia-detailing',
   },
 };
 

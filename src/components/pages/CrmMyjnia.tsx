@@ -114,8 +114,8 @@ const CrmMyjnia = () => {
         {/* Solutions Section with Images */}
         <section className="py-16 md:py-20 border-b border-border">
           <div className="container mx-auto px-4">
-            <h2 id="jak-n2wash-pomaga-zarzadzac-myjnia" className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground text-center mb-12">
-              Jak N2Wash pomaga zarządzać myjnią?
+            <h2 id="jak-carfect-pomaga-zarzadzac-myjnia" className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground text-center mb-12">
+              Jak Carfect pomaga zarządzać myjnią?
             </h2>
 
             {/* Solution 1 - Image Right */}
@@ -171,7 +171,7 @@ const CrmMyjnia = () => {
               </div>
               <div className="flex-1 order-1 lg:order-2">
                 <div className="bg-muted rounded-2xl overflow-hidden border border-border flex items-center justify-center p-4">
-                  <Image src={smsPrzypomnienie} alt="SMS przypomnienie o wizycie w myjni z systemu N2Wash" className="max-h-[500px] w-auto rounded-xl" sizes="(max-width: 1024px) 100vw, 50vw" />
+                  <Image src={smsPrzypomnienie} alt="SMS przypomnienie o wizycie w myjni z systemu Carfect" className="max-h-[500px] w-auto rounded-xl" sizes="(max-width: 1024px) 100vw, 50vw" />
                 </div>
               </div>
             </div>
@@ -197,7 +197,7 @@ const CrmMyjnia = () => {
             <h2 id="gotowy-by-usprawnic-swoja-myjnie" className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6">
               Gotowy, by usprawnić swoją myjnię?
             </h2>
-            <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8">Dołącz do wielu myjni, które już korzystają z N2Wash. Zacznij bezpłatny okres próbny już dziś.</p>
+            <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8">Dołącz do wielu myjni, które już korzystają z Carfect. Zacznij bezpłatny okres próbny już dziś.</p>
             <Button asChild className="h-12 px-8 text-base font-semibold rounded-xl bg-white text-primary hover:bg-white/90">
               <Link href="/umow-prezentacje">Umów bezpłatną prezentację</Link>
             </Button>

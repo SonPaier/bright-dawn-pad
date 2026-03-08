@@ -15,7 +15,7 @@ export default function Breadcrumbs({ items }: BreadcrumbsProps) {
       '@type': 'ListItem',
       position: index + 1,
       name: item.name,
-      item: `https://n2wash.com${item.href}`,
+      item: `https://carfect.pl${item.href}`,
     })),
   };
 

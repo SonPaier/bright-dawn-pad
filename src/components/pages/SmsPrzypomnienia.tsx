@@ -70,7 +70,7 @@ const SmsPrzypomnienia = () => {
                 <div className="bg-primary/10 rounded-2xl p-8 border border-primary/20">
                   <div className="flex items-center gap-3 mb-4">
                     <Check className="w-8 h-8 text-primary" />
-                    <h3 id="z-sms-n2wash" className="text-xl font-semibold text-foreground">Z SMS N2Wash</h3>
+                    <h3 id="z-sms-carfect" className="text-xl font-semibold text-foreground">Z SMS Carfect</h3>
                   </div>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-2">
@@ -95,8 +95,8 @@ const SmsPrzypomnienia = () => {
         {/* SMS Types Section */}
         <section className="py-16 md:py-20 bg-muted/30">
           <div className="container mx-auto px-4">
-            <h2 id="rodzaje-sms-w-n2wash" className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground text-center mb-12">
-              Rodzaje SMS w N2Wash
+            <h2 id="rodzaje-sms-w-carfect" className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground text-center mb-12">
+              Rodzaje SMS w Carfect
             </h2>
 
             <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-12">
@@ -211,7 +211,7 @@ const SmsPrzypomnienia = () => {
                   mniej no-show dzięki przypomnieniom
                 </h4>
                 <p className="text-muted-foreground">
-                  Klienci korzystający z automatycznych przypomnień SMS w N2Wash odnotowują drastyczny spadek nieobecności – z kilkunastu procent do zaledwie kilku.
+                  Klienci korzystający z automatycznych przypomnień SMS w Carfect odnotowują drastyczny spadek nieobecności – z kilkunastu procent do zaledwie kilku.
                 </p>
               </div>
 
